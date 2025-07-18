@@ -1,0 +1,69 @@
+// Kaleidoscope Tiles Node for Coollab / Kaleidoskop Kacheln Node für Coollab
+// Based on ISF shader by VIDVOX / Basiert auf ISF Shader von VIDVOX
+
+INPUT UV->sRGB_StraightA 'Image';
+INPUT float 'Size';
+INPUT float 'Sides';
+INPUT float 'Rotation';
+INPUT float 'Angle';
+INPUT Point2D 'Slide 1';
+INPUT Point2D 'Slide 2';
+INPUT Point2D 'Shift';
+
+vec2 pattern(vec2 uv) {
+    float s = sin(TAU * 'Rotation');
+    float c = cos(TAU * 'Rotation');
+    
+    // Apply rotation / Rotation anwenden
+    vec2 point = vec2(c * uv.x - s * uv.y, s * uv.x + c * uv.y);
+    
+    // Apply scale / Skalierung anwenden
+    float scale = 1.0 / max('Size', 0.001);
+    point *= scale;
+    
+    // Apply shift / Verschiebung anwenden
+    point -= 'Shift';
+    
+    // Repeat pattern / Muster wiederholen
+    point = mod(point, 1.0);
+    
+    // Apply slide effects / Slide-Effekte anwenden
+    if (point.x < 0.5) {
+        point.y = mod(point.y + 'Slide 1'[1], 1.0);
+    } else {
+        point.y = mod(point.y + 'Slide 2'[1], 1.0);
+    }
+    
+    if (point.y < 0.5) {
+        point.x = mod(point.x + 'Slide 1'[0], 1.0);
+    } else {
+        point.x = mod(point.x + 'Slide 2'[0], 1.0);
+    }
+    
+    // Create reflections / Spiegelungen erstellen
+    point = 1.0 - abs(1.0 - 2.0 * point);
+    
+    // Convert to polar coordinates for kaleidoscope effect / In Polarkoordinaten umwandeln für Kaleidoskop-Effekt
+    vec2 center = vec2(0.5, 0.5);
+    float r = distance(center, point);
+    float a = atan(point.y - center.y, point.x - center.x);
+    
+    // Apply kaleidoscope effect / Kaleidoskop-Effekt anwenden
+    a = mod(a, TAU / 'Sides');
+    a = abs(a - TAU / 'Sides' / 2.0);
+    
+    // Apply angle rotation / Winkel-Rotation anwenden
+    s = sin(a + TAU * 'Angle');
+    c = cos(a + TAU * 'Angle');
+    
+    // Convert back to UV coordinates / Zurück zu UV-Koordinaten umwandeln
+    point.x = r * c + 0.5;
+    point.y = r * s + 0.5;
+    
+    return point;
+}
+
+sRGB_StraightA main(vec2 uv) {
+    vec2 pat = pattern(uv);
+    return 'Image'(pat);
+}
