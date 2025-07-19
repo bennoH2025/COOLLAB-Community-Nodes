@@ -1,3 +1,6 @@
+English | Deutsch
+---
+
 # 🔸 Kaleidoscope Tiles Node Documentation
 
 ## 🇬🇧 English
