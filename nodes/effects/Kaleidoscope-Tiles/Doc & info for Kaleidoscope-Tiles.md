@@ -20,7 +20,9 @@ The **Kaleidoscope Tiles** node creates stunning symmetrical, mirrored patterns 
 1. **Import the Node:**
    - Download both files from this directory
    - Import the `.clbnode` file into your COOLLAB project
-   - Load the default preset using the `.json` file (optional)
+   - as well as the associated default preset file, the `.json` file.
+You can place the two files in these categories or folders in your latest version of Coollab, which you can find in the Launcher. In this example, I'm using version "1.4.1 Spout OUT." Also note your username (Windows account). Here's the example path to organize it under the Image Modifiers:
+   C:\Users\_YourUserName_\AppData\Roaming\Coollab Launcher\Installed Versions\1.4.1 Spout OUT\Nodes\11 Image Modifier (Post Process)
 
 2. **Connect Input:**
    - Connect any image, video, or generator as input
@@ -72,12 +74,14 @@ Das **Kaleidoskop-Kacheln** Node erstellt beeindruckende symmetrische, gespiegel
 - `Kaleidoscope Tiles.clbnode` - Das Haupt-COOLLAB Node
 - `Kaleidoscope Tiles - Default.json` - Standard-Preset-Konfiguration
 
-### 🚀 Verwendung
+### 🚀 Verwendung sprich Insatllationsanleitung
 
 1. **Node Importieren:**
    - Beide Dateien aus diesem Verzeichnis herunterladen
    - Die `.clbnode` Datei in Ihr COOLLAB-Projekt importieren
-   - Standard-Preset mit der `.json` Datei laden (optional)
+   - wie auch die zugehörige Standard-Preset-Datei die `.json` Datei
+Sie können die beiden Files in diese Kategorien respektive Ordner hinenin legen in Ihrer aktuellsten Version von Coollab die Sie im Launcher finden, ich verwnde im Beispilelspfad Version "1.4.1 Spout OUT" und beachten Sie auch Ihren Nutzernahme (Windows Konto), hier der Beispilspfad um es unter den "Image Modifier's" ein zu ordnen:
+     C:\Users\_YourUserName_\AppData\Roaming\Coollab Launcher\Installed Versions\1.4.1 Spout OUT\Nodes\11 Image Modifier (Post Process)
 
 2. **Eingabe Verbinden:**
    - Beliebiges Bild, Video oder Generator als Eingabe verbinden
