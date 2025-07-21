@@ -1,4 +1,9 @@
 // based on butadiene's SDF at https://jbaker.graphics/writings/DEC.html
+//
+// idee and projectcordination by bennoH.
+// Credits for the SDF go to: butadiene
+// coding by claude.ai in the Sonnet model of Anthropic PBC on a "KostenlosPlan" of bennoH.
+// This Coollab 3D-Shape-node by his name "TetraederRadialSymetriX 51K.clbnode" is lizensed under GPLv3.0 by bennoH. 2025
 
 
 //  float pi = acos(-1.);
@@ -45,10 +50,6 @@
 //  return tet(p,vec3(1),1.8);
 //}
 
-// idee and projectcordination by bennoH.
-// Credits for the SDF go to: butadiene
-// coding by claude.ai in the Sonnet model of Anthropic PBC on a "KostenlosPlan" if bennoH.
-// This Coollab 3D-Shape-node by his name "TetraederRadialSymetriX 51K.clbnode" is lizensed under GPLv3.0 by bennoH. 2025
 
 
 INPUT float 'Scale'; /// Controls the fractal scaling factor
