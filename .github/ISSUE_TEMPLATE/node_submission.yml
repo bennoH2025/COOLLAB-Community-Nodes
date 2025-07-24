@@ -1,5 +1,5 @@
 name: 🎨 Node Submission
-description: Submit your custom COOLLAB node to the community collection. The node must be compatible with the latest version of COOLLAB. Please include a preset.json file with at least 1 preset and ideally a brief description with usage instructions as .md file.
+description: Submit your custom COOLLAB node. Must work with latest COOLLAB version. Include preset.json and .md documentation.
 title: "[NODE] "
 labels: ["node-submission"]
 body:
