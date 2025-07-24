@@ -1,0 +1,44 @@
+// Inspired by the cool Blob from VisualJockai-SP1
+//
+// Idea and project coordination by bennoH.
+// Coding by claude.ai in the Sonnet-4 model of Anthropic PBC on a "KostenlosPlan" of bennoH.
+// This Coollab 3D-Shape-node by his name "Bob the Blob pro" is lizensed under GPLv3.0 by bennoH. 2025
+
+// To learn how to write nodes, see https://coollab-art.com/Tutorials/Writing%20Nodes/Intro
+
+
+INPUT float 'Size'; /// Controls the overall size of the blob
+INPUT float 'Bumpiness'; /// Controls the surface detail intensity (0.0 to 1.0)
+INPUT float 'PHI'; /// Golden ratio constant
+INPUT vec3 'Direction 1'; /// First direction vector
+INPUT vec3 'Direction 2'; /// Second direction vector  
+INPUT vec3 'Direction 3'; /// Third direction vector
+
+SignedDistance main(vec3 pos)
+{
+    // Scale the position by the inverse of size
+    vec3 p = pos / 'Size';
+    
+    // Apply absolute value to create symmetry
+    p = abs(p);
+    
+    // Sort coordinates to ensure proper orientation
+    if (p.x < max(p.y, p.z)) p = p.yzx;
+    if (p.x < max(p.y, p.z)) p = p.yzx;
+    
+    // Calculate various dot products for the blob shape
+    float b = max(max(max(
+        dot(p, normalize('Direction 1')),
+        dot(p.xz, normalize('Direction 2'.xz))),
+        dot(p.yx, normalize('Direction 3'.yx))),
+        dot(p.xz, normalize(vec2(1, 'PHI'))));
+    
+    float l = length(p);
+    
+    // Calculate the blob surface with cosine modulation
+    float surface_detail = 'Bumpiness' * (1.5 / 2.0) * cos(min(sqrt(1.01 - b / l) * (PI / 0.25), PI));
+    float distance = l - 1.5 - 0.2 * surface_detail;
+    
+    // Scale back by size
+    return distance * 'Size';
+}
