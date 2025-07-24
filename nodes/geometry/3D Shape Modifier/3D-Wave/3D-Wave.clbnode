@@ -1,0 +1,32 @@
+// Based on video VFX-filters, but here using a SDF to modify 3 dimensional objects
+//
+// Idea and project coordination by bennoH.
+// Coding by claude.ai in the Sonnet-4 model of Anthropic PBC on a "KostenlosPlan" of bennoH.
+// This Coollab 3D-Shape-Modifier-node by his name "3D-Wave.clbnode" is lizensed under GPLv3.0 by bennoH. 2025
+
+// To learn how to write nodes, see https://coollab-art.com/Tutorials/Writing%20Nodes/Intro
+
+
+
+INPUT vec3->SignedDistance 'Shape';
+INPUT float 'Amplitude';
+INPUT float 'Frequency';
+INPUT vec3 'Direction';
+INPUT float 'Phase';
+
+SignedDistance main(vec3 pos) {
+    vec3 wave_dir = normalize('Direction');
+    
+    // Wellenposition entlang der Richtung
+    float wave_pos = dot(pos, wave_dir);
+    
+    // Senkrechte Verschiebungsrichtung
+    vec3 up = abs(wave_dir.y) < 0.9 ? vec3(0,1,0) : vec3(1,0,0);
+    vec3 perpendicular = normalize(cross(wave_dir, up));
+    
+    // Wellendisplacement
+    float displacement = 'Amplitude' * sin(wave_pos * 'Frequency' + 'Phase');
+    vec3 displaced_pos = pos + perpendicular * displacement;
+    
+    return 'Shape'(displaced_pos);
+}
