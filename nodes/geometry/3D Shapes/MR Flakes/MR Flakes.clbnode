@@ -1,0 +1,85 @@
+// Based on a SDF under MIT by Marten Range aka mrange 
+//
+// Idea and project coordination by bennoH.
+// Credits for the SDF go to: mrange
+// Coding by claude.ai in the Sonnet model of Anthropic PBC on a "KostenlosPlan" of bennoH.
+// This Coollab 3D-Shape-node by his name "MR Snowflake.clbnode" is lizensed under GPLv3.0 by bennoH. 2025
+
+// To learn how to write nodes, see https://coollab-art.com/Tutorials/Writing%20Nodes/Intro
+
+
+INPUT float 'Scale'; /// Controls the fractal scaling factor
+INPUT int 'Iterations'; /// Number of fractal iterations (1-15)
+INPUT float 'Threshold'; /// Early exit threshold for optimization
+INPUT float 'Power Exponent'; /// Controls the power scaling behavior
+INPUT vec3 'Offset'; /// Position offset for the fractal
+INPUT float 'Size'; /// Overall size multiplier
+
+void r45(inout vec2 p) {
+    p = (p + vec2(p.y, -p.x)) * sqrt(0.5);
+}
+
+float fractal_sdf(vec3 p) {
+    // Scale the input position
+    p /= 'Size';
+    
+    int layer = 0;
+    float s = 'Scale';
+    float scale = 1.0;
+    float r = 0.2;
+    vec3 o = 'Offset';
+    float d = 0.0;
+    int max_iter = clamp('Iterations', 1, 15);
+    float threshold = 'Threshold';
+    float power_exp = 'Power Exponent';
+    
+    p += o;
+    
+    for (int i = 0; i < max_iter; ++i) {
+        p = (-1.0 + 2.0 * fract(0.5 * p + 0.5));
+        r45(p.xz);
+        float r2 = dot(p, p) + 0.0001; // Prevent division by zero
+        float k = s / r2;
+        float ss = pow((1.0 + float(i)), -power_exp);
+        p *= pow(k, ss);
+        scale *= pow(k, -ss * ss);
+        d = 0.25 * abs(p.y) * scale;
+        layer = i;
+        if (abs(d) < threshold) break;
+    }
+    
+    // Scale the result back and ensure it's a proper distance
+    return d * 'Size';
+}
+
+SignedDistance main(vec3 pos) {
+    return fractal_sdf(pos);
+}
+
+/*
+Original SDF Code:
+void r45 ( inout vec2 p) {
+  p = ( p + vec2( p.y, -p.x ) ) * sqrt( 0.5 );
+}
+float de ( vec3 p ) {
+  int layer = 0;
+  const float s = 1.9;
+  float scale = 1.0;
+  float r = 0.2;
+  vec3 o = vec3( 0.22, 0.0, 0.0 );
+  float d = 0.0;
+  for ( int i = 0; i < 11; ++i ) {
+    p = ( -1.00 + 2.0 * fract( 0.5 * p + 0.5 ) );
+    r45( p.xz );
+    float r2 = dot( p, p ) + 0.0;
+    float k = s / r2;
+    float ss = pow( ( 1.0 + float( i ) ), -0.15 );
+    p *= pow( k, ss );
+    scale *= pow( k, -ss * ss );
+    d = 0.25 * abs( p.y ) * scale;
+    layer = i;
+    if( abs( d ) < 0.00048 ) break;
+  }
+  return d; 
+}
+*/
