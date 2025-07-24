@@ -15,7 +15,7 @@ Modern AI systems like ChatGPT, Gemini, or Claude master GLSL code and have coun
 The Coollab developers have created helpful tutorials, but AI systems cannot fully access web content. Therefore, I've prepared the most important tutorials as PDFs:
 
 **📥 Download Coollab AI Resources:**
-- [Google Drive Folder mit allen Ressourcen](https://drive.google.com/drive/folders/1mcp8zaL8--RHOMGw3rddOkjTV1bTl-Kd?usp=sharing)
+- [Google Drive folder with  traini ressources](https://drive.google.com/drive/folders/1mcp8zaL8--RHOMGw3rddOkjTV1bTl-Kd?usp=sharing)
   - Coollab Node Development Guide - Teil 1 (PDF)
   - Coollab Node Development Guide - Teil 2 (PDF)
 
