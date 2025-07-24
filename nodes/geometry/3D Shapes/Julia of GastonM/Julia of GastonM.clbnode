@@ -1,0 +1,44 @@
+// Based on a Mandelbulber-setup by bennoH. which is based on low modificatet the standard "Mandelbox" 
+//
+// Idea and project coordination by bennoH.
+// Coding by claude.ai in the Sonnet-4 model of Anthropic PBC on a "KostenlosPlan" of bennoH.
+// This Coollab 3D-Shape-node by his name "Julia of GastonM.clbnode" is lizensed under GPLv3.0 by bennoH. 2025
+// Special credits to: Gaston Maurice Julia for his theorem with the Julia-set in the "Mémoire sur l’itération des fonctions rationnelles" from 1918
+// and Pierre Fatou like Benoit Mandelbrot by the side
+
+// To learn how to write nodes, see https://coollab-art.com/Tutorials/Writing%20Nodes/Intro
+
+
+INPUT int 'Iterations'; /// Number of fractal iterations (1-20)
+INPUT float 'Scale'; /// Main scale factor for the fractal
+INPUT float 'Min Radius'; /// Minimum radius for sphere folding (0.1-1.0)
+INPUT float 'Box Limit'; /// Box folding limit (0.5-2.0)
+INPUT float 'Fixed Radius'; /// Fixed radius multiplier for sphere folding
+INPUT vec3 'Julia Offset'; /// Julia set offset for variation
+INPUT float 'Detail'; /// Surface detail multiplier for finer structures
+
+SignedDistance main(vec3 pos)
+{
+    float minRad2 = clamp('Min Radius', 1.0e-9, 1.0);
+    float absScalem1 = abs('Scale' - 1.0);
+    float AbsScale = pow(abs('Scale'), float(1 - 'Iterations'));
+    vec4 scale = vec4('Scale', 'Scale', 'Scale', abs('Scale')) / minRad2;
+    
+    vec4 p = vec4(pos, 1.0);
+    vec4 p0 = vec4(pos + 'Julia Offset', 1.0);
+    
+    for (int i = 0; i < 'Iterations'; i++)
+    {
+        // Box folding with adjustable limit
+        p.xyz = clamp(p.xyz, -'Box Limit', 'Box Limit') * 2.0 - p.xyz;
+        
+        // Sphere folding with controllable radius
+        float r2 = dot(p.xyz, p.xyz);
+        p *= clamp(max(minRad2 / r2, minRad2 * 'Fixed Radius'), 0.0, 1.0);
+        
+        // Scale and add offset
+        p = p * scale + p0;
+    }
+    
+    return ((length(p.xyz) - absScalem1) / p.w - AbsScale) * 'Detail';
+}
