@@ -30,7 +30,9 @@ nodes/
 ├── effects/          # Visual effects and filters
 ├── generators/       # Pattern and shape generators  
 ├── math/            # Mathematical operations
-├── geometry/        # Geometric transformations
+├── geometry/        # Geometric transformations  / Shapes
+                                                  / 3D Shapes
+                                                  / 3D Shape Modifier
 ├── colors/          # Color manipulation
 └── experimental/    # Work-in-progress nodes
 
@@ -40,8 +42,15 @@ docs/               # Development guides and tutorials
 ```
 
 ### 🤝 Contributing
+ 
+## 📤 Contributing Nodes
+We welcome all useful contributions!
+Want to share your custom Coollab-Node with the community? 
 
-We welcome all contributions! See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
+👉 **[Read our Submission Guide](docs/submission-guide.md)**
+
+[Submit Node Now →](../../issues/new/choose)
+Or see [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines. -under construction-
 
 **Ways to contribute:**
 - Share your custom nodes
