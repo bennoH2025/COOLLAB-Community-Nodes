@@ -1,0 +1,144 @@
+//
+// Snowflake 3D SDF Node for Coollab
+// 3D extrusion with variable thickness and edge rounding
+// Inspired by natural snowflake patterns 
+// Based on the web freely available geometric formulas and fractal systems
+// by a GPLv3.0 compatible implementation
+// Idea and project coordination by bennoH.
+// Coding by claude.ai in the Sonnet-4 model of Anthropic PBC on a "KostenlosPlan" of bennoH.
+// This Coollab 3D-Shape-node by his name "3D-Explode.clbnode" is lizensed under GPLv3.0 by bennoH. 2025
+
+// To learn how to write nodes, see https://coollab-art.com/Tutorials/Writing%20Nodes/Intro
+
+
+INPUT float 'Size';
+INPUT float 'Arm Length';
+INPUT float 'Arm Thickness';
+INPUT float 'Branch Density';
+INPUT float 'Detail Level';
+INPUT float 'Symmetry';
+INPUT Angle 'Rotation';
+INPUT float 'Z Thickness';
+INPUT float 'Edge Rounding';
+INPUT float 'Thickness Variation';
+
+// Helper function for creating symmetrical patterns
+float sdHexagram(vec2 p, float r) {
+    const vec3 k = vec3(-0.866025404, 0.5, 0.577350269);
+    p = abs(p);
+    p -= 2.0 * min(dot(k.xy, p), 0.0) * k.xy;
+    p -= vec2(clamp(p.x, -k.z * r, k.z * r), r);
+    return length(p) * sign(p.y);
+}
+
+// Snowflake arm with branching (2D)
+float snowflakeArm2D(vec2 p, float thickness, float density, float detail, float armLength) {
+    float d = 1e10;
+    
+    // Main stem - properly bounded by arm length
+    vec2 stem = vec2(abs(p.x), p.y);
+    float mainArm = max(max(stem.x - thickness, -stem.y), stem.y - armLength);
+    d = min(d, mainArm);
+    
+    // Side branches - only within arm length
+    float branches = 1e10;
+    int maxBranches = int(detail * 6.0 + 1.0);
+    for(int i = 1; i <= maxBranches; i++) {
+        float t = float(i) * armLength / float(maxBranches + 1);
+        if(t >= armLength) break;
+        
+        vec2 branchPos = vec2(0.0, t);
+        
+        // Rotate branch points
+        float angle = 0.5 + density * 0.3;
+        vec2 branchDir = vec2(sin(angle), cos(angle));
+        
+        // Left branch
+        vec2 pLeft = p - branchPos;
+        float projLeft = dot(pLeft, branchDir);
+        vec2 perpLeft = pLeft - projLeft * branchDir;
+        float branchLeft = max(length(perpLeft) - thickness * 0.6, 
+                              max(-projLeft, projLeft - t * density));
+        branches = min(branches, branchLeft);
+        
+        // Right branch (mirrored)
+        branchDir.x = -branchDir.x;
+        vec2 pRight = p - branchPos;
+        float projRight = dot(pRight, branchDir);
+        vec2 perpRight = pRight - projRight * branchDir;
+        float branchRight = max(length(perpRight) - thickness * 0.6,
+                               max(-projRight, projRight - t * density));
+        branches = min(branches, branchRight);
+        
+        // Small sub-branches
+        if(detail > 0.5) {
+            float subSize = thickness * 0.3;
+            float subBranch1 = length(p - vec2(t * 0.7, t)) - subSize;
+            float subBranch2 = length(p - vec2(-t * 0.7, t)) - subSize;
+            branches = min(branches, min(subBranch1, subBranch2));
+        }
+    }
+    
+    return min(d, branches);
+}
+
+// Get 2D snowflake distance
+float getSnowflake2D(vec2 p, float armThickness, float branchDensity, float detailLevel, float armLength, float symmetry) {
+    float d = 1e10;
+    
+    // Create 6-fold symmetry
+    float symmetryFold = symmetry * 6.0;
+    for(int i = 0; i < 6; i++) {
+        float angle = float(i) * TAU / 6.0;
+        if(float(i) >= symmetryFold) break;
+        
+        mat2 rotArm = mat2(cos(angle), -sin(angle), sin(angle), cos(angle));
+        vec2 armP = rotArm * p;
+        
+        float armDist = snowflakeArm2D(armP, armThickness, branchDensity, detailLevel, armLength);
+        d = min(d, armDist);
+    }
+    
+    // Center hexagon/circle
+    float center = length(p) - armThickness * 1.5;
+    d = min(d, center);
+    
+    return d;
+}
+
+SignedDistance main(vec3 pos) {
+    // Apply rotation only to XY plane
+    float rot = 'Rotation';
+    mat2 rotMat = mat2(cos(rot), -sin(rot), sin(rot), cos(rot));
+    vec2 p = rotMat * pos.xy;
+    
+    // Scale by size
+    p /= 'Size';
+    
+    // Get 2D snowflake distance
+    float d2D = getSnowflake2D(p, 'Arm Thickness', 'Branch Density', 'Detail Level', 'Arm Length', 'Symmetry');
+    
+    // Z-axis processing
+    float z = pos.z / 'Size';
+    float halfThickness = 'Z Thickness' * 0.5;
+    
+    // Thickness variation based on distance from center
+    float distFromCenter = length(p);
+    float thicknessMod = 1.0 - 'Thickness Variation' * saturate(distFromCenter);
+    float adjustedThickness = halfThickness * thicknessMod;
+    
+    // Z distance (slab)
+    float dZ = abs(z) - adjustedThickness;
+    
+    // Combine 2D and Z distances
+    float d3D;
+    if('Edge Rounding' > 0.001) {
+        // Rounded edges
+        d3D = length(max(vec2(d2D, dZ), 0.0)) + min(max(d2D, dZ), 0.0) - 'Edge Rounding';
+    } else {
+        // Sharp edges
+        d3D = max(d2D, dZ);
+    }
+    
+    return d3D;
+}
