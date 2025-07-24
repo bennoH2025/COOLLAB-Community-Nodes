@@ -1,0 +1,51 @@
+// Mandelbox of Midrakd - 3D SDF Node
+// Based on Mandelbulber fractal parameters by bennoH. 2025
+// Coding by claude.ai in the Sonnet-4 model of Anthropic PBC on a "KostenlosPlan" of bennoH.
+// Project coordination by bennoH.
+// The "Mandelbox of Midrakd" Coollab-node is licensed under the GPLv3.0 by bennoH.
+
+// To learn how to write nodes, see https://coollab-art.com/Tutorials/Writing%20Nodes/Intro
+
+
+INPUT float 'Scale'; /// Main scaling factor (default: -2.1)
+INPUT float 'Folding Limit'; /// Box folding limit (default: 1.1)
+INPUT float 'Fixed Radius'; /// Sphere folding fixed radius (default: 1.3)
+INPUT float 'Min Radius'; /// Sphere folding minimum radius (default: 0.6)
+INPUT vec3 'Offset'; /// Translation offset (default: -0.1, -0.1, -0.3)
+INPUT int 'Max Iterations'; /// Maximum iterations (default: 15)
+
+float mandelbox(vec3 pos) {
+    vec4 z = vec4(pos, 1.0);
+    
+    float scale = 'Scale';
+    float minRadius2 = 'Min Radius' * 'Min Radius';
+    float fixedRadius2 = 'Fixed Radius' * 'Fixed Radius';
+    
+    for (int i = 0; i < 'Max Iterations'; i++) {
+        // Box fold
+        z.xyz = clamp(z.xyz, -'Folding Limit', 'Folding Limit') * 2.0 - z.xyz;
+        
+        // Sphere fold
+        float r2 = dot(z.xyz, z.xyz);
+        
+        if (r2 < minRadius2) {
+            // Linear inner scaling
+            z *= fixedRadius2 / minRadius2;
+        } else if (r2 < fixedRadius2) {
+            // Inversion
+            z *= fixedRadius2 / r2;
+        }
+        
+        // Scale and translate
+        z = z * scale + vec4('Offset', 1.0);
+        
+        // Escape condition
+        if (dot(z.xyz, z.xyz) > 1000.0) break;
+    }
+    
+    return (length(z.xyz) - 2.0) / abs(z.w);
+}
+
+SignedDistance main(vec3 pos) {
+    return mandelbox(pos);
+}
