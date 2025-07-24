@@ -1,0 +1,342 @@
+{
+    "Presets": {
+        "Underlying container": [
+            {
+                "first": "e17655be-2933-4bde-8699-96ff87bfd1fa",
+                "second": {
+                    "Name": "Splash out right down (Time x 3.0)",
+                    "Values": [
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "Strength",
+                                "Value": 1.600000023841858,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 5,
+                            "data": {
+                                "Name": "Center",
+                                "Value": {
+                                    "x": 0.8299999833106995,
+                                    "y": 0.6599999070167542,
+                                    "z": -0.22999998927116395
+                                },
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "Time",
+                                "Value": 20.369998931884767,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "Noise Scale",
+                                "Value": -3.799999952316284,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "first": "f83dfeae-e9ef-4ab3-94c8-4d62ab4b6cb0",
+                "second": {
+                    "Name": "Explod   DRASTIC  (Time x 3.0)",
+                    "Values": [
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "Strength",
+                                "Value": 5.0,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 5,
+                            "data": {
+                                "Name": "Center",
+                                "Value": {
+                                    "x": 0.46000000834465029,
+                                    "y": 0.31999993324279787,
+                                    "z": -0.23999997973442079
+                                },
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "Time",
+                                "Value": 20.369998931884767,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "Noise Scale",
+                                "Value": 8.0,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "first": "1db472dc-729b-43d8-89d6-79b184b41b77",
+                "second": {
+                    "Name": "Explode   FLASHY  (Time x 3.0)",
+                    "Values": [
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "Strength",
+                                "Value": 1.7999999523162842,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 5,
+                            "data": {
+                                "Name": "Center",
+                                "Value": {
+                                    "x": 0.46000000834465029,
+                                    "y": 0.31999993324279787,
+                                    "z": -0.23999997973442079
+                                },
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "Time",
+                                "Value": 20.369998931884767,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "Noise Scale",
+                                "Value": 10.0,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "first": "275c895a-8591-4bc4-bc82-c1f020722ff0",
+                "second": {
+                    "Name": "Explod   STEROIDE-SLOPY  (Time x 3.0)",
+                    "Values": [
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "Strength",
+                                "Value": 0.8199999928474426,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 5,
+                            "data": {
+                                "Name": "Center",
+                                "Value": {
+                                    "x": 0.1600000262260437,
+                                    "y": 0.049999937415122989,
+                                    "z": 0.2199999988079071
+                                },
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "Time",
+                                "Value": 20.369998931884767,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "Noise Scale",
+                                "Value": 6.900000095367432,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}
