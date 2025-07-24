@@ -50,6 +50,7 @@ Want to share your custom self coded Coollab-Node with the community?
 👉 **[Read our Submission Guide](docs/submission-guide.md)**
 
 [Submit Node Now →](../../issues/new/choose)
+
 Or see [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines. -under construction-
 
 **Ways to contribute:**
@@ -72,7 +73,7 @@ This repository includes development resources created in collaboration with Cla
 
 - Build the largest open collection of COOLLAB community nodes
 - Provide comprehensive development resources  / How to build nodes Tutorial "Writing Nodes for Coollab" https://coollab-art.com/Tutorials/Writing%20Nodes/Intro
-                                               / How do I build nodes if I can't program and coding using an AI
+                                               / How do I build nodes if I can't program and coding using an AI: 🤖 **[AI-Assisted Node Development](docs/ai-development-guide.md)**
 - Foster a collaborative, open-source community
 - Ensure long-term preservation of community knowledge
 
@@ -143,7 +144,7 @@ Dieses Repository enthält Entwicklungsressourcen, die in Zusammenarbeit mit Cla
 
 - Die größte offene Sammlung von COOLLAB Community-Nodes aufbauen
 - Umfassende Entwicklungsressourcen bereitstellen  / wie baue ich Nodes Tutorial "Writing Nodes for Coollab" https://coollab-art.com/Tutorials/Writing%20Nodes/Intro
-                                                   / Wie baue ich Nodes wen ich nicht programieren kann mit Hilfe einer AI
+                                                   / Wie baue ich Nodes wen ich nicht programieren kann mit Hilfe einer AI: 🤖 **[KI-Assistent zum Node entwickeln](docs/ai-development-guide.md)**
 - Eine kollaborative, Open-Source-Community fördern
 - Langfristige Erhaltung von Community-Wissen sicherstellen
 
