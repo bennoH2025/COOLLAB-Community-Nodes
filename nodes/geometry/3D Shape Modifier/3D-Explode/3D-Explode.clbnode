@@ -1,0 +1,32 @@
+// Based on video VFX-filters, but here using a SDF to modify 3 dimensional objects
+//
+// Idea and project coordination by bennoH.
+// Coding by claude.ai in the Sonnet-4 model of Anthropic PBC on a "KostenlosPlan" of bennoH.
+// This Coollab 3D-Shape-Modifier-node by his name "3D-Explode.clbnode" is lizensed under GPLv3.0 by bennoH. 2025
+
+// To learn how to write nodes, see https://coollab-art.com/Tutorials/Writing%20Nodes/Intro
+
+
+
+INPUT vec3->SignedDistance 'Shape';
+INPUT float 'Strength';
+INPUT vec3 'Center';
+INPUT float 'Time';
+INPUT float 'Noise Scale';
+
+SignedDistance main(vec3 pos) {
+    vec3 relative_pos = pos - 'Center';
+    float dist_from_center = length(relative_pos);
+    
+    // Normalisierte Richtung vom Zentrum
+    vec3 direction = dist_from_center > 0.001 ? relative_pos / dist_from_center : vec3(1,0,0);
+    
+    // Noise für unregelmäßige Explosion
+    float noise = sin(pos.x * 'Noise Scale') * sin(pos.y * 'Noise Scale') * sin(pos.z * 'Noise Scale');
+    
+    // Explosion displacement mit Zeit
+    float explosion_amount = 'Strength' * 'Time' * (1.0 + noise * 0.3);
+    vec3 exploded_pos = pos - direction * explosion_amount;
+    
+    return 'Shape'(exploded_pos);
+}
