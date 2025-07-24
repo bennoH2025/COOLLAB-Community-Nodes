@@ -151,11 +151,13 @@ Dieses Repository enthält Entwicklungsressourcen, die in Zusammenarbeit mit Cla
 - Langfristige Erhaltung von Community-Wissen sicherstellen
 
 ---
+----------------
+---
 
 ### 📄 License
 
 This repository is licensed under the [GNU General Public License v3.0](LICENSE) - the same license as COOLLAB itself, ensuring full compatibility. Individual nodes may have their own licenses - check the node documentation.
-
+---
 ### 🔗 Links
 
 - [COOLLAB Official Website](https://coollab-art.com/)
