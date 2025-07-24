@@ -1,0 +1,31 @@
+// Inspired by difrend web-searchs & free infos
+//
+// Idee and projectcordination by bennoH.
+// Coding by claude.ai in the Sonnet-4 model of Anthropic PBC on a "KostenlosPlan" of bennoH.
+// This Coollab 3D-Shape-node by his name "Gyroid Torus.clbnode" is lizensed under GPLv3.0 by bennoH. 2025
+
+// To learn how to write nodes, see https://coollab-art.com/Tutorials/Writing%20Nodes/Intro
+
+
+INPUT float 'Major Radius'; /// Outer radius of torus
+INPUT float 'Minor Radius'; /// Inner thickness of torus  
+INPUT float 'Gyroid Scale'; /// Controls gyroid pattern density
+INPUT float 'Gyroid Thickness'; /// Thickness of gyroid walls
+
+SignedDistance main(vec3 pos)
+{
+    float rt = 'Major Radius';
+    float rg = 'Minor Radius';  
+    float ws = 'Gyroid Thickness';
+    
+    // Transform to torus space
+    vec3 p = pos;
+    p.xz = vec2(rt * atan(p.z, -p.x), length(p.xz) - rt);
+    p.yz = vec2(rg * atan(p.z, -p.y), length(p.yz) - rg);
+    
+    // Scale for gyroid pattern
+    p *= 'Gyroid Scale';
+    
+    // Gyroid surface with height limit
+    return 0.6 * max(abs(dot(sin(p), cos(p).yzx)) - ws, abs(p.z) - 0.5 * PI);
+}
