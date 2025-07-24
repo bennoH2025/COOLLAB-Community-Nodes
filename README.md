@@ -27,8 +27,8 @@ This repository is a community-driven collection of custom nodes for [COOLLAB](h
 
 ```
 nodes/
-├── effects/          # Visual effects and filters
-├── generators/       # Pattern and shape generators  
+├── effects/         # Visual effects and filters
+├── generators/      # Pattern and shape generators  
 ├── math/            # Mathematical operations
 ├── geometry/        # Geometric transformations  / Shapes
                                                   / 3D Shapes
@@ -45,7 +45,7 @@ docs/               # Development guides and tutorials
  
 ## 📤 Contributing Nodes
 We welcome all useful contributions!
-Want to share your custom Coollab-Node with the community? 
+Want to share your custom self coded Coollab-Node with the community? 
 
 👉 **[Read our Submission Guide](docs/submission-guide.md)**
 
@@ -71,7 +71,8 @@ This repository includes development resources created in collaboration with Cla
 ### 🎯 Goals
 
 - Build the largest open collection of COOLLAB community nodes
-- Provide comprehensive development resources
+- Provide comprehensive development resources  / How to build nodes Tutorial "Writing Nodes for Coollab" https://coollab-art.com/Tutorials/Writing%20Nodes/Intro
+                                               / How do I build nodes if I can't program and coding using an AI
 - Foster a collaborative, open-source community
 - Ensure long-term preservation of community knowledge
 
@@ -103,7 +104,9 @@ nodes/
 ├── effects/          # Visuelle Effekte und Filter
 ├── generators/       # Muster- und Form-Generatoren
 ├── math/            # Mathematische Operationen
-├── geometry/        # Geometrische Transformationen
+├── geometry/        # Geometrische Transformationens  / Shapes
+                                                       / 3D Shapes
+                                                       / 3D Shape Modifier
 ├── colors/          # Farb-Manipulation
 └── experimental/    # Work-in-Progress Nodes
 
@@ -113,11 +116,15 @@ docs/               # Entwicklungsanleitungen und Tutorials
 ```
 
 ### 🤝 Beitragen
-
-Wir begrüßen alle Beiträge! Siehe [CONTRIBUTING.md](CONTRIBUTING.md) für Richtlinien.
+## 📤 Nodes Beitragen
+Wir begrüßen alle nützlichen Beiträge!
+Möchten Sie Ihre benutzerdefinierte Coollab-Node mit der Community teilen?
+👉 **[Lesen Sie unseren Einreichungsleitfaden](docs/submission-guide.md)**
+[Node jetzt einreichen →](../../issues/new/choose)
+Oder siehe [CONTRIBUTING.md](CONTRIBUTING.md) für Richtlinien. -im Aufbau-
 
 **Möglichkeiten beizutragen:**
-- Teilen Sie Ihre benutzerdefinierten Nodes
+- Teilen Sie Ihre benutzerdefinierten selbst erstelten Nodes
 - Verbessern Sie bestehende Nodes
 - Dokumentation hinzufügen
 - Probleme melden
@@ -135,7 +142,8 @@ Dieses Repository enthält Entwicklungsressourcen, die in Zusammenarbeit mit Cla
 ### 🎯 Ziele
 
 - Die größte offene Sammlung von COOLLAB Community-Nodes aufbauen
-- Umfassende Entwicklungsressourcen bereitstellen
+- Umfassende Entwicklungsressourcen bereitstellen  / wie baue ich Nodes Tutorial "Writing Nodes for Coollab" https://coollab-art.com/Tutorials/Writing%20Nodes/Intro
+                                                   / Wie baue ich Nodes wen ich nicht programieren kann mit Hilfe einer AI
 - Eine kollaborative, Open-Source-Community fördern
 - Langfristige Erhaltung von Community-Wissen sicherstellen
 
