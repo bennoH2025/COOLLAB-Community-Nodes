@@ -1,0 +1,426 @@
+{
+    "Presets": {
+        "Underlying container": [
+            {
+                "first": "f01a6371-a2a3-4c15-b355-4cf1936838c0",
+                "second": {
+                    "Name": "Ruber",
+                    "Values": [
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "Strength",
+                                "Value": 3.5899999141693117,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 5,
+                            "data": {
+                                "Name": "Center",
+                                "Value": {
+                                    "x": 0.1899999976158142,
+                                    "y": 0.3100000023841858,
+                                    "z": 0.6299999952316284
+                                },
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 5,
+                            "data": {
+                                "Name": "Axis",
+                                "Value": {
+                                    "x": 0.5899999737739563,
+                                    "y": 0.2499999850988388,
+                                    "z": 1.1799999475479127
+                                },
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "first": "ebcfd5e1-af89-4c58-af01-5c3ac8098d7b",
+                "second": {
+                    "Name": "Splisch",
+                    "Values": [
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "Strength",
+                                "Value": 11.889999389648438,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 5,
+                            "data": {
+                                "Name": "Center",
+                                "Value": {
+                                    "x": -0.44999995827674868,
+                                    "y": 0.3100000023841858,
+                                    "z": 0.6299999952316284
+                                },
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 5,
+                            "data": {
+                                "Name": "Axis",
+                                "Value": {
+                                    "x": 0.429999977350235,
+                                    "y": 0.8199999928474426,
+                                    "z": -1.0799999237060547
+                                },
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "first": "cd878eda-4160-4660-9d7f-71f051d3b0d5",
+                "second": {
+                    "Name": "Snailing",
+                    "Values": [
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "Strength",
+                                "Value": 11.889999389648438,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 5,
+                            "data": {
+                                "Name": "Center",
+                                "Value": {
+                                    "x": 0.20000000298023225,
+                                    "y": 0.10000000149011612,
+                                    "z": 0.30000001192092898
+                                },
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 5,
+                            "data": {
+                                "Name": "Axis",
+                                "Value": {
+                                    "x": 0.20000000298023225,
+                                    "y": 0.10000000149011612,
+                                    "z": 0.30000001192092898
+                                },
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "first": "5178343c-3d9b-487e-a726-c04b5ee63245",
+                "second": {
+                    "Name": "GumBuble",
+                    "Values": [
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "Strength",
+                                "Value": 11.889999389648438,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 5,
+                            "data": {
+                                "Name": "Center",
+                                "Value": {
+                                    "x": 0.20000000298023225,
+                                    "y": -0.3199999928474426,
+                                    "z": 0.020000020042061807
+                                },
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 5,
+                            "data": {
+                                "Name": "Axis",
+                                "Value": {
+                                    "x": 0.8700000047683716,
+                                    "y": -1.159999966621399,
+                                    "z": 0.09000001847743988
+                                },
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "first": "d4767778-7d2c-4c0a-b5db-e01be547dd3f",
+                "second": {
+                    "Name": "small s",
+                    "Values": [
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "Strength",
+                                "Value": 8.930000305175782,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 5,
+                            "data": {
+                                "Name": "Center",
+                                "Value": {
+                                    "x": 0.00999997928738594,
+                                    "y": -0.3199999928474426,
+                                    "z": -0.22999997437000276
+                                },
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 5,
+                            "data": {
+                                "Name": "Axis",
+                                "Value": {
+                                    "x": 0.06000003591179848,
+                                    "y": -0.47999998927116396,
+                                    "z": -0.3099999725818634
+                                },
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "first": "22bc7421-43b9-42ec-affa-b2fc7370b989",
+                "second": {
+                    "Name": "Krumpl",
+                    "Values": [
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "Strength",
+                                "Value": -4.859999656677246,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 5,
+                            "data": {
+                                "Name": "Center",
+                                "Value": {
+                                    "x": 0.1899999976158142,
+                                    "y": 0.3100000023841858,
+                                    "z": 0.6299999952316284
+                                },
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 5,
+                            "data": {
+                                "Name": "Axis",
+                                "Value": {
+                                    "x": 0.5899999737739563,
+                                    "y": 0.0299999937415123,
+                                    "z": 1.1799999475479127
+                                },
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}
