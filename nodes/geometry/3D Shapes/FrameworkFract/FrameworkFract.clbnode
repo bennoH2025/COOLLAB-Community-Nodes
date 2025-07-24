@@ -1,0 +1,46 @@
+// Based on a Mandelbulber-setup by bennoH.
+//
+// Idee and projectcordination by bennoH.
+// Coding by claude.ai in the Sonnet-4 model of Anthropic PBC on a "KostenlosPlan" of bennoH.
+// This Coollab 3D-Shape-node by his name "FrameworkFract.clbnode" is lizensed under GPLv3.0 by bennoH. 2025
+// Special credits to: Benoit Mandelbrot as the father of the fraktalmathematics and basic formula
+
+// To learn how to write nodes, see https://coollab-art.com/Tutorials/Writing%20Nodes/Intro
+
+
+
+INPUT int 'Iterations'; /// Number of fractal iterations (1-20)
+INPUT float 'Scale'; /// Scale factor applied each iteration
+INPUT float 'Fold Size'; /// Size of the folding operation
+INPUT bool 'Enable Sorting'; /// Enable coordinate sorting/swapping
+INPUT float 'Final Scale'; /// Final scaling factor for the result
+INPUT vec3 'Offset'; /// Translation offset for each iteration
+
+SignedDistance main(vec3 pos)
+{
+    vec4 p = vec4(pos, 1.0);
+    
+    for(int i = 0; i < 'Iterations'; i++) {
+        // Coordinate sorting for symmetry
+        if('Enable Sorting') {
+            if(p.x > p.z) p.xz = p.zx;
+            if(p.z > p.y) p.zy = p.yz;
+        }
+        
+        // Absolute folding
+        p = abs(p);
+        
+        // Box folding with adjustable size
+        p.xyz = mod(p.xyz - 'Fold Size', 2.0 * 'Fold Size') - 'Fold Size';
+        
+        // Add offset for variation
+        p.xyz += 'Offset';
+        
+        // Scale transformation
+        p *= 'Scale';
+    }
+    
+    // Normalize by w component and return Y-axis distance
+    p /= p.w;
+    return abs(p.y) * 'Final Scale';
+}
