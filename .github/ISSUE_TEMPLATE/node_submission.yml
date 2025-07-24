@@ -1,5 +1,5 @@
 name: 🎨 Node Submission
-description: Submit your custom COOLLAB node to the community collection
+description: Submit your custom COOLLAB node to the community collection. The node must be compatible with the latest version of COOLLAB. Please include a preset.json file with at least 1 preset and ideally a brief description with usage instructions as .md file.
 title: "[NODE] "
 labels: ["node-submission"]
 body:
@@ -75,9 +75,11 @@ body:
       label: Files
       description: |
         Please attach your files here:
-        📎 **Required:** Your .clbnode file
-        📸 **Optional but recommended:** Screenshots showing the node in action
-        📄 **Optional:** Additional documentation or example projects
+        📎 **Required:** Your .clbnode file (compatible with latest COOLLAB)
+        🎛️ **Required:** preset.json file with at least 1 preset
+        📝 **Recommended:** .md file with description and usage instructions
+        📸 **Optional:** Screenshots showing the node in action
+        📄 **Optional:** Example projects
         
         Simply drag and drop files into this text area or click to upload.
       placeholder: Drag and drop your .clbnode file and screenshots here...
