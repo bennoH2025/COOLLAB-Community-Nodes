@@ -74,7 +74,7 @@ This repository includes development resources created in collaboration with Cla
 - Build the largest open collection of COOLLAB community nodes
 - Provide comprehensive development resources
      - / How to build nodes Tutorial "Writing Nodes for Coollab" https://coollab-art.com/Tutorials/Writing%20Nodes/Intro
-     - / How do I build nodes if I can't program and coding using an AI: 🤖 **[AI-Assisted Node Development](docs/ai-development-guide.md)**
+     - / How do I build nodes if I can't program and coding using an KI: 🤖 **[AI-Assisted Node Development](docs/ai-development-guide.md)**
 - Foster a collaborative, open-source community
 - Ensure long-term preservation of community knowledge
 
