@@ -6,7 +6,7 @@
 // Based on the original "Menger Sponge" Coollab node
 // The extensions are coded by claude.ai in the Sonnet-4 model of Anthropic PBC on a "KostenlosPlan" of bennoH.
 // through instructions and under the supervision of bennoH.
-// This Coollab 3D-Shape-node by his name "3D-Explode.clbnode" is lizensed under GPLv3.0 by bennoH. 2025
+// This Coollab 3D-Shape-node by his name "Menger Sponge EXTENDED.clbnode" is lizensed under GPLv3.0 by bennoH. 2025
 
 
 INPUT int 'Detail';
