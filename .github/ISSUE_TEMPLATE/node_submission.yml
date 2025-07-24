@@ -1,0 +1,94 @@
+name: 🎨 Node Submission
+description: Submit your custom COOLLAB node to the community collection
+title: "[NODE] "
+labels: ["node-submission"]
+body:
+  - type: input
+    id: node_name
+    attributes:
+      label: Node Name
+      description: What's the name of your node?
+      placeholder: e.g. "Rainbow Blur Effect"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      description: Which category does your node belong to?
+      options:
+        - effects
+        - generators
+        - math
+        - geometry
+        - colors
+        - experimental
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Describe what your node does and how to use it
+      placeholder: This node creates a rainbow blur effect with adjustable intensity...
+    validations:
+      required: true
+
+  - type: textarea
+    id: parameters
+    attributes:
+      label: Parameters
+      description: List the node's input parameters and their functions
+      placeholder: |
+        - Intensity (float): Controls blur strength (0.0 - 1.0)
+        - Colors (int): Number of rainbow colors (3-12)
+    validations:
+      required: false
+
+  - type: input
+    id: author
+    attributes:
+      label: Author
+      description: Your name or username for attribution
+      placeholder: e.g. "YourUsername"
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Submission Checklist
+      description: Please confirm the following
+      options:
+        - label: I have tested this node in COOLLAB and it works correctly
+          required: true
+        - label: This node is my original work or I have permission to share it
+          required: true
+        - label: I understand this will be shared under GPL v3.0 license
+          required: true
+
+  - type: textarea
+    id: files
+    attributes:
+      label: Files
+      description: |
+        Please attach your files here:
+        📎 **Required:** Your .clbnode file
+        📸 **Optional but recommended:** Screenshots showing the node in action
+        📄 **Optional:** Additional documentation or example projects
+        
+        Simply drag and drop files into this text area or click to upload.
+      placeholder: Drag and drop your .clbnode file and screenshots here...
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional_info
+    attributes:
+      label: Additional Information
+      description: Anything else you'd like to add?
+      placeholder: Known limitations, future improvements, special thanks...
+    validations:
+      required: false
