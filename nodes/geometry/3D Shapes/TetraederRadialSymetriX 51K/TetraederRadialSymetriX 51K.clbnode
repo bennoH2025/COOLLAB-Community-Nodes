@@ -1,0 +1,118 @@
+//
+// Idea and project coordination by bennoH.
+// Inspired by butadiene's SDF at https://jbaker.graphics/writings/DEC.html
+// Credits for the inspirational SDF go to: butadiene
+// coding by claude.ai in the Sonnet model of Anthropic PBC on a "KostenlosPlan" of bennoH.
+// This Coollab 3D-Shape-node by his name "TetraederRadialSymetriX 51K.clbnode" is lizensed under GPLv3.0 by bennoH. 2025
+
+// To learn how to write nodes, see https://coollab-art.com/Tutorials/Writing%20Nodes/Intro
+
+
+//  float pi = acos(-1.);
+//  mat2 rot(float r){
+//  vec2 s = vec2(cos(r),sin(r));
+//  return mat2(s.x,s.y,-s.y,s.x);
+//}
+//float cube(vec3 p,vec3 s){
+//  vec3 q = abs(p);
+//  vec3 m = max(s-q,0.);
+//  return length(max(q-s,0.))-min(min(m.x,m.y),m.z);
+//}
+//float tet(vec3 p,vec3 offset,float scale){
+//  vec4 z = vec4(p,1.);
+//  for(int i = 0;i<12;i++){
+//    if(z.x+z.y<0.0)z.xy = -z.yx;
+//    if(z.x+z.z<0.0)z.xz = -z.zx;
+//    if(z.z+z.y<0.0)z.zy = -z.yz;
+//    z *= scale;
+//    z.xyz += offset*(1.0-scale);
+//  }
+//  return (cube(z.xyz,vec3(1.5)))/z.w;
+//}
+//float de(vec3 p){
+//  p.xy *= rot(pi);
+//
+//  float np = 2.*pi/24.;
+//  float r = atan(p.x,p.z)-0.5*np;
+//  r = mod(r,np)-0.5*np;
+//  p.xz = length(p.xz)*vec2(cos(r),sin(r));
+//
+//  p.x -= 5.1;
+//  p.xy *= rot(0.3);
+//  p.xz *= rot(0.25*pi);
+//
+//  p.yz *= rot(pi*0.5);
+//  float s =1.;
+//  p.z = abs(p.z)-3.;
+//  p = abs(p)-s*8.;
+//  p = abs(p)-s*4.;
+//  p = abs(p)-s*2.;
+//  p = abs(p)-s*1.;
+//  vec3 col = vec3(0.082,0.647,0.894);
+//  return tet(p,vec3(1),1.8);
+//}
+
+
+
+INPUT float 'Scale'; /// Controls the fractal scaling factor
+INPUT int 'Iterations'; /// Number of fractal iterations (higher = more detail)
+INPUT vec3 'Offset'; /// Fractal offset vector
+INPUT float 'Radial Symmetry'; /// Number of radial repetitions around Y-axis
+INPUT float 'Distance'; /// Distance from center
+INPUT float 'XY Rotation'; /// Rotation around Z-axis
+INPUT float 'XZ Rotation'; /// Rotation around Y-axis  
+INPUT float 'YZ Rotation'; /// Rotation around X-axis
+INPUT vec3 'Fold Scale'; /// Scaling factors for the folding operations
+
+mat2 rot(float r) {
+    vec2 s = vec2(cos(r), sin(r));
+    return mat2(s.x, s.y, -s.y, s.x);
+}
+
+float cube(vec3 p, vec3 s) {
+    vec3 q = abs(p);
+    vec3 m = max(s - q, 0.);
+    return length(max(q - s, 0.)) - min(min(m.x, m.y), m.z);
+}
+
+float tet(vec3 p, vec3 offset, float scale, int iterations) {
+    vec4 z = vec4(p, 1.);
+    for(int i = 0; i < iterations; i++) {
+        if(z.x + z.y < 0.0) z.xy = -z.yx;
+        if(z.x + z.z < 0.0) z.xz = -z.zx;
+        if(z.z + z.y < 0.0) z.zy = -z.yz;
+        z *= scale;
+        z.xyz += offset * (1.0 - scale);
+    }
+    return (cube(z.xyz, vec3(1.5))) / z.w;
+}
+
+SignedDistance main(vec3 pos) {
+    vec3 p = pos;
+    
+    // Apply rotations
+    p.xy *= rot('XY Rotation');
+    
+    // Radial symmetry
+    float np = 2. * PI / 'Radial Symmetry';
+    float r = atan(p.x, p.z) - 0.5 * np;
+    r = mod(r, np) - 0.5 * np;
+    p.xz = length(p.xz) * vec2(cos(r), sin(r));
+    
+    // Move outward from center
+    p.x -= 'Distance';
+    p.xy *= rot('XY Rotation' * 0.3);
+    p.xz *= rot('XZ Rotation');
+    
+    p.yz *= rot('YZ Rotation');
+    
+    // Folding operations
+    vec3 foldScale = 'Fold Scale';
+    p.z = abs(p.z) - 3.;
+    p = abs(p) - foldScale * 8.;
+    p = abs(p) - foldScale * 4.;
+    p = abs(p) - foldScale * 2.;
+    p = abs(p) - foldScale * 1.;
+    
+    return tet(p, 'Offset', 'Scale', 'Iterations');
+}
