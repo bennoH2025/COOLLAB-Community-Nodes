@@ -1,0 +1,64 @@
+// To learn how to write nodes, see https://coollab-art.com/Tutorials/Writing%20Nodes/Intro
+
+// This is simply a version with additional inputs so you can experiment a bit more with this 3D shape.
+// But please adjust the options carefully, otherwise you'll end up in chaos, or just in black, or even nothing at all!
+//
+// Based on the original "Menger Sponge" Coollab node
+// The extensions are coded by claude.ai in the Sonnet-4 model of Anthropic PBC on a "KostenlosPlan" of bennoH.
+// through instructions and under the supervision of bennoH.
+// This Coollab 3D-Shape-node by his name "3D-Explode.clbnode" is lizensed under GPLv3.0 by bennoH. 2025
+
+
+INPUT int 'Detail';
+/// Number of fractal iterations - higher values create more detailed cross structures
+
+INPUT float 'Cross Thickness';
+/// Controls how thick the cross arms are - lower values make thinner crosses
+
+INPUT float 'Cube Size';
+/// Size of the containing cube that limits the cross shape
+
+INPUT float 'Base Scale';
+/// Starting scale factor for the fractal - affects overall size
+
+INPUT float 'Iteration Start';
+/// Starting iteration offset - shifts which fractal level begins
+
+INPUT float 'Fold Factor';
+/// Controls the folding transformation between iterations
+
+INPUT float 'Fold Scale';
+/// Scale factor for the folding operation
+
+INPUT float 'Fold Offset';
+/// Offset applied during the folding transformation
+
+INPUT float 'Scale Reduction';
+/// How much the scale decreases each iteration - higher values create faster decay
+
+float cross_sdf(vec3 p)
+{
+    vec3 absp = abs(p);
+    // get the distance to the closest axis
+    float maxyz = max(absp.y, absp.z);
+    float maxxz = max(absp.x, absp.z);
+    float maxxy = max(absp.x, absp.y);
+    float cr    = 'Cross Thickness' - (step(maxyz, absp.x) * maxyz + step(maxxz, absp.y) * maxxz + step(maxxy, absp.z) * maxxy);
+    // cube
+    float cu = max(maxxy, absp.z) - 'Cube Size';
+    // remove the cross from the cube
+    return max(cr, cu);
+}
+
+SignedDistance main(vec3 pos)
+{
+    float scale = 'Base Scale';
+    float dist  = -FLT_MAX;
+    for (int i = int('Iteration Start'); i < 'Detail'; i++)
+    {
+        dist = max(dist, cross_sdf(pos) * scale);
+        pos  = fract((pos - 'Fold Offset') * 'Fold Factor') * 'Fold Scale' - 'Fold Offset';
+        scale /= 'Scale Reduction';
+    }
+    return dist;
+}
