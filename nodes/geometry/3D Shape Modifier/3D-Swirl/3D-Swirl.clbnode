@@ -1,0 +1,34 @@
+// Based on video VFX-filters, but here using a SDF to modify 3 dimensional objects
+//
+// Idea and project coordination by bennoH.
+// Coding by claude.ai in the Sonnet-4 model of Anthropic PBC on a "KostenlosPlan" of bennoH.
+// This Coollab 3D-Shape-Modifier-node by his name "3D-Swirl.clbnode" is lizensed under GPLv3.0 by bennoH. 2025
+
+// To learn how to write nodes, see https://coollab-art.com/Tutorials/Writing%20Nodes/Intro
+
+
+
+INPUT vec3->SignedDistance 'Shape';
+INPUT float 'Strength';
+INPUT vec3 'Center';
+INPUT vec3 'Axis';
+
+SignedDistance main(vec3 pos) {
+    vec3 relative_pos = pos - 'Center';
+    vec3 axis_normalized = normalize('Axis');
+    
+    // Projektion auf Rotationsebene
+    vec3 projected = relative_pos - dot(relative_pos, axis_normalized) * axis_normalized;
+    float dist_from_axis = length(projected);
+    
+    // Rotationswinkel basierend auf Distanz
+    float angle = 'Strength' * exp(-dist_from_axis * 0.5);
+    
+    // Rodrigues Rotation um Achse
+    vec3 k = axis_normalized;
+    vec3 rotated = relative_pos * cos(angle) + 
+                   cross(k, relative_pos) * sin(angle) + 
+                   k * dot(k, relative_pos) * (1.0 - cos(angle));
+    
+    return 'Shape'(rotated + 'Center');
+}
