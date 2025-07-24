@@ -1,0 +1,25 @@
+// Based on the 3D-primitiv of 3ds-Max, Strata 3D CX and ... .
+//
+// Idea and project coordination by bennoH.
+// Coding by claude.ai in the Sonnet-4 model of Anthropic PBC on a "KostenlosPlan" of bennoH.
+// This Coollab 3D-Shape-node by his name "ChamferBox.clbnode" is lizensed under GPLv3.0 by bennoH. 2025
+
+// To learn how to write nodes, see https://coollab-art.com/Tutorials/Writing%20Nodes/Intro
+
+
+INPUT float 'Width';
+INPUT float 'Height'; 
+INPUT float 'Depth';
+INPUT float 'Chamfer Radius';
+
+SignedDistance main(vec3 pos)
+{
+    // Halbiere die Dimensionen für Box-Center-Berechnung
+    vec3 size = vec3('Width', 'Height', 'Depth') * 0.5;
+    
+    // Berechne Distanz zur Box mit Chamfer
+    vec3 d = abs(pos) - size + 'Chamfer Radius';
+    
+    // SDF für abgerundete Box (Chamfer/Fillet)
+    return length(max(d, 0.0)) + min(max(d.x, max(d.y, d.z)), 0.0) - 'Chamfer Radius';
+}
