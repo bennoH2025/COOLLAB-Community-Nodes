@@ -1,0 +1,20 @@
+// Inspired and based on the bevel-function of 3D-App's like Blender
+//
+// Idea and project coordination by bennoH.
+// Coding by claude.ai in the Sonnet-4 model of Anthropic PBC on a "KostenlosPlan" of bennoH.
+// This Coollab 3D-Shape-Modifier-node by his name "ChamferBox Pro.clbnode" is lizensed under GPLv3.0 by bennoH. 2025
+
+// To learn how to write nodes, see https://coollab-art.com/Tutorials/Writing%20Nodes/Intro
+
+
+INPUT vec3->SignedDistance 'Shape';
+INPUT float 'Bevel Size';
+
+SignedDistance main(vec3 pos)
+{
+    float d = 'Shape'(pos);
+    
+    // Einfacher Bevel durch "Onion" Operation
+    // Nimmt die absolute Distanz und subtrahiert Bevel Size
+    return abs(d) - 'Bevel Size';
+}
