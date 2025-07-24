@@ -1,0 +1,112 @@
+//
+// Snowflake 2D SDF Node for Coollab
+// Inspired by natural snowflake patterns 
+// based on geomertric formulas & fraktalsystems
+// by a GPLv3.0 compatible implementation
+// Idea and project coordination by bennoH.
+// Coding by claude.ai in the Sonnet-4 model of Anthropic PBC on a "KostenlosPlan" of bennoH.
+// This Coollab Shape-node by his name "3D-Explode.clbnode" is lizensed under GPLv3.0 by bennoH. 2025
+
+// To learn how to write nodes, see https://coollab-art.com/Tutorials/Writing%20Nodes/Intro
+
+
+INPUT float 'Size';
+INPUT float 'Arm Length';
+INPUT float 'Arm Thickness';
+INPUT float 'Branch Density';
+INPUT float 'Detail Level';
+INPUT float 'Symmetry';
+INPUT Angle 'Rotation';
+
+// Helper function for creating symmetrical patterns
+float sdHexagram(vec2 p, float r) {
+    const vec3 k = vec3(-0.866025404, 0.5, 0.577350269);
+    p = abs(p);
+    p -= 2.0 * min(dot(k.xy, p), 0.0) * k.xy;
+    p -= vec2(clamp(p.x, -k.z * r, k.z * r), r);
+    return length(p) * sign(p.y);
+}
+
+// Snowflake arm with branching
+float snowflakeArm(vec2 p, float thickness, float density, float detail, float armLength) {
+    float d = 1e10;
+    
+    // Main stem - properly bounded by arm length
+    vec2 stem = vec2(abs(p.x), p.y);
+    float mainArm = max(max(stem.x - thickness, -stem.y), stem.y - armLength);
+    d = min(d, mainArm);
+    
+    // Side branches - only within arm length
+    float branches = 1e10;
+    int maxBranches = int(detail * 6.0 + 1.0);
+    for(int i = 1; i <= maxBranches; i++) {
+        float t = float(i) * armLength / float(maxBranches + 1);
+        if(t >= armLength) break;
+        
+        vec2 branchPos = vec2(0.0, t);
+        
+        // Rotate branch points
+        float angle = 0.5 + density * 0.3;
+        vec2 branchDir = vec2(sin(angle), cos(angle));
+        
+        // Left branch
+        vec2 pLeft = p - branchPos;
+        float projLeft = dot(pLeft, branchDir);
+        vec2 perpLeft = pLeft - projLeft * branchDir;
+        float branchLeft = max(length(perpLeft) - thickness * 0.6, 
+                              max(-projLeft, projLeft - t * density));
+        branches = min(branches, branchLeft);
+        
+        // Right branch (mirrored)
+        branchDir.x = -branchDir.x;
+        vec2 pRight = p - branchPos;
+        float projRight = dot(pRight, branchDir);
+        vec2 perpRight = pRight - projRight * branchDir;
+        float branchRight = max(length(perpRight) - thickness * 0.6,
+                               max(-projRight, projRight - t * density));
+        branches = min(branches, branchRight);
+        
+        // Small sub-branches
+        if(detail > 0.5) {
+            float subSize = thickness * 0.3;
+            float subBranch1 = length(p - vec2(t * 0.7, t)) - subSize;
+            float subBranch2 = length(p - vec2(-t * 0.7, t)) - subSize;
+            branches = min(branches, min(subBranch1, subBranch2));
+        }
+    }
+    
+    return min(d, branches);
+}
+
+SignedDistance main(UV uv) {
+    vec2 p = uv * 2.0; // Scale to see full snowflake
+    
+    // Apply rotation
+    float rot = 'Rotation';
+    mat2 rotMat = mat2(cos(rot), -sin(rot), sin(rot), cos(rot));
+    p = rotMat * p;
+    
+    // Scale by size
+    p /= 'Size';
+    
+    float d = 1e10;
+    
+    // Create 6-fold symmetry
+    float symmetryFold = 'Symmetry' * 6.0;
+    for(int i = 0; i < 6; i++) {
+        float angle = float(i) * TAU / 6.0;
+        if(float(i) >= symmetryFold) break;
+        
+        mat2 rotArm = mat2(cos(angle), -sin(angle), sin(angle), cos(angle));
+        vec2 armP = rotArm * p;
+        
+        float armDist = snowflakeArm(armP, 'Arm Thickness', 'Branch Density', 'Detail Level', 'Arm Length');
+        d = min(d, armDist);
+    }
+    
+    // Center hexagon/circle
+    float center = length(p) - 'Arm Thickness' * 1.5;
+    d = min(d, center);
+    
+    return d;
+}
