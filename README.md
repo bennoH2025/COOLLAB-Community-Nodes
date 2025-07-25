@@ -1,22 +1,21 @@
-# COOLLAB Community Nodes
+# Coollab Community Nodes
 
 ### 📄 License & Disclamer
 
-This repositori is licensed under the [GNU General Public License v3.0](LICENSE) - the same license as COOLLAB itself, ensuring full compatibility. 
+This repositori is licensed under the [GNU General Public License v3.0](LICENSE) - the same license as Coollab itself, ensuring full compatibility. 
 By submitting your Coollab-Node, you accept that it will be freely available here and perhaps also in the Coollab main-repositori, and that your Nude will be licensed under the GPLv3.0 license.
 ---
 -----
 
-
-[English](#english) | [Deutsch](#deutsch)
+🌍 **Languages**: [English](#english) | [Deutsch](#deutsch) | [Français](README%20FR.md) | [Español](README%20ES.md) | [Português (Brasil)](README%20PT-BR.md) | [中文](README%20ZH-CN.md)
 
 ---
 
 ## English
 
-### 🎨 Community-Driven COOLLAB Node Collection
+### 🎨 Community-Driven Coollab Node Collection
 
-This repository is a community-driven collection of custom nodes for [COOLLAB](https://coollab-art.com/), the powerful node-based creative coding environment.
+This repository is a community-driven collection of custom nodes for [Coollab](https://coollab-art.com/), the powerful node-based creative coding environment.
 
 **Why this repository exists:**
 - **Open Knowledge Sharing**: Unlike closed platforms like Discord, this repository ensures that community knowledge remains publicly accessible, searchable, and preserved
@@ -28,7 +27,7 @@ This repository is a community-driven collection of custom nodes for [COOLLAB](h
 
 1. **Browse nodes** in the `/nodes/` directory
 2. **Download** the `.clbnode` files you need
-3. **Import** them into your COOLLAB project
+3. **Import** them into your Coollab project
 4. **Create and share** your own nodes!
 
 ### 📁 Repository Structure
@@ -76,11 +75,11 @@ This repository includes development resources created in collaboration with Cla
 - Best practices guides
 - Community tutorials
 
-*Want to develop nodes with AI assistance? Claude can help you create custom COOLLAB nodes - just provide the development documentation in your chat!*
+*Want to develop nodes with AI assistance? Claude can help you create custom Coollab nodes - just provide the development documentation in your chat!*
 
 ### 🎯 Goals
 
-- Build the largest open collection of COOLLAB community nodes
+- Build the largest open collection of Coollab community nodes
 - Provide comprehensive development resources
      - / How to build nodes Tutorial "Writing Nodes for Coollab" https://coollab-art.com/Tutorials/Writing%20Nodes/Intro
      - / How do I build nodes if I can't program and coding using an KI: 🤖 **[AI-Assisted Node Development](docs/ai-development-guide.md)**
@@ -91,9 +90,9 @@ This repository includes development resources created in collaboration with Cla
 
 ## Deutsch
 
-### 🎨 Community-getriebene COOLLAB Node Sammlung
+### 🎨 Community-getriebene Coollab Node Sammlung
 
-Dieses Repository ist eine community-getriebene Sammlung von benutzerdefinierten Nodes für [COOLLAB](https://coollab-art.com/), die mächtige node-basierte kreative Programmierumgebung.
+Dieses Repository ist eine community-getriebene Sammlung von benutzerdefinierten Nodes für [Coollab](https://coollab-art.com/), die mächtige node-basierte kreative Programmierumgebung.
 
 **Warum dieses Repository existiert:**
 - **Offenes Wissens-Sharing**: Im Gegensatz zu geschlossenen Plattformen wie Discord stellt dieses Repository sicher, dass Community-Wissen öffentlich zugänglich, durchsuchbar und dauerhaft verfügbar bleibt
@@ -105,7 +104,7 @@ Dieses Repository ist eine community-getriebene Sammlung von benutzerdefinierten
 
 1. **Nodes durchsuchen** im `/nodes/` Verzeichnis
 2. **Herunterladen** der benötigten `.clbnode` Dateien
-3. **Importieren** in Ihr COOLLAB Projekt
+3. **Importieren** in Ihr Coollab Projekt
 4. **Erstellen und teilen** Sie Ihre eigenen Nodes!
 
 ### 📁 Repository-Struktur
@@ -150,11 +149,11 @@ Dieses Repository enthält Entwicklungsressourcen, die in Zusammenarbeit mit Cla
 - Best-Practice-Anleitungen
 - Community-Tutorials
 
-*Möchten Sie Nodes mit KI-Unterstützung entwickeln? Claude kann Ihnen beim Erstellen benutzerdefinierter COOLLAB-Nodes helfen - stellen Sie einfach die Entwicklungsdokumentation in Ihrem Chat zur Verfügung!*
+*Möchten Sie Nodes mit KI-Unterstützung entwickeln? Claude kann Ihnen beim Erstellen benutzerdefinierter Coollab-Nodes helfen - stellen Sie einfach die Entwicklungsdokumentation in Ihrem Chat zur Verfügung!*
 
 ### 🎯 Ziele
 
-- Die größte offene Sammlung von COOLLAB Community-Nodes aufbauen
+- Die größte offene Sammlung von Coollab Community-Nodes aufbauen
 - Umfassende Entwicklungsressourcen bereitstellen
      - / wie baue ich Nodes Tutorial "Writing Nodes for Coollab" https://coollab-art.com/Tutorials/Writing%20Nodes/Intro
      - / Wie baue ich Nodes wen ich nicht programieren kann mit Hilfe einer AI: 🤖 **[KI-Assistent zum Node entwickeln](docs/ai-development-guide.md)**
@@ -165,7 +164,6 @@ Dieses Repository enthält Entwicklungsressourcen, die in Zusammenarbeit mit Cla
 ----------------
 ---
 
-
 ### 🔗 Links
 
-- [COOLLAB Official Website](https://coollab-art.com/)
+- [Coollab Official Website](https://coollab-art.com/)
