@@ -1,177 +1,93 @@
 # COOLLAB Community Nodes
 
-### 📄 License & Disclamer
+### 📄 Licence et Avertissement
 
-This repositori is licensed under the [GNU General Public License v3.0](LICENSE) - the same license as COOLLAB itself, ensuring full compatibility. 
-By submitting your Coollab-Node, you accept that it will be freely available here and perhaps also in the Coollab main-repositori, and that your Nude will be licensed under the GPLv3.0 license.
+Ce dépôt est sous licence [GNU General Public License v3.0](LICENSE) - la même licence que COOLLAB lui-même, garantissant une compatibilité totale.
+En soumettant votre Node Coollab, vous acceptez qu'il soit librement disponible ici et peut-être aussi dans le dépôt principal de Coollab, et que votre Node soit sous licence GPLv3.0.
 ---
 -----
 
-
-[English](#english) | [Deutsch](#deutsch)
+🌍 **Langues**: [English & Deutsch](README%20EN%20-%20DE.md) | [Français](#français) | [Português (Brasil)](README%20PT-BR.md) | [中文](README%20ZH-CN.md)
 
 ---
 
-## English
+## Français
 
-### 🎨 Community-Driven COOLLAB Node Collection
+### 🎨 Collection de Nodes COOLLAB Communautaire
 
-This repository is a community-driven collection of custom nodes for [COOLLAB](https://coollab-art.com/), the powerful node-based creative coding environment.
+Ce dépôt est une collection communautaire de nodes personnalisés pour [COOLLAB](https://coollab-art.com/), le puissant environnement de programmation créative basé sur les nodes.
 
-**Why this repository exists:**
-- **Open Knowledge Sharing**: Unlike closed platforms like Discord, this repository ensures that community knowledge remains publicly accessible, searchable, and preserved
-- **No Platform Lock-in**: Your contributions won't be trapped behind proprietary platforms with questionable data policies
-- **Collaborative Development**: Use Git's powerful version control for node development and community contributions
-- **Discoverability**: Anyone can find, use, and improve these nodes without needing special access
+**Pourquoi ce dépôt existe :**
+- **Partage de Connaissances Ouvert** : Contrairement aux plateformes fermées comme Discord, ce dépôt garantit que les connaissances de la communauté restent publiquement accessibles, consultables et préservées
+- **Pas de Verrouillage de Plateforme** : Vos contributions ne seront pas piégées derrière des plateformes propriétaires aux politiques de données discutables
+- **Développement Collaboratif** : Utilisez le puissant contrôle de version de Git pour le développement de nodes et les contributions communautaires
+- **Découvrabilité** : Tout le monde peut trouver, utiliser et améliorer ces nodes sans avoir besoin d'un accès spécial
 
-### 🚀 Quick Start
+### 🚀 Démarrage Rapide
 
-1. **Browse nodes** in the `/nodes/` directory
-2. **Download** the `.clbnode` files you need
-3. **Import** them into your COOLLAB project
-4. **Create and share** your own nodes!
+1. **Parcourir les nodes** dans le répertoire `/nodes/`
+2. **Télécharger** les fichiers `.clbnode` dont vous avez besoin
+3. **Importer** dans votre projet COOLLAB
+4. **Créer et partager** vos propres nodes !
 
-### 📁 Repository Structure
+### 📁 Structure du Dépôt
 
 ```
 nodes/
-├── effects/         # Visual effects and filters / Image Modifier (Post Process)
-├── generators/      # Pattern and shape generators  
-├── math/            # Mathematical operations
-├── geometry/        # Geometric transformations  / Shapes
-                                                  / 3D Shapes
-                                                  / 3D Shape Modifier
-├── colors/          # Color manipulation
-└── experimental/    # Work-in-progress nodes
+├── effects/         # Effets visuels et filtres / Image Modifier (Post Process)
+├── generators/      # Générateurs de motifs et formes
+├── math/            # Opérations mathématiques
+├── geometry/        # Transformations géométriques / Shapes
+                                                    / 3D Shapes
+                                                    / 3D Shape Modifier
+├── colors/          # Manipulation des couleurs
+└── experimental/    # Nodes en cours de développement
 
-examples/            # Complete project examples
-templates/           # Node templates for development
-docs/               # Development guides and tutorials
+examples/            # Exemples de projets complets
+templates/           # Modèles de nodes pour le développement
+docs/               # Guides de développement et tutoriels
 ```
 
-### 🤝 Contributing
+### 🤝 Contribuer
  
-## 📤 Contributing Nodes
-We welcome all useful contributions!
-Want to share your custom self coded Coollab-Node with the community? 
+## 📤 Contribuer des Nodes
+Nous accueillons toutes les contributions utiles !
+Vous voulez partager votre Node Coollab personnalisé auto-codé avec la communauté ?
 
-👉 **[Read our Submission Guide](docs/submission-guide.md)**
+👉 **[Lisez notre Guide de Soumission](docs/submission-guide.md)**
 
-By submitting your Coollab Node you accept that it is freely available to everyone here and perhaps also in the actual Coollab main-repository and that your Nude is placed under the GPLv3.0 license within your submision.
-[Submit Node Now →](../../issues/new/choose)
+En soumettant votre Node Coollab, vous acceptez qu'il soit librement disponible à tous ici et peut-être aussi dans le dépôt principal actuel de Coollab et que votre Node soit placé sous la licence GPLv3.0 lors de votre soumission.
+[Soumettre un Node Maintenant →](../../issues/new/choose)
 
-Or see [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines. -under construction-
+Ou voir [CONTRIBUTING.md](CONTRIBUTING.md) pour les directives. -en construction-
 
-**Ways to contribute:**
-- Share your custom nodes
-- Improve existing nodes
-- Add documentation
-- Report issues
-- Suggest new node categories
+**Façons de contribuer :**
+- Partager vos nodes personnalisés
+- Améliorer les nodes existants
+- Ajouter de la documentation
+- Signaler des problèmes
+- Suggérer de nouvelles catégories de nodes
 
-### 📚 Development Resources
+### 📚 Ressources de Développement
 
-This repository includes development resources created in collaboration with Claude (Anthropic), including:
-- Node development templates
-- Best practices guides
-- Community tutorials
+Ce dépôt inclut des ressources de développement créées en collaboration avec Claude (Anthropic), incluant :
+- Modèles de développement de nodes
+- Guides de bonnes pratiques
+- Tutoriels communautaires
 
-*Want to develop nodes with AI assistance? Claude can help you create custom COOLLAB nodes - just provide the development documentation in your chat!*
+*Vous voulez développer des nodes avec l'assistance IA ? Claude peut vous aider à créer des nodes COOLLAB personnalisés - fournissez simplement la documentation de développement dans votre chat !*
 
-### 🎯 Goals
+### 🎯 Objectifs
 
-- Build the largest open collection of COOLLAB community nodes
-- Provide comprehensive development resources
-     - / How to build nodes Tutorial "Writing Nodes for Coollab" https://coollab-art.com/Tutorials/Writing%20Nodes/Intro
-     - / How do I build nodes if I can't program and coding using an KI: 🤖 **[AI-Assisted Node Development](docs/ai-development-guide.md)**
-- Foster a collaborative, open-source community
-- Ensure long-term preservation of community knowledge
-
----
-
-## Deutsch
-
-### 🎨 Community-getriebene COOLLAB Node Sammlung
-
-Dieses Repository ist eine community-getriebene Sammlung von benutzerdefinierten Nodes für [COOLLAB](https://coollab-art.com/), die mächtige node-basierte kreative Programmierumgebung.
-
-**Warum dieses Repository existiert:**
-- **Offenes Wissens-Sharing**: Im Gegensatz zu geschlossenen Plattformen wie Discord stellt dieses Repository sicher, dass Community-Wissen öffentlich zugänglich, durchsuchbar und dauerhaft verfügbar bleibt
-- **Keine Plattform-Abhängigkeit**: Ihre Beiträge werden nicht hinter proprietären Plattformen mit fragwürdigen Datenrichtlinien eingesperrt
-- **Kollaborative Entwicklung**: Nutzen Sie Gits mächtige Versionskontrolle für Node-Entwicklung und Community-Beiträge
-- **Auffindbarkeit**: Jeder kann diese Nodes finden, nutzen und verbessern, ohne spezielle Zugangsberechtigung
-
-### 🚀 Schnellstart
-
-1. **Nodes durchsuchen** im `/nodes/` Verzeichnis
-2. **Herunterladen** der benötigten `.clbnode` Dateien
-3. **Importieren** in Ihr COOLLAB Projekt
-4. **Erstellen und teilen** Sie Ihre eigenen Nodes!
-
-### 📁 Repository-Struktur
-
-```
-nodes/
-├── effects/          # Visuelle Effekte und Filter    / Image Modifier (Post Process)
-├── generators/       # Muster- und Form-Generatoren
-├── math/            # Mathematische Operationen
-├── geometry/        # Geometrische Transformationens  / Shapes
-                                                       / 3D Shapes
-                                                       / 3D Shape Modifier
-├── colors/          # Farb-Manipulation
-└── experimental/    # Work-in-Progress Nodes
-
-examples/            # Vollständige Projekt-Beispiele
-templates/           # Node-Templates für Entwicklung
-docs/               # Entwicklungsanleitungen und Tutorials
-```
-
-### 🤝 Beitragen
-## 📤 Nodes Beitragen
-Wir begrüßen alle nützlichen Beiträge!
-Möchten Sie Ihre benutzerdefinierte Coollab-Node mit der Community teilen?
-
-Mit dem Übermitteln ihrer Coollab Node aktzeptieren Sie dass diese hier und allfälig im eigentlichen Coollab-Repositori frei verfügbar für jeden sein wird sowie das ihre Nude unter die GPLv3.0 Lizenz gestelt wird.
-👉 **[Lesen Sie unseren Einreichungsleitfaden](docs/submission-guide.md)**
-[Node jetzt einreichen →](../../issues/new/choose)
-Oder siehe [CONTRIBUTING.md](CONTRIBUTING.md) für Richtlinien. -im Aufbau-
-
-**Möglichkeiten beizutragen:**
-- Teilen Sie Ihre benutzerdefinierten selbst erstelten Nodes
-- Verbessern Sie bestehende Nodes
-- Dokumentation hinzufügen
-- Probleme melden
-- Neue Node-Kategorien vorschlagen
-
-### 📚 Entwicklungsressourcen
-
-Dieses Repository enthält Entwicklungsressourcen, die in Zusammenarbeit mit Claude (Anthropic) erstellt wurden:
-- Node-Entwicklungsvorlagen
-- Best-Practice-Anleitungen
-- Community-Tutorials
-
-*Möchten Sie Nodes mit KI-Unterstützung entwickeln? Claude kann Ihnen beim Erstellen benutzerdefinierter COOLLAB-Nodes helfen - stellen Sie einfach die Entwicklungsdokumentation in Ihrem Chat zur Verfügung!*
-
-### 🎯 Ziele
-
-- Die größte offene Sammlung von COOLLAB Community-Nodes aufbauen
-- Umfassende Entwicklungsressourcen bereitstellen
-     - / wie baue ich Nodes Tutorial "Writing Nodes for Coollab" https://coollab-art.com/Tutorials/Writing%20Nodes/Intro
-     - / Wie baue ich Nodes wen ich nicht programieren kann mit Hilfe einer AI: 🤖 **[KI-Assistent zum Node entwickeln](docs/ai-development-guide.md)**
-- Eine kollaborative, Open-Source-Community fördern
-- Langfristige Erhaltung von Community-Wissen sicherstellen
-
----
-----------------
----
-
-
-### 🔗 Links
-
-- [COOLLAB Official Website](https://coollab-art.com/)
-- [COOLLAB GitHub](https://github.com/CoolLibs/COOLLAB)
-- [COOLLAB Documentation](https://coollab-art.com/Tutorials/)
+- Construire la plus grande collection ouverte de nodes communautaires COOLLAB
+- Fournir des ressources de développement complètes
+     - / Tutoriel "Comment construire des nodes" "Writing Nodes for Coollab" https://coollab-art.com/Tutorials/Writing%20Nodes/Intro
+     - / Comment construire des nodes si je ne sais pas programmer en utilisant une IA : 🤖 **[Développement de Nodes Assisté par IA](docs/ai-development-guide.md)**
+- Favoriser une communauté collaborative et open-source
+- Assurer la préservation à long terme des connaissances communautaires
 
 ---
 
-*Started by [bennoH2025](https://github.com/bennoH2025) as an initiative to create an open, discoverable alternative to closed community platforms.*
+### 🔗 Liens
+
+- [Site Officiel COOLLAB](https://coollab-art.com/)
