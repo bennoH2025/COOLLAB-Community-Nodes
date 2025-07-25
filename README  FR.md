@@ -7,7 +7,7 @@ En soumettant votre Node Coollab, vous acceptez qu'il soit librement disponible 
 ---
 -----
 
-🌍 **Langues**: [English](README.md) | [Deutsch](README-de.md) | [Français](#français) | [Português (Brasil)](README-pt-br.md) | [中文](README-zh-cn.md)
+🌍 **Langues**: [English](README EN & DE.md) | [Deutsch](README-de.md) | [Français](#français) | [Português (Brasil)](README-pt-br.md) | [中文](README-zh-cn.md)
 
 ---
 
