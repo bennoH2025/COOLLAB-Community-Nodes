@@ -1,21 +1,21 @@
-# COOLLAB Community Nodes
+# Coollab Community Nodes
 
 ### 📄 Licence et Avertissement
 
-Ce dépôt est sous licence [GNU General Public License v3.0](LICENSE) - la même licence que COOLLAB lui-même, garantissant une compatibilité totale.
+Ce dépôt est sous licence [GNU General Public License v3.0](LICENSE) - la même licence que Coollab lui-même, garantissant une compatibilité totale.
 En soumettant votre Node Coollab, vous acceptez qu'il soit librement disponible ici et peut-être aussi dans le dépôt principal de Coollab, et que votre Node soit sous licence GPLv3.0.
 ---
 -----
 
-🌍 **Langues**: [English & Deutsch](README%20EN%20&%20DE.md) | [Français](#français) | [Português (Brasil)](README%20PT-BR.md) | [中文](README%20ZH-CN.md)
+🌍 **Langues**: [English & Deutsch](README%20EN%20-%20DE.md) | [Français](#français) | [Português (Brasil)](README%20PT-BR.md) | [中文](README%20ZH-CN.md)
 
 ---
 
 ## Français
 
-### 🎨 Collection de Nodes COOLLAB Communautaire
+### 🎨 Collection de Nodes Coollab Communautaire
 
-Ce dépôt est une collection communautaire de nodes personnalisés pour [COOLLAB](https://coollab-art.com/), le puissant environnement de programmation créative basé sur les nodes.
+Ce dépôt est une collection communautaire de nodes personnalisés pour [Coollab](https://coollab-art.com/), le puissant environnement de programmation créative basé sur les nodes.
 
 **Pourquoi ce dépôt existe :**
 - **Partage de Connaissances Ouvert** : Contrairement aux plateformes fermées comme Discord, ce dépôt garantit que les connaissances de la communauté restent publiquement accessibles, consultables et préservées
@@ -27,7 +27,7 @@ Ce dépôt est une collection communautaire de nodes personnalisés pour [COOLLA
 
 1. **Parcourir les nodes** dans le répertoire `/nodes/`
 2. **Télécharger** les fichiers `.clbnode` dont vous avez besoin
-3. **Importer** dans votre projet COOLLAB
+3. **Importer** dans votre projet Coollab
 4. **Créer et partager** vos propres nodes !
 
 ### 📁 Structure du Dépôt
