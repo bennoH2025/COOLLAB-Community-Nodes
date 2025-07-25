@@ -2,7 +2,7 @@
 
 ### 📄 License & Disclamer
 
-This repository is licensed under the [GNU General Public License v3.0](LICENSE) - the same license as COOLLAB itself, ensuring full compatibility. 
+This repositori is licensed under the [GNU General Public License v3.0](LICENSE) - the same license as COOLLAB itself, ensuring full compatibility. 
 By submitting your Coollab-Node, you accept that it will be freely available here and perhaps also in the Coollab main-repositori, and that your Nude will be licensed under the GPLv3.0 license.
 ---
 -----
