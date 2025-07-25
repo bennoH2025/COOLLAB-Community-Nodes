@@ -27,7 +27,7 @@ This repository is a community-driven collection of custom nodes for [COOLLAB](h
 
 ```
 nodes/
-├── effects/         # Visual effects and filters
+├── effects/         # Visual effects and filters / Image Modifier (Post Process)
 ├── generators/      # Pattern and shape generators  
 ├── math/            # Mathematical operations
 ├── geometry/        # Geometric transformations  / Shapes
@@ -104,7 +104,7 @@ Dieses Repository ist eine community-getriebene Sammlung von benutzerdefinierten
 
 ```
 nodes/
-├── effects/          # Visuelle Effekte und Filter
+├── effects/          # Visuelle Effekte und Filter    / Image Modifier (Post Process)
 ├── generators/       # Muster- und Form-Generatoren
 ├── math/            # Mathematische Operationen
 ├── geometry/        # Geometrische Transformationens  / Shapes
