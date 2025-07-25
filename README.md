@@ -49,6 +49,7 @@ Want to share your custom self coded Coollab-Node with the community?
 
 👉 **[Read our Submission Guide](docs/submission-guide.md)**
 
+By submitting your Coollab Node you accept that it is freely available to everyone here and perhaps also in the actual Coollab main-repository and that your Nude is placed under the GPLv3.0 license within your submision.
 [Submit Node Now →](../../issues/new/choose)
 
 Or see [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines. -under construction-
@@ -121,6 +122,8 @@ docs/               # Entwicklungsanleitungen und Tutorials
 ## 📤 Nodes Beitragen
 Wir begrüßen alle nützlichen Beiträge!
 Möchten Sie Ihre benutzerdefinierte Coollab-Node mit der Community teilen?
+
+Mit dem Übermitteln ihrer Coollab Node aktzeptieren Sie dass diese hier und allfälig im eigentlichen Coollab-Repositori frei verfügbar für jeden sein wird sowie das ihre Nude unter die GPLv3.0 Lizenz gestelt wird.
 👉 **[Lesen Sie unseren Einreichungsleitfaden](docs/submission-guide.md)**
 [Node jetzt einreichen →](../../issues/new/choose)
 Oder siehe [CONTRIBUTING.md](CONTRIBUTING.md) für Richtlinien. -im Aufbau-
@@ -154,9 +157,10 @@ Dieses Repository enthält Entwicklungsressourcen, die in Zusammenarbeit mit Cla
 ----------------
 ---
 
-### 📄 License
+### 📄 License & Disclamer
 
-This repository is licensed under the [GNU General Public License v3.0](LICENSE) - the same license as COOLLAB itself, ensuring full compatibility. Individual nodes may have their own licenses - check the node documentation.
+This repository is licensed under the [GNU General Public License v3.0](LICENSE) - the same license as COOLLAB itself, ensuring full compatibility. 
+By submitting your Coollab-Node, you accept that it will be freely available here and perhaps also in the Coollab main-repositori, and that your Nude will be licensed under the GPLv3.0 license.
 ---
 ### 🔗 Links
 
