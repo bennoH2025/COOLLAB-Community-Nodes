@@ -8,7 +8,7 @@
 -----
 
 🌍
-语言: [English & Deutsch](README.md) | [Français](README%20FR.md) | [Español](README%20ES.md) | [Português (Brasil)](README%20PT-BR.md)
+语言: [English & Deutsch](README.md) | [Français](README%20FR.md) | [Español](README%20ES.md) | [Português (Brasil)](README%20PT-BR.md) | [Русский](README%20RU.md)
 
 ---
 
