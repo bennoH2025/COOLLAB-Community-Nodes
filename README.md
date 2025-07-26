@@ -7,8 +7,8 @@ By submitting your Coollab-Node, you accept that it will be freely available her
 ---
 -----
 
-🌍 **Languages**: [Deutsch](README%20DE.md) | [Français](README%20FR.md) | [Español](README%20ES.md) | [Português (Brasil)](README%20PT-BR.md) | [中文](README%20ZH-CN.md)
----
+🌍
+Languages: [Deutsch](README%20DE.md) | [Français](README%20FR.md) | [Español](README%20ES.md) | [Português (Brasil)](README%20PT-BR.md) | [中文](README%20ZH-CN.md)
 
 ## English
 
@@ -87,7 +87,8 @@ This repository includes development resources created in collaboration with Cla
 
 ------
 
-🌍 **Sprachen**: [English](README.md) | [Français](README%20FR.md) | [Español](README%20ES.md) | [Português (Brasil)](README%20PT-BR.md) | [中文](README%20ZH-CN.md)
+🌍
+**Sprachen**: [English](README.md) | [Français](README%20FR.md) | [Español](README%20ES.md) | [Português (Brasil)](README%20PT-BR.md) | [中文](README%20ZH-CN.md)
 
 ## Deutsch
 
