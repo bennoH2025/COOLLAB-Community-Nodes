@@ -1,10 +1,10 @@
 # 🌀 Julia of GastonM - 3D Fractal Node
 
-## 🇬🇧 English | 🇩🇪 Deutsch
+## 🇬🇧 [English](#english-documentation) | 🇩🇪 [Deutsch](#deutsche-dokumentation)
 
 ---
 
-## 🇬🇧 **English Documentation**
+## 🇬🇧 **English Documentation** {#english-documentation}
 
 ### 📖 **Overview**
 The **Julia of GastonM** node creates stunning 3D fractal structures based on the mathematical foundations of Gaston Maurice Julia's groundbreaking work from 1918. This node combines Julia set mathematics with Mandelbox folding techniques to generate complex, organic-looking fractal geometries.
@@ -54,7 +54,7 @@ This node generates sophisticated 3D fractals using:
 
 ---
 
-## 🇩🇪 **Deutsche Dokumentation**
+## 🇩🇪 **Deutsche Dokumentation** {#deutsche-dokumentation}
 
 ### 📖 **Überblick**
 Der **Julia of GastonM** Node erzeugt atemberaubende 3D-Fraktalstrukturen basierend auf den mathematischen Grundlagen von Gaston Maurice Julias bahnbrechender Arbeit von 1918. Dieser Node kombiniert Julia-Mengen-Mathematik mit Mandelbox-Faltungstechniken für komplexe, organisch wirkende Fraktalgeometrien.
