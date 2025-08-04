@@ -291,4 +291,4 @@ Jedes Preset demonstriert verschiedene Fraktalcharakteristiken und Animationspot
 - COOLLAB Official Website
 - Community Node Collection
 
-Community node contributed to the COOLLAB Community Nodes collection - January 2025
+Coollab-node contributed to the Coolab-Community Nodes collection - June 2025
