@@ -12,13 +12,15 @@ The **Bob the Blob** node creates smooth, organic 3D blob shapes with customizab
 **📋 Files Included**
 
 - Bob the Blob.clbnode - The main COOLLAB 3D shape node
+- Bob the Blob.clbnode.presets.json - Preset configurations with 3 animation-ready setups
 
 **🚀 How to Use**
 
 *Import the Node:*
 
-- Download the .clbnode file from this directory
+- Download both files from this directory (necessary files to make it run)
 - Copy the .clbnode file into your COOLLAB Launcher to the Node-directory of the most actual Coollab-Version you find in that
+- as well as the associated preset .json file.
 
 You can place the file in the category "3D Shapes", means in that named folder in your latest version of Coollab, which you can find in the Launcher. In this example, I'm using version "1.4.1 Spout OUT." Also note your username (Windows account). Here's the example path to organize it under the 3D Shapes: 
 
@@ -93,7 +95,39 @@ The blob generation works through several mathematical stages:
 - ✅ Combine multiple blobs with different sizes for complex compositions
 
 ### 🎬 Animation Possibilities
-**Bob the Blob** is perfect for animation:
+**Bob the Blob** is perfect for animation and comes with animation-ready presets:
+
+### 📦 Available Presets
+**Bob the Blob** includes 3 carefully crafted animation setups:
+
+#### 🎬 Animation-Ready Presets
+- **"BloberOid (Time0.5 SinWav -0.6 0.6 2.9 / 3DWave Soft SwoBle / Rotate X&Z Time0.18)"**
+  - Size: 1.31, Bumpiness: 1.62
+  - Complete animation chain with Size oscillation, 3D Wave deformation, and rotation
+  
+- **"PoPing (Time 0.1 SinWav --0.86 0.86 2.9 / 3DWave Soft SwoBle)"**
+  - Size: 1.36, Bumpiness: 1.62
+  - Fast popping animation with rapid Size changes and 3D Wave effects
+  
+- **"Blobik (Time 0.5 SinWav -1.0 2.4 2.9 / Rotate X&Z Time0.18)"**
+  - Size: 1.32, Bumpiness: 1.62
+  - Classic blob animation with dramatic Size variation and gentle rotation
+
+#### 🎯 Understanding Preset Animation Instructions
+The preset names contain detailed node chain setups:
+
+**"BloberOid" Animation Chain:**
+1. 🕐 **Time Node** (Speed: 0.5) → **Sine Wave** (Min: -0.6, Max: 0.6, Period: 2.9) → **Size**
+2. 🌊 **3D-Wave Node** with "Soft SwoBle" preset
+3. 🔄 **Rotate Node** with **Time Node** (Speed: 0.18) → **X & Z axes**
+
+**"PoPing" Animation Chain:**
+1. 🕐 **Time Node** (Speed: 0.1) → **Sine Wave** (Min: -0.86, Max: 0.86, Period: 2.9) → **Size**
+2. 🌊 **3D-Wave Node** with "Soft SwoBle" preset
+
+**"Blobik" Animation Chain:**
+1. 🕐 **Time Node** (Speed: 0.5) → **Sine Wave** (Min: -1.0, Max: 2.4, Period: 2.9) → **Size**
+2. 🔄 **Rotate Node** with **Time Node** (Speed: 0.18) → **X & Z axes**
 
 **Recommended Animation Setups:**
 1. 🕐 **Time Node** → **Sine Wave** (Min: 0.5, Max: 2.0, Period: 3.0) → **Size**
@@ -143,16 +177,18 @@ Coollab-node contributed to the Coolab-Community Nodes collection - June 2025
 Der **Bob the Blob** Node erzeugt glatte, organische 3D-Blob-Formen mit anpassbaren Oberflächendetails. Dieser prozedurale Geometrie-Generator produziert natürliche, bauchige Formen, die an Meerestiere, organische Zellen oder abstrakte skulpturale Elemente erinnern. Inspiriert vom coolen Blob aus VisualJockai-SP1 bietet diese optimierte Version essentielle Blob-Erstellungs-Fähigkeiten mit zwei Hauptparametern für Größen- und Oberflächentextur-Kontrolle.
 & generiert wunderschöne organische 3D-Formen, die als perfekte Bausteine für künstlerische Szenen, Charakter-Modeling-Basen oder abstrakte Kompositionen dienen.
 
-**📋 Enthaltene Dateien**
+**📋 Enthaltene Dateien (notwendige Dateien damit es lauffähig ist)**
 
 - Bob the Blob.clbnode - Das Haupt-COOLLAB 3D-Form Node
+- Bob the Blob.clbnode.presets.json - Preset-Konfigurationen mit 3 animations-bereiten Setups
 
 **🚀 Verwendung sprich Installationsanleitung**
 
 *Node Importieren:*
 
-- Die .clbnode Datei aus diesem Verzeichnis herunterladen
-- Die .clbnode Datei in Ihr COOLLAB Launcher in das Node-Verzeichnis der aktuellsten Coollab-Version kopieren
+- Sie müssen beide Dateien aus diesem Verzeichnis herunterladen
+- Die .clbnode Datei in Ihr COOLLAB Launcher kopieren
+- wie auch die zugehörige Preset-Datei die .json Datei.
 
 Sie können die Datei in die Kategorie "3D Shapes" respektive den entsprechenden Ordner hinein legen in Ihrer aktuellsten Version von Coollab die Sie im Launcher finden, ich verwende im Beispielpfad Version "1.4.1 Spout OUT" und beachten Sie auch Ihren Nutzernamen (Windows Konto), hier der Beispielpfad um es unter den "3D Shapes" einzuordnen: 
 
@@ -227,7 +263,39 @@ Die Blob-Generierung funktioniert durch mehrere mathematische Stufen:
 - ✅ Mehrere Blobs mit verschiedenen Größen für komplexe Kompositionen kombinieren
 
 ### 🎬 Animations-Möglichkeiten
-**Bob the Blob** ist perfekt für Animation:
+**Bob the Blob** ist perfekt für Animation und kommt mit animations-bereiten Presets:
+
+### 📦 Verfügbare Presets
+**Bob the Blob** enthält 3 sorgfältig gestaltete Animations-Setups:
+
+#### 🎬 Animations-Bereite Presets
+- **"BloberOid (Time0.5 SinWav -0.6 0.6 2.9 / 3DWave Soft SwoBle / Rotate X&Z Time0.18)"**
+  - Size: 1.31, Bumpiness: 1.62
+  - Komplette Animations-Kette mit Size-Oszillation, 3D Wave-Verformung und Rotation
+  
+- **"PoPing (Time 0.1 SinWav --0.86 0.86 2.9 / 3DWave Soft SwoBle)"**
+  - Size: 1.36, Bumpiness: 1.62
+  - Schnelle Popping-Animation mit rapiden Size-Änderungen und 3D Wave-Effekten
+  
+- **"Blobik (Time 0.5 SinWav -1.0 2.4 2.9 / Rotate X&Z Time0.18)"**
+  - Size: 1.32, Bumpiness: 1.62
+  - Klassische Blob-Animation mit dramatischer Size-Variation und sanfter Rotation
+
+#### 🎯 Preset-Animations-Anweisungen verstehen
+Die Preset-Namen enthalten detaillierte Node-Chain-Setups:
+
+**"BloberOid" Animations-Kette:**
+1. 🕐 **Time Node** (Geschwindigkeit: 0.5) → **Sine Wave** (Min: -0.6, Max: 0.6, Period: 2.9) → **Size**
+2. 🌊 **3D-Wave Node** mit "Soft SwoBle" Preset
+3. 🔄 **Rotate Node** mit **Time Node** (Geschwindigkeit: 0.18) → **X & Z Achsen**
+
+**"PoPing" Animations-Kette:**
+1. 🕐 **Time Node** (Geschwindigkeit: 0.1) → **Sine Wave** (Min: -0.86, Max: 0.86, Period: 2.9) → **Size**
+2. 🌊 **3D-Wave Node** mit "Soft SwoBle" Preset
+
+**"Blobik" Animations-Kette:**
+1. 🕐 **Time Node** (Geschwindigkeit: 0.5) → **Sine Wave** (Min: -1.0, Max: 2.4, Period: 2.9) → **Size**
+2. 🔄 **Rotate Node** mit **Time Node** (Geschwindigkeit: 0.18) → **X & Z Achsen**
 
 **Empfohlene Animations-Setups:**
 1. 🕐 **Time Node** → **Sine Wave** (Min: 0.5, Max: 2.0, Period: 3.0) → **Size**
