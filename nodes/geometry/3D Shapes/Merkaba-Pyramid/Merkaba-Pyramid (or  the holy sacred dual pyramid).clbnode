@@ -1,0 +1,88 @@
+// Merkaba (Wireframe Stellated Octahedron) SDF - V3
+//
+// Fügt volle Rotationskontrolle für die zweite Pyramiede hinzu,
+// um eine präzise Ausrichtung und Verschränkung zu ermöglichen.
+
+// --- Einstellbare Parameter ---
+INPUT float 'Grösse' = 0.4; /// Bestimmt die Gesamtgrösse der Form.
+INPUT float 'Dicke' = 0.04; /// Bestimmt die Dicke der Kanten.
+INPUT float 'Verschränkung' = 0.25; /// Steuert, wie tief die beiden Pyramiden ineinander geschoben sind.
+
+// NEU: Rotations-Parameter für den zweiten Tetraeder.
+// Der Typ 'Angle' erzeugt ein Grad-basiertes UI-Element. 
+INPUT Angle 'Rotation X' = 180.0; /// Rotation um die X-Achse in Grad.
+INPUT Angle 'Rotation Y' = 0.0;   /// Rotation um die Y-Achse in Grad.
+INPUT Angle 'Rotation Z' = 0.0;   /// Rotation um die Z-Achse in Grad.
+
+
+// --- Hilfsfunktionen ---
+
+// SDF für ein Liniensegment
+float sdSegment( vec3 p, vec3 a, vec3 b )
+{
+    vec3 pa = p - a, ba = b - a;
+    float h = clamp( dot(pa,ba)/dot(ba,ba), 0.0, 1.0 );
+    return length( pa - ba*h );
+}
+
+// Erstellt eine 3x3 Rotationsmatrix aus Euler-Winkeln (in Bogenmass)
+mat3 rotationMatrix(vec3 angle)
+{
+    vec2 a = sin(angle.xz);
+    vec2 b = cos(angle.xz);
+    vec2 c = sin(angle.yy);
+    vec2 d = cos(angle.yy);
+
+    return mat3(
+        d.y*b.y,  a.x*c.x*b.y - b.x*c.y,  b.x*c.x*b.y + a.x*c.y,
+        d.y*b.x,  a.x*c.x*b.x + b.y*c.y,  b.x*c.x*b.x - a.x*c.y,
+        -c.x,     a.x*d.x,                b.x*d.x
+    );
+}
+
+
+// --- Hauptfunktion des Nodes ---
+SignedDistance main(vec3 pos)
+{
+    float s = 'Grösse';
+
+    // Vertices des ersten, statischen Tetraeders
+    vec3 t1_v1 = vec3( s,  s,  s);
+    vec3 t1_v2 = vec3( s, -s, -s);
+    vec3 t1_v3 = vec3(-s,  s, -s);
+    vec3 t1_v4 = vec3(-s, -s,  s);
+
+    // Transformationen für den zweiten Tetraeder vorbereiten
+    vec3 y_offset = vec3(0.0, -'Verschränkung', 0.0);
+    // Konvertiere Grad in Bogenmass für die Mathe-Funktionen
+    vec3 rot_angles = radians(vec3('Rotation X', 'Rotation Y', 'Rotation Z'));
+    mat3 rot_matrix = rotationMatrix(rot_angles);
+
+    // Vertices des zweiten Tetraeders berechnen:
+    // 1. Invertieren, 2. Rotieren, 3. Verschieben
+    vec3 t2_v1 = rot_matrix * (-t1_v1) + y_offset;
+    vec3 t2_v2 = rot_matrix * (-t1_v2) + y_offset;
+    vec3 t2_v3 = rot_matrix * (-t1_v3) + y_offset;
+    vec3 t2_v4 = rot_matrix * (-t1_v4) + y_offset;
+
+    // --- Abstandsberechnung zu allen 12 Kanten ---
+    float dist = 1e6;
+
+    // Kanten des ersten Tetraeders
+    dist = min(dist, sdSegment(pos, t1_v1, t1_v2));
+    dist = min(dist, sdSegment(pos, t1_v1, t1_v3));
+    dist = min(dist, sdSegment(pos, t1_v1, t1_v4));
+    dist = min(dist, sdSegment(pos, t1_v2, t1_v3));
+    dist = min(dist, sdSegment(pos, t1_v2, t1_v4));
+    dist = min(dist, sdSegment(pos, t1_v3, t1_v4));
+
+    // Kanten des zweiten Tetraeders
+    dist = min(dist, sdSegment(pos, t2_v1, t2_v2));
+    dist = min(dist, sdSegment(pos, t2_v1, t2_v3));
+    dist = min(dist, sdSegment(pos, t2_v1, t2_v4));
+    dist = min(dist, sdSegment(pos, t2_v2, t2_v3));
+    dist = min(dist, sdSegment(pos, t2_v2, t2_v4));
+    dist = min(dist, sdSegment(pos, t2_v3, t2_v4));
+
+    return dist - 'Dicke';
+}
