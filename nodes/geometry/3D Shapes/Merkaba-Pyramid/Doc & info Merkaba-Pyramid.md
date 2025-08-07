@@ -300,9 +300,8 @@ Jedes Preset demonstriert verschiedene spirituelle und geometrische Philosophien
 
 **🔗 Links**
 
-- Sacred Geometry Research and Merkaba Symbolism
-- COOLLAB Official Website  
-- Community Node Collection
-- Example Project: "Examples for the MERKABA node.coollab"
-
+Sacred Geometry Research and Merkaba Symbolism
+COOLLAB Official Website
+COOLLAB Community Node Collection
+Example Project: "Examples for the MERKABA node.coollab"
 Coollab-node contributed to the Coollab-Community Nodes collection - August 2025
