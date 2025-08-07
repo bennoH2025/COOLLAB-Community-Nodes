@@ -1,0 +1,1112 @@
+{
+    "Presets": {
+        "Underlying container": [
+            {
+                "first": "c824bbf4-8a31-49b3-8dc0-35fd09abb87b",
+                "second": {
+                    "Name": "Default",
+                    "Values": [
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "Size",
+                                "Value": 1.0,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 11,
+                            "data": {
+                                "Name": "Roto X",
+                                "Value": {
+                                    "Radians": {
+                                        "Radians": 0.0
+                                    }
+                                },
+                                "Metadata": {
+                                    "Number of snaps": 24,
+                                    "Snaps offset (in radians)": 0.0,
+                                    "Always snap": false
+                                }
+                            }
+                        },
+                        {
+                            "index": 11,
+                            "data": {
+                                "Name": "Roto Y",
+                                "Value": {
+                                    "Radians": {
+                                        "Radians": 0.0
+                                    }
+                                },
+                                "Metadata": {
+                                    "Number of snaps": 24,
+                                    "Snaps offset (in radians)": 0.0,
+                                    "Always snap": false
+                                }
+                            }
+                        },
+                        {
+                            "index": 11,
+                            "data": {
+                                "Name": "Roto Z",
+                                "Value": {
+                                    "Radians": {
+                                        "Radians": 0.0
+                                    }
+                                },
+                                "Metadata": {
+                                    "Number of snaps": 24,
+                                    "Snaps offset (in radians)": 0.0,
+                                    "Always snap": false
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "Thickness",
+                                "Value": 0.07999999821186066,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "Integration",
+                                "Value": 0.0,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 11,
+                            "data": {
+                                "Name": "X Rotar-P2",
+                                "Value": {
+                                    "Radians": {
+                                        "Radians": 0.0
+                                    }
+                                },
+                                "Metadata": {
+                                    "Number of snaps": 24,
+                                    "Snaps offset (in radians)": 0.0,
+                                    "Always snap": false
+                                }
+                            }
+                        },
+                        {
+                            "index": 11,
+                            "data": {
+                                "Name": "Y Rotar-P2",
+                                "Value": {
+                                    "Radians": {
+                                        "Radians": 0.0
+                                    }
+                                },
+                                "Metadata": {
+                                    "Number of snaps": 24,
+                                    "Snaps offset (in radians)": 0.0,
+                                    "Always snap": false
+                                }
+                            }
+                        },
+                        {
+                            "index": 11,
+                            "data": {
+                                "Name": "Z Rotar-P2",
+                                "Value": {
+                                    "Radians": {
+                                        "Radians": 0.0
+                                    }
+                                },
+                                "Metadata": {
+                                    "Number of snaps": 24,
+                                    "Snaps offset (in radians)": 0.0,
+                                    "Always snap": false
+                                }
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "first": "2227674b-365b-4ff8-b12c-192d32f402e0",
+                "second": {
+                    "Name": "Bold standard",
+                    "Values": [
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "Size",
+                                "Value": 1.159999966621399,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 11,
+                            "data": {
+                                "Name": "Roto X",
+                                "Value": {
+                                    "Radians": {
+                                        "Radians": 6.161012172698975
+                                    }
+                                },
+                                "Metadata": {
+                                    "Number of snaps": 24,
+                                    "Snaps offset (in radians)": 0.0,
+                                    "Always snap": false
+                                }
+                            }
+                        },
+                        {
+                            "index": 11,
+                            "data": {
+                                "Name": "Roto Y",
+                                "Value": {
+                                    "Radians": {
+                                        "Radians": 6.230825424194336
+                                    }
+                                },
+                                "Metadata": {
+                                    "Number of snaps": 24,
+                                    "Snaps offset (in radians)": 0.0,
+                                    "Always snap": false
+                                }
+                            }
+                        },
+                        {
+                            "index": 11,
+                            "data": {
+                                "Name": "Roto Z",
+                                "Value": {
+                                    "Radians": {
+                                        "Radians": 6.161012172698975
+                                    }
+                                },
+                                "Metadata": {
+                                    "Number of snaps": 24,
+                                    "Snaps offset (in radians)": 0.0,
+                                    "Always snap": false
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "Thickness",
+                                "Value": 0.1600000113248825,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "Integration",
+                                "Value": 0.0,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 11,
+                            "data": {
+                                "Name": "X Rotar-P2",
+                                "Value": {
+                                    "Radians": {
+                                        "Radians": 0.0
+                                    }
+                                },
+                                "Metadata": {
+                                    "Number of snaps": 24,
+                                    "Snaps offset (in radians)": 0.0,
+                                    "Always snap": false
+                                }
+                            }
+                        },
+                        {
+                            "index": 11,
+                            "data": {
+                                "Name": "Y Rotar-P2",
+                                "Value": {
+                                    "Radians": {
+                                        "Radians": 0.0
+                                    }
+                                },
+                                "Metadata": {
+                                    "Number of snaps": 24,
+                                    "Snaps offset (in radians)": 0.0,
+                                    "Always snap": false
+                                }
+                            }
+                        },
+                        {
+                            "index": 11,
+                            "data": {
+                                "Name": "Z Rotar-P2",
+                                "Value": {
+                                    "Radians": {
+                                        "Radians": 0.0
+                                    }
+                                },
+                                "Metadata": {
+                                    "Number of snaps": 24,
+                                    "Snaps offset (in radians)": 0.0,
+                                    "Always snap": false
+                                }
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "first": "52172a60-0102-4797-8b05-5384977842cc",
+                "second": {
+                    "Name": "Swinger King",
+                    "Values": [
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "Size",
+                                "Value": 0.7599999904632568,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 11,
+                            "data": {
+                                "Name": "Roto X",
+                                "Value": {
+                                    "Radians": {
+                                        "Radians": 6.161012172698975
+                                    }
+                                },
+                                "Metadata": {
+                                    "Number of snaps": 24,
+                                    "Snaps offset (in radians)": 0.0,
+                                    "Always snap": false
+                                }
+                            }
+                        },
+                        {
+                            "index": 11,
+                            "data": {
+                                "Name": "Roto Y",
+                                "Value": {
+                                    "Radians": {
+                                        "Radians": 6.230825424194336
+                                    }
+                                },
+                                "Metadata": {
+                                    "Number of snaps": 24,
+                                    "Snaps offset (in radians)": 0.0,
+                                    "Always snap": false
+                                }
+                            }
+                        },
+                        {
+                            "index": 11,
+                            "data": {
+                                "Name": "Roto Z",
+                                "Value": {
+                                    "Radians": {
+                                        "Radians": 6.161012172698975
+                                    }
+                                },
+                                "Metadata": {
+                                    "Number of snaps": 24,
+                                    "Snaps offset (in radians)": 0.0,
+                                    "Always snap": false
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "Thickness",
+                                "Value": 0.25999999046325686,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "Integration",
+                                "Value": 1.4899998903274537,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 11,
+                            "data": {
+                                "Name": "X Rotar-P2",
+                                "Value": {
+                                    "Radians": {
+                                        "Radians": 0.0
+                                    }
+                                },
+                                "Metadata": {
+                                    "Number of snaps": 24,
+                                    "Snaps offset (in radians)": 0.0,
+                                    "Always snap": false
+                                }
+                            }
+                        },
+                        {
+                            "index": 11,
+                            "data": {
+                                "Name": "Y Rotar-P2",
+                                "Value": {
+                                    "Radians": {
+                                        "Radians": 0.0
+                                    }
+                                },
+                                "Metadata": {
+                                    "Number of snaps": 24,
+                                    "Snaps offset (in radians)": 0.0,
+                                    "Always snap": false
+                                }
+                            }
+                        },
+                        {
+                            "index": 11,
+                            "data": {
+                                "Name": "Z Rotar-P2",
+                                "Value": {
+                                    "Radians": {
+                                        "Radians": 0.0
+                                    }
+                                },
+                                "Metadata": {
+                                    "Number of snaps": 24,
+                                    "Snaps offset (in radians)": 0.0,
+                                    "Always snap": false
+                                }
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "first": "66a3dc3a-f411-4035-9b64-43bf050ee68e",
+                "second": {
+                    "Name": "Glider (see my example Project for MERKABA)",
+                    "Values": [
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "Size",
+                                "Value": 0.7599999904632568,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 11,
+                            "data": {
+                                "Name": "Roto X",
+                                "Value": {
+                                    "Radians": {
+                                        "Radians": 6.161012172698975
+                                    }
+                                },
+                                "Metadata": {
+                                    "Number of snaps": 24,
+                                    "Snaps offset (in radians)": 0.0,
+                                    "Always snap": false
+                                }
+                            }
+                        },
+                        {
+                            "index": 11,
+                            "data": {
+                                "Name": "Roto Y",
+                                "Value": {
+                                    "Radians": {
+                                        "Radians": 6.230825424194336
+                                    }
+                                },
+                                "Metadata": {
+                                    "Number of snaps": 24,
+                                    "Snaps offset (in radians)": 0.0,
+                                    "Always snap": false
+                                }
+                            }
+                        },
+                        {
+                            "index": 11,
+                            "data": {
+                                "Name": "Roto Z",
+                                "Value": {
+                                    "Radians": {
+                                        "Radians": 6.161012172698975
+                                    }
+                                },
+                                "Metadata": {
+                                    "Number of snaps": 24,
+                                    "Snaps offset (in radians)": 0.0,
+                                    "Always snap": false
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "Thickness",
+                                "Value": 0.25999999046325686,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "Integration",
+                                "Value": 1.4899998903274537,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 11,
+                            "data": {
+                                "Name": "X Rotar-P2",
+                                "Value": {
+                                    "Radians": {
+                                        "Radians": 1.5707963705062867
+                                    }
+                                },
+                                "Metadata": {
+                                    "Number of snaps": 24,
+                                    "Snaps offset (in radians)": 0.0,
+                                    "Always snap": false
+                                }
+                            }
+                        },
+                        {
+                            "index": 11,
+                            "data": {
+                                "Name": "Y Rotar-P2",
+                                "Value": {
+                                    "Radians": {
+                                        "Radians": 1.5707963705062867
+                                    }
+                                },
+                                "Metadata": {
+                                    "Number of snaps": 24,
+                                    "Snaps offset (in radians)": 0.0,
+                                    "Always snap": false
+                                }
+                            }
+                        },
+                        {
+                            "index": 11,
+                            "data": {
+                                "Name": "Z Rotar-P2",
+                                "Value": {
+                                    "Radians": {
+                                        "Radians": -1.5707963705062867
+                                    }
+                                },
+                                "Metadata": {
+                                    "Number of snaps": 24,
+                                    "Snaps offset (in radians)": 0.0,
+                                    "Always snap": false
+                                }
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "first": "487efa16-e158-44b0-9d47-2c3e8a23ce3a",
+                "second": {
+                    "Name": "BumpyBlober (activate the Union-Node at my example Project for MERKABA)",
+                    "Values": [
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "Size",
+                                "Value": 0.7599999904632568,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 11,
+                            "data": {
+                                "Name": "Roto X",
+                                "Value": {
+                                    "Radians": {
+                                        "Radians": 6.161012172698975
+                                    }
+                                },
+                                "Metadata": {
+                                    "Number of snaps": 24,
+                                    "Snaps offset (in radians)": 0.0,
+                                    "Always snap": false
+                                }
+                            }
+                        },
+                        {
+                            "index": 11,
+                            "data": {
+                                "Name": "Roto Y",
+                                "Value": {
+                                    "Radians": {
+                                        "Radians": 6.230825424194336
+                                    }
+                                },
+                                "Metadata": {
+                                    "Number of snaps": 24,
+                                    "Snaps offset (in radians)": 0.0,
+                                    "Always snap": false
+                                }
+                            }
+                        },
+                        {
+                            "index": 11,
+                            "data": {
+                                "Name": "Roto Z",
+                                "Value": {
+                                    "Radians": {
+                                        "Radians": 6.161012172698975
+                                    }
+                                },
+                                "Metadata": {
+                                    "Number of snaps": 24,
+                                    "Snaps offset (in radians)": 0.0,
+                                    "Always snap": false
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "Thickness",
+                                "Value": 0.25999999046325686,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "Integration",
+                                "Value": 1.4899998903274537,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 11,
+                            "data": {
+                                "Name": "X Rotar-P2",
+                                "Value": {
+                                    "Radians": {
+                                        "Radians": 0.0
+                                    }
+                                },
+                                "Metadata": {
+                                    "Number of snaps": 24,
+                                    "Snaps offset (in radians)": 0.0,
+                                    "Always snap": false
+                                }
+                            }
+                        },
+                        {
+                            "index": 11,
+                            "data": {
+                                "Name": "Y Rotar-P2",
+                                "Value": {
+                                    "Radians": {
+                                        "Radians": 1.5707963705062867
+                                    }
+                                },
+                                "Metadata": {
+                                    "Number of snaps": 24,
+                                    "Snaps offset (in radians)": 0.0,
+                                    "Always snap": false
+                                }
+                            }
+                        },
+                        {
+                            "index": 11,
+                            "data": {
+                                "Name": "Z Rotar-P2",
+                                "Value": {
+                                    "Radians": {
+                                        "Radians": -1.5707963705062867
+                                    }
+                                },
+                                "Metadata": {
+                                    "Number of snaps": 24,
+                                    "Snaps offset (in radians)": 0.0,
+                                    "Always snap": false
+                                }
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "first": "6561b1d9-db69-438b-9c7c-ef84e0aa74c1",
+                "second": {
+                    "Name": "Knotted one",
+                    "Values": [
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "Size",
+                                "Value": 0.7200000286102295,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 11,
+                            "data": {
+                                "Name": "Roto X",
+                                "Value": {
+                                    "Radians": {
+                                        "Radians": 0.0
+                                    }
+                                },
+                                "Metadata": {
+                                    "Number of snaps": 24,
+                                    "Snaps offset (in radians)": 0.0,
+                                    "Always snap": false
+                                }
+                            }
+                        },
+                        {
+                            "index": 11,
+                            "data": {
+                                "Name": "Roto Y",
+                                "Value": {
+                                    "Radians": {
+                                        "Radians": 0.0
+                                    }
+                                },
+                                "Metadata": {
+                                    "Number of snaps": 24,
+                                    "Snaps offset (in radians)": 0.0,
+                                    "Always snap": false
+                                }
+                            }
+                        },
+                        {
+                            "index": 11,
+                            "data": {
+                                "Name": "Roto Z",
+                                "Value": {
+                                    "Radians": {
+                                        "Radians": 0.0
+                                    }
+                                },
+                                "Metadata": {
+                                    "Number of snaps": 24,
+                                    "Snaps offset (in radians)": 0.0,
+                                    "Always snap": false
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "Thickness",
+                                "Value": 0.4700000286102295,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "Integration",
+                                "Value": 0.15999998152256013,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 11,
+                            "data": {
+                                "Name": "X Rotar-P2",
+                                "Value": {
+                                    "Radians": {
+                                        "Radians": 0.0
+                                    }
+                                },
+                                "Metadata": {
+                                    "Number of snaps": 24,
+                                    "Snaps offset (in radians)": 0.0,
+                                    "Always snap": false
+                                }
+                            }
+                        },
+                        {
+                            "index": 11,
+                            "data": {
+                                "Name": "Y Rotar-P2",
+                                "Value": {
+                                    "Radians": {
+                                        "Radians": 0.0
+                                    }
+                                },
+                                "Metadata": {
+                                    "Number of snaps": 24,
+                                    "Snaps offset (in radians)": 0.0,
+                                    "Always snap": false
+                                }
+                            }
+                        },
+                        {
+                            "index": 11,
+                            "data": {
+                                "Name": "Z Rotar-P2",
+                                "Value": {
+                                    "Radians": {
+                                        "Radians": 0.4363323152065277
+                                    }
+                                },
+                                "Metadata": {
+                                    "Number of snaps": 24,
+                                    "Snaps offset (in radians)": 0.0,
+                                    "Always snap": false
+                                }
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "first": "8e0034a3-ead5-43e3-8010-2bec12df8e32",
+                "second": {
+                    "Name": "The Interlocked",
+                    "Values": [
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "Size",
+                                "Value": 0.7200000286102295,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 11,
+                            "data": {
+                                "Name": "Roto X",
+                                "Value": {
+                                    "Radians": {
+                                        "Radians": 0.0
+                                    }
+                                },
+                                "Metadata": {
+                                    "Number of snaps": 24,
+                                    "Snaps offset (in radians)": 0.0,
+                                    "Always snap": false
+                                }
+                            }
+                        },
+                        {
+                            "index": 11,
+                            "data": {
+                                "Name": "Roto Y",
+                                "Value": {
+                                    "Radians": {
+                                        "Radians": 0.0
+                                    }
+                                },
+                                "Metadata": {
+                                    "Number of snaps": 24,
+                                    "Snaps offset (in radians)": 0.0,
+                                    "Always snap": false
+                                }
+                            }
+                        },
+                        {
+                            "index": 11,
+                            "data": {
+                                "Name": "Roto Z",
+                                "Value": {
+                                    "Radians": {
+                                        "Radians": 0.0
+                                    }
+                                },
+                                "Metadata": {
+                                    "Number of snaps": 24,
+                                    "Snaps offset (in radians)": 0.0,
+                                    "Always snap": false
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "Thickness",
+                                "Value": 0.3200000524520874,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "Integration",
+                                "Value": 0.9199999570846558,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 11,
+                            "data": {
+                                "Name": "X Rotar-P2",
+                                "Value": {
+                                    "Radians": {
+                                        "Radians": -0.9600703716278076
+                                    }
+                                },
+                                "Metadata": {
+                                    "Number of snaps": 24,
+                                    "Snaps offset (in radians)": 0.0,
+                                    "Always snap": false
+                                }
+                            }
+                        },
+                        {
+                            "index": 11,
+                            "data": {
+                                "Name": "Y Rotar-P2",
+                                "Value": {
+                                    "Radians": {
+                                        "Radians": 2.506565809249878
+                                    }
+                                },
+                                "Metadata": {
+                                    "Number of snaps": 24,
+                                    "Snaps offset (in radians)": 0.0,
+                                    "Always snap": false
+                                }
+                            }
+                        },
+                        {
+                            "index": 11,
+                            "data": {
+                                "Name": "Z Rotar-P2",
+                                "Value": {
+                                    "Radians": {
+                                        "Radians": 0.4398425817489624
+                                    }
+                                },
+                                "Metadata": {
+                                    "Number of snaps": 24,
+                                    "Snaps offset (in radians)": 0.0,
+                                    "Always snap": false
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}
