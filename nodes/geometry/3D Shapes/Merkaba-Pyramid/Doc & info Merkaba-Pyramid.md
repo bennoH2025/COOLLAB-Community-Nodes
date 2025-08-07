@@ -299,6 +299,7 @@ Jedes Preset demonstriert verschiedene spirituelle und geometrische Philosophien
 - **"The Interlocked"**: Complex dance (Multi-axis rotations, Integration: 0.92) - Sophisticated geometric choreography
 
 **🔗 Links**
+
 *COOLLAB Official Website* - https://coollab-art.com/
 
 *Sacred Geometry Research and Merkaba Symbolism* - https://www.sacred-geometry.es/?q=en/content/stellations
