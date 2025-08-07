@@ -299,11 +299,15 @@ Jedes Preset demonstriert verschiedene spirituelle und geometrische Philosophien
 - **"The Interlocked"**: Complex dance (Multi-axis rotations, Integration: 0.92) - Sophisticated geometric choreography
 
 **🔗 Links**
-
-*Sacred Geometry Research and Merkaba Symbolism* - https://en.wikipedia.org/wiki/Merkabah
 *COOLLAB Official Website* - https://coollab-art.com/
+
+*Sacred Geometry Research and Merkaba Symbolism* - https://www.sacred-geometry.es/?q=en/content/stellations
+
+*Wikipedia article on the topic* - https://en.wikipedia.org/wiki/Stellated_octahedron
+
 *COOLLAB Community Node Collection* - https://github.com/bennoH2025/COOLLAB-Community-Nodes
-*Example Project: "Examples for the MERKABA node.coollab"* - https://raw.githubusercontent.com/bennoH2025/COOLLAB-Community-Nodes/refs/heads/main/nodes/geometry/3D%20Shapes/Merkaba-Pyramid/Examples%20for%20the%20MERKABA%20node.coollab
+
+*The Example Project: "Examples for the MERKABA node.coollab"* - https://raw.githubusercontent.com/bennoH2025/COOLLAB-Community-Nodes/refs/heads/main/nodes/geometry/3D%20Shapes/Merkaba-Pyramid/Examples%20for%20the%20MERKABA%20node.coollab
 
 
 Coollab-node contributed to the Coollab-Community Nodes collection - August 2025
