@@ -77,9 +77,9 @@ This is not just a simple geometric shape. The Merkaba-Pyramid node creates the 
 ### 🎛️ Parameters
 
 #### 📏 Basic Geometry Controls
-- **Grösse** (Size, Float, 0.1-2.0): Controls the overall scale of the entire Merkaba structure. Higher values create larger, more prominent geometric presence
-- **Dicke** (Thickness, Float, 0.01-0.5): Thickness of the wireframe edges. Controls how substantial the tubular structure appears
-- **Verschränkung** (Integration, Float, -1.0-2.0): Controls how deeply the two pyramids interpenetrate. 0 = perfect traditional Merkaba, positive values = more overlap, negative values = separation
+- **Size** (Float, 0.1-2.0): Controls the overall scale of the entire Merkaba structure. Higher values create larger, more prominent geometric presence
+- **Thickness** (Float, 0.01-0.5): Thickness of the wireframe edges. Controls how substantial the tubular structure appears
+- **Integration** (Float, -1.0-2.0): Controls how deeply the two pyramids interpenetrate. 0 = perfect traditional Merkaba, positive values = more overlap, negative values = separation
 
 #### 🌍 Global Rotation Controls
 - **Rotation X** (Angle, 0-360°): Rotates the entire Merkaba structure around the X-axis
