@@ -51,3 +51,11 @@ New additions are:
 
 
 ---
+
+08/06 2025
+
+- [*Merkaba-Pyramid*](https://github.com/bennoH2025/COOLLAB-Community-Nodes/tree/main/nodes/geometry/3D%20Shapes/Merkaba-Pyramid)
+
+
+
+---
