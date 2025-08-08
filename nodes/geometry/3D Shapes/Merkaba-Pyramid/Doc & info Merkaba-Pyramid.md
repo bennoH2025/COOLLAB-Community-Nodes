@@ -14,7 +14,7 @@ The Merkaba represents the perfect union of opposing forces, the intersection of
 
 - Merkaba-Pyramid (or the holy sacred dual pyramid).clbnode - The main COOLLAB 3D shape node
 - MERKABA or the sacred DualPyramid.clbnode.presets.json - Preset configurations including "Default", "Bold standard", "Swinger King", "Glider", "BumpyBlober", "Knotted one", and "The Interlocked" variations
-- Examples for the MERKABA node.coollab - Complete example project demonstrating optimal node connections, camera settings, and preset usage
+- Examples for the MERKABA node.coollab - Complete example coollab-project-file demonstrating optimal node connections, camera settings, and preset usage. This projectc file was made in V-1.4.1 but it's upDate'able for newer versions of Coollab.
 
 **🚀 How to Use**
 
@@ -24,13 +24,19 @@ The Merkaba represents the perfect union of opposing forces, the intersection of
 - Copy the .clbnode file into your COOLLAB Nodes directory in your most current Coollab version
 - as well as the associated preset .json file and the example project .coollab file 
 
-You can place the two files in the category "3D Shapes", means in that named folder in your latest version of Coollab, which you can find in the Launcher. In this example, I'm using version "1.4.1 Spout OUT." Also note your username (Windows account). Here's the example path to organize it under the 3D Shapes: 
+You can place the two files in the category "3D Shapes", means in that named folder in your latest version of Coollab, which you can find in the Launcher. 
+Here's the example path to organize it under the 3D Shapes: 
 
 `C:\Users\_YourUserName_\AppData\Roaming\Coollab Launcher\Installed Versions\1.4.1 Spout OUT\Nodes\08 3D Shapes\Merkaba-Pyramid`
+Also note your username (Windows account _YourUserName_). 
+
+For the example, I'm was using version "1.4.1 Spout OUT" but for newer versions like 1.5.0 you can easy update the projectfile (LMB for the dropdownmenue to do so) but maybe you nead to have instaled V-1.4.1 to see the project file in the luncher. 
 
 The example project file (.coollab) should be placed in your Projects directory:
 
 `C:\Users\_YourUserName_\AppData\Roaming\Coollab Launcher\Projects`
+
+A second Coolab project file, created in version 1.5.0, contains additional deformation examples (CoShaping), as well as shading/coloring examples. Regarding the latter, however, it should be noted that shading using pbr-textures, in particular, creates very high GPU loads and should be used with caution. Using the spout-out feature in addition tobthe pbr-texturing is almost impossible and results in a very low frame rate on my desktop-RTX3080, which is essentially unusable!
 
 
 *Connect to Scene:*
@@ -175,7 +181,8 @@ Die Merkaba repräsentiert die perfekte Vereinigung gegensätzlicher Kräfte, di
 
 - Merkaba-Pyramid (or the holy sacred dual pyramid).clbnode - Das Haupt-COOLLAB 3D-Form Node
 - MERKABA or the sacred DualPyramid.clbnode.presets.json - Preset-Konfigurationen inklusive "Default", "Bold standard", "Swinger King", "Glider", "BumpyBlober", "Knotted one" und "The Interlocked" Variationen
-- Examples for the MERKABA node.coollab - Vollständiges Beispielprojekt mit optimalen Node-Verbindungen, Kameraeinstellungen und Preset-Nutzung
+- Example for the MERKABA node.coollab - Umfassendes Coollab-Beispielprojekt mit optionalen Node-Verbindungen, voreingestelten 2D & 3D Viewer-Kameras zwecks Demos der Preset wie der erweiterte Nutzung mit zusätzlichen Node's inkl. Time-Nodes etc. zur Animation
+Eine zweite Coolab-Projektdatei die bereits unter Version 1.5.0 entstanden ist beinhaltet zusätzliche Verformungsbeispiele wie Shading-/Colorierungsbeispiele.  Bei letzteren ist aber zu sagen dass insbesonders das shading mittels Texturen sehr hohe GPU-Belastungen erzeugt und eher mit Vorsicht zu Nutzen ist, zusätzlich den Spout-Out zu nutzen ist fast nich mehr möglich und erzeugt dan mit meiner desktop-RTX3080er nur noch eine sehr niedrige Framerate, an sich unbrauchbar!!
 
 **🚀 Verwendung**
 
