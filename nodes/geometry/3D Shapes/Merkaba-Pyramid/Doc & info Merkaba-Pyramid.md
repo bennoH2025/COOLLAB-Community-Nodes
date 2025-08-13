@@ -15,6 +15,8 @@ The Merkaba represents the perfect union of opposing forces, the intersection of
 - Merkaba-Pyramid (or the holy sacred dual pyramid).clbnode - The main COOLLAB 3D shape node
 - MERKABA or the sacred DualPyramid.clbnode.presets.json - Preset configurations including "Default", "Bold standard", "Swinger King", "Glider", "BumpyBlober", "Knotted one", and "The Interlocked" variations
 - Examples for the MERKABA node.coollab - Complete example coollab-project-file demonstrating optimal node connections, camera settings, and preset usage. This projectc file was made in V-1.4.1 but it's upDate'able for newer versions of Coollab.
+- Additionally you will also find a Coollab-project file for version "1.5.0 Spout IN" which is slightly extended
+- On my YouTube channel there are explanatory videos about the MERKABA Node 2, A) about the options of the node & B) about the examples of the project file for version 1.5.0 (Part 1 + 2)
 
 **🚀 How to Use**
 
@@ -30,9 +32,9 @@ Here's the example path to organize it under the 3D Shapes:
 `C:\Users\_YourUserName_\AppData\Roaming\Coollab Launcher\Installed Versions\1.4.1 Spout OUT\Nodes\08 3D Shapes\Merkaba-Pyramid`
 Also note your username (Windows account _YourUserName_). 
 
-For the example, I'm was using version "1.4.1 Spout OUT" but for newer versions like 1.5.0 you can easy update the projectfile (LMB for the dropdownmenue to do so) but maybe you nead to have instaled V-1.4.1 to see the project file in the luncher. 
+For the example, I'm was using version "1.4.1 Spout OUT" but for newer versions like 1.5.0 you can easy update the projectfile (LMB for the dropdownmenue to do so) but maybe you nead to have instaled V-1.4.1 to see the project file in the luncher. But it's a extendet Version for 1.5.0 also made after, and for this version are 2 Demo-Videos on my YT-channel.
 
-The example project file (.coollab) should be placed in your Projects directory:
+The example project file's (.coollab) should be placed in your Projects directory (in the Launcher):
 
 `C:\Users\_YourUserName_\AppData\Roaming\Coollab Launcher\Projects`
 
@@ -183,6 +185,8 @@ Die Merkaba repräsentiert die perfekte Vereinigung gegensätzlicher Kräfte, di
 - MERKABA or the sacred DualPyramid.clbnode.presets.json - Preset-Konfigurationen inklusive "Default", "Bold standard", "Swinger King", "Glider", "BumpyBlober", "Knotted one" und "The Interlocked" Variationen
 - Example for the MERKABA node.coollab - Umfassendes Coollab-Beispielprojekt mit optionalen Node-Verbindungen, voreingestelten 2D & 3D Viewer-Kameras zwecks Demos der Preset wie der erweiterte Nutzung mit zusätzlichen Node's inkl. Time-Nodes etc. zur Animation
 Eine zweite Coolab-Projektdatei die bereits unter Version 1.5.0 entstanden ist beinhaltet zusätzliche Verformungsbeispiele wie Shading-/Colorierungsbeispiele.  Bei letzteren ist aber zu sagen dass insbesonders das shading mittels Texturen sehr hohe GPU-Belastungen erzeugt und eher mit Vorsicht zu Nutzen ist, zusätzlich den Spout-Out zu nutzen ist fast nich mehr möglich und erzeugt dan mit meiner desktop-RTX3080er nur noch eine sehr niedrige Framerate, an sich unbrauchbar!!
+- Zusätzlich findet ihr auch noch eine  Projektdatei für Version "1.5.0 Spout IN" welche etwas erweitert ist.
+- Auf meinem Youtubekanal sind zum MERKABA Node 2 Erklärvideos, A) über die Optionen des Nodes & B) zu den Beispilen der Proektdatei für Version 1.5.0 (Part 1 + 2)
 
 **🚀 Verwendung**
 
@@ -192,11 +196,11 @@ Eine zweite Coolab-Projektdatei die bereits unter Version 1.5.0 entstanden ist b
 - Die .clbnode Datei in Ihr COOLLAB Nodes-Verzeichnis in Ihrer aktuellsten Coollab-Version kopieren
 - sowie die zugehörige Preset .json Datei und die Beispielprojekt .coollab Datei
 
-Sie können die Node-Dateien in die Kategorie "3D Shapes" platzieren, also in den entsprechend benannten Ordner Ihrer neuesten Coollab-Version, die Sie im Launcher finden. In diesem Beispiel verwende ich Version "1.4.1 Spout OUT". Beachten Sie auch Ihren Benutzernamen (Windows-Konto). Hier der Beispielpfad zur Organisation unter den 3D Shapes:
+Sie können die Node-Dateien in die Kategorie "3D Shapes" platzieren, also in den entsprechend benannten Ordner Ihrer neuesten Coollab-Version, die Sie im Launcher finden. In diesem Beispiel verwende ich Version "1.4.1 Spout OUT". Ich habe aber ja noch eien erweiterte Projektdatei für Version 1.5.0 erstellt. Beachten Sie auch Ihren Benutzernamen (Windows-Konto). Hier der Beispielpfad zur Organisation unter den 3D Shapes:
 
 `C:\Users\_YourUserName_\AppData\Roaming\Coollab Launcher\Installed Versions\1.4.1 Spout OUT\Nodes\08 3D Shapes\Merkaba-Pyramid`
 
-Die Beispielprojekt-Datei (.coollab) sollte in Ihr Projects-Verzeichnis gelegt werden:
+Die Beispielprojekt-Dateien (.coollab) muss in Ihr Projects-Verzeichnis (im Launcher) gelegt werden:
 
 `C:\Users\_YourUserName_\AppData\Roaming\Coollab Launcher\Projects`
 
