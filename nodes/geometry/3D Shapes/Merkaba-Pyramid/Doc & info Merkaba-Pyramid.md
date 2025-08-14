@@ -24,7 +24,7 @@ The Merkaba represents the perfect union of opposing forces, the intersection of
 
 - Download all three files from this directory (necessary files to make it run optimally)
 - Copy the .clbnode file into your COOLLAB Nodes directory in your most current Coollab version
-- as well as the associated preset .json file and the example project .coollab file 
+- as well as the associated preset .json file and the example project .coollab file   https://youtu.be/w6OPx42v43c
 
 You can place the two files in the category "3D Shapes", means in that named folder in your latest version of Coollab, which you can find in the Launcher. 
 Here's the example path to organize it under the 3D Shapes: 
@@ -32,13 +32,13 @@ Here's the example path to organize it under the 3D Shapes:
 `C:\Users\_YourUserName_\AppData\Roaming\Coollab Launcher\Installed Versions\1.4.1 Spout OUT\Nodes\08 3D Shapes\Merkaba-Pyramid`
 Also note your username (Windows account _YourUserName_). 
 
-For the example, I'm was using version "1.4.1 Spout OUT" but for newer versions like 1.5.0 you can easy update the projectfile (LMB for the dropdownmenue to do so) but maybe you nead to have instaled V-1.4.1 to see the project file in the luncher. But it's a extendet Version for 1.5.0 also here I made after, and for this version are 2 Demo-Videos on my YT-channel. https://youtu.be/w6OPx42v43c  
+For the example, I'm was using version "1.4.1 Spout OUT" but for newer versions like 1.5.0 you can easy update the projectfile (LMB for the dropdownmenue to do so) but maybe you nead to have instaled V-1.4.1 to see the project file in the luncher. But it's a extendet Version for 1.5.0 also here I made after, and for this version are 2 Demo-Videos on my YT-channel. https://youtu.be/jDStfb7rWyg & https://youtu.be/XpaXf7jpQ_U  
 
 The example project file's (.coollab) should be placed in your Projects directory (in the Launcher):
 
 `C:\Users\_YourUserName_\AppData\Roaming\Coollab Launcher\Projects`
 
-A second Coolab project file, created in version 1.5.0, contains additional deformation examples (CoShaping), as well as shading/coloring examples. Regarding the latter, however, it should be noted that shading using pbr-textures, in particular, creates very high GPU loads and should be used with caution. Using the spout-out feature in addition tobthe pbr-texturing is almost impossible and results in a very low frame rate on my desktop-RTX3080, which is essentially unusable!
+A second Coolab project file, created in version 1.5.0, contains additional deformation examples (CoShaping), as well as shading/coloring examples. Regarding the latter, however, it should be noted that shading using pbr-textures, in particular, creates very high GPU loads and should be used with caution. Using the spout-out feature in addition to the pbr-texturing is almost impossible and results in a very low frame rate on my desktop-RTX3080, which is essentially unusable!
 
 
 *Connect to Scene:*
@@ -189,7 +189,7 @@ Die Merkaba repräsentiert die perfekte Vereinigung gegensätzlicher Kräfte, di
 - Example for the MERKABA node.coollab - Umfassendes Coollab-Beispielprojekt mit optionalen Node-Verbindungen, voreingestelten 2D & 3D Viewer-Kameras zwecks Demos der Preset wie der erweiterte Nutzung mit zusätzlichen Node's inkl. Time-Nodes etc. zur Animation
 Eine zweite Coolab-Projektdatei die bereits unter Version 1.5.0 entstanden ist beinhaltet zusätzliche Verformungsbeispiele wie Shading-/Colorierungsbeispiele.  Bei letzteren ist aber zu sagen dass insbesonders das shading mittels Texturen sehr hohe GPU-Belastungen erzeugt und eher mit Vorsicht zu Nutzen ist, zusätzlich den Spout-Out zu nutzen ist fast nich mehr möglich und erzeugt dan mit meiner desktop-RTX3080er nur noch eine sehr niedrige Framerate, an sich unbrauchbar!!
 - Zusätzlich findet ihr auch noch eine  Projektdatei für Version "1.5.0 Spout IN" welche etwas erweitert ist.
-- Auf meinem Youtubekanal sind zum MERKABA Node 2 Erklärvideos, A) über die Optionen des Nodes https://youtu.be/w6OPx42v43c & B) zu den Beispilen der Proektdatei für Version 1.5.0 (Part 1 + 2)
+- Auf meinem Youtubekanal sind zum MERKABA Node 2 Erklärvideos, A) über die Optionen des Nodes https://youtu.be/w6OPx42v43c & B) zu den Beispilen der Projektdatei für Version 1.5.0 (Part 1 + 2)  https://youtu.be/jDStfb7rWyg  &  https://youtu.be/XpaXf7jpQ_U
 
 **🚀 Verwendung**
 
@@ -326,7 +326,9 @@ Jedes Preset demonstriert verschiedene spirituelle und geometrische Philosophien
 
 *The Example Project: "Examples for the MERKABA node.coollab"* - https://raw.githubusercontent.com/bennoH2025/COOLLAB-Community-Nodes/refs/heads/main/nodes/geometry/3D%20Shapes/Merkaba-Pyramid/Examples%20for%20the%20MERKABA%20node.coollab
 
-*MERKABA Pyramid OptionsSHOW  https://youtu.be/w6OPx42v43c
+*MERKABA Pyramid OptionsSHOW* - https://youtu.be/w6OPx42v43c$
+
+*MERKABA Pyramid ExamplesShow Part 1 & 2* - https://youtu.be/jDStfb7rWyg & https://youtu.be/XpaXf7jpQ_U
 
 
 Coollab-node contributed to the Coollab-Community Nodes collection - August 2025
