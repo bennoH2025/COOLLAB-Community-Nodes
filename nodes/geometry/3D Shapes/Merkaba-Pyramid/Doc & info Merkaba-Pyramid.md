@@ -325,6 +325,7 @@ Jedes Preset demonstriert verschiedene spirituelle und geometrische Philosophien
 *COOLLAB Community Node Collection* - https://github.com/bennoH2025/COOLLAB-Community-Nodes
 
 *The Example Project: "Examples for the MERKABA node.coollab"* - https://raw.githubusercontent.com/bennoH2025/COOLLAB-Community-Nodes/refs/heads/main/nodes/geometry/3D%20Shapes/Merkaba-Pyramid/Examples%20for%20the%20MERKABA%20node.coollab
+
 *MERKABA Pyramid OptionsSHOW  https://youtu.be/w6OPx42v43c
 
 
