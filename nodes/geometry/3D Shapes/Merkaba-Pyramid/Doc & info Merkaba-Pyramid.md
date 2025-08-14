@@ -32,7 +32,7 @@ Here's the example path to organize it under the 3D Shapes:
 `C:\Users\_YourUserName_\AppData\Roaming\Coollab Launcher\Installed Versions\1.4.1 Spout OUT\Nodes\08 3D Shapes\Merkaba-Pyramid`
 Also note your username (Windows account _YourUserName_). 
 
-For the example, I'm was using version "1.4.1 Spout OUT" but for newer versions like 1.5.0 you can easy update the projectfile (LMB for the dropdownmenue to do so) but maybe you nead to have instaled V-1.4.1 to see the project file in the luncher. But it's a extendet Version for 1.5.0 also made after, and for this version are 2 Demo-Videos on my YT-channel.
+For the example, I'm was using version "1.4.1 Spout OUT" but for newer versions like 1.5.0 you can easy update the projectfile (LMB for the dropdownmenue to do so) but maybe you nead to have instaled V-1.4.1 to see the project file in the luncher. But it's a extendet Version for 1.5.0 also here I made after, and for this version are 2 Demo-Videos on my YT-channel. https://youtu.be/w6OPx42v43c  
 
 The example project file's (.coollab) should be placed in your Projects directory (in the Launcher):
 
@@ -82,7 +82,7 @@ This is not just a simple geometric shape. The Merkaba-Pyramid node creates the 
 - 🎯 **Integration Control**: Fine-tune the interpenetration depth of the two pyramids
 - 🎛️ **Animation Ready**: Perfect for spiritual visualizations, meditative animations, and geometric art projects
 
-### 🎛️ Parameters
+### 🎛️ Parameters 
 
 #### 📏 Basic Geometry Controls
 - **Size** (Float, 0.1-2.0): Controls the overall scale of the entire Merkaba structure. Higher values create larger, more prominent geometric presence
@@ -98,6 +98,8 @@ This is not just a simple geometric shape. The Merkaba-Pyramid node creates the 
 - **Rotation X** (Angle, 0-360°): Independent rotation of the second pyramid around its X-axis only
 - **Rotation Y** (Angle, 0-360°): Independent rotation of the second pyramid around its Y-axis only
 - **Rotation Z** (Angle, 0-360°): Independent rotation of the second pyramid around its Z-axis only
+
+*About the Parameters: https://youtu.be/w6OPx42v43c*
 
 ### ⚙️ Technical Implementation
 The Merkaba geometry generation uses precise mathematical construction:
@@ -165,6 +167,7 @@ For deep meditative experiences, use the example project which demonstrates:
 - COOLLAB Official Website
 - Community Node Collection
 - Example Project: "Examples for the MERKABA node.coollab"
+- MERKABA Pyramid OptionsSHOW https://youtu.be/w6OPx42v43c
 
 Coollab-node contributed to the Coollab-Community Nodes collection - August 2025
 
@@ -186,7 +189,7 @@ Die Merkaba repräsentiert die perfekte Vereinigung gegensätzlicher Kräfte, di
 - Example for the MERKABA node.coollab - Umfassendes Coollab-Beispielprojekt mit optionalen Node-Verbindungen, voreingestelten 2D & 3D Viewer-Kameras zwecks Demos der Preset wie der erweiterte Nutzung mit zusätzlichen Node's inkl. Time-Nodes etc. zur Animation
 Eine zweite Coolab-Projektdatei die bereits unter Version 1.5.0 entstanden ist beinhaltet zusätzliche Verformungsbeispiele wie Shading-/Colorierungsbeispiele.  Bei letzteren ist aber zu sagen dass insbesonders das shading mittels Texturen sehr hohe GPU-Belastungen erzeugt und eher mit Vorsicht zu Nutzen ist, zusätzlich den Spout-Out zu nutzen ist fast nich mehr möglich und erzeugt dan mit meiner desktop-RTX3080er nur noch eine sehr niedrige Framerate, an sich unbrauchbar!!
 - Zusätzlich findet ihr auch noch eine  Projektdatei für Version "1.5.0 Spout IN" welche etwas erweitert ist.
-- Auf meinem Youtubekanal sind zum MERKABA Node 2 Erklärvideos, A) über die Optionen des Nodes & B) zu den Beispilen der Proektdatei für Version 1.5.0 (Part 1 + 2)
+- Auf meinem Youtubekanal sind zum MERKABA Node 2 Erklärvideos, A) über die Optionen des Nodes https://youtu.be/w6OPx42v43c & B) zu den Beispilen der Proektdatei für Version 1.5.0 (Part 1 + 2)
 
 **🚀 Verwendung**
 
@@ -246,6 +249,8 @@ Dies ist nicht nur eine einfache geometrische Form. Der Merkaba-Pyramid Node ers
 - **Rotation X** (Winkel, 0-360°): Unabhängige Rotation der zweiten Pyramide nur um ihre X-Achse
 - **Rotation Y** (Winkel, 0-360°): Unabhängige Rotation der zweiten Pyramide nur um ihre Y-Achse
 - **Rotation Z** (Winkel, 0-360°): Unabhängige Rotation der zweiten Pyramide nur um ihre Z-Achse
+
+*Über die Parameter: https://youtu.be/w6OPx42v43c*
 
 ### 🎨 Kreative Anwendungen
 - 🏛️ **Heilige Architektur**: Meditationsräume, spirituelle Zentren und bewusstseinserweiternde Installationen entwerfen
@@ -320,6 +325,7 @@ Jedes Preset demonstriert verschiedene spirituelle und geometrische Philosophien
 *COOLLAB Community Node Collection* - https://github.com/bennoH2025/COOLLAB-Community-Nodes
 
 *The Example Project: "Examples for the MERKABA node.coollab"* - https://raw.githubusercontent.com/bennoH2025/COOLLAB-Community-Nodes/refs/heads/main/nodes/geometry/3D%20Shapes/Merkaba-Pyramid/Examples%20for%20the%20MERKABA%20node.coollab
+*MERKABA Pyramid OptionsSHOW  https://youtu.be/w6OPx42v43c
 
 
 Coollab-node contributed to the Coollab-Community Nodes collection - August 2025
