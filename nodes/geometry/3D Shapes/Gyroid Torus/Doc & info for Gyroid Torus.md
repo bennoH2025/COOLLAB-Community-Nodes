@@ -13,6 +13,8 @@ The **Gyroid Torus** node creates sophisticated 3D structures that combine the m
 
 - Gyroid Torus.clbnode - The main COOLLAB 3D shape node
 - Gyroid Torus.clbnode.presets.json - Preset configurations with 7 distinct gyroid variations
+- 2 Coollab project files, one for version 1.4.1, and one for 1.5.0. There is also a YT showcase video in 2 parts.
+  https://youtu.be/Dl-4oxJv_yY/  &  https://youtu.be/LOuvIQTOYkc/ 
 
 **🚀 How to Use**
 
@@ -198,6 +200,8 @@ Der **Gyroid Torus** Node erzeugt anspruchsvolle 3D-Strukturen, die die mathemat
 
 - Gyroid Torus.clbnode - Das Haupt-COOLLAB 3D-Form Node
 - Gyroid Torus.clbnode.presets.json - Preset-Konfigurationen mit 7 verschiedenen Gyroid-Variationen
+- 2 Coollab Projektdateien, eine für Version 1.4.1, und eine für 1.5.0 hierzu giebt es auch ein YT Showcase-Video in 2 Teilen
+  https://youtu.be/Dl-4oxJv_yY/  &  https://youtu.be/LOuvIQTOYkc/ 
 
 **🚀 Verwendung sprich Installationsanleitung**
 
@@ -387,9 +391,11 @@ Der Gyroid ist eine unendlich verbundene periodische Minimalfläche ohne gerade 
 
 **🔗 Links**
 
-- Alan Schoen's Original Gyroid Research
-- Triply Periodic Minimal Surfaces Documentation
-- COOLLAB Official Website
-- Community Node Collection
+- Youtube Showcase of the "Gyroid Torus" Coolab-Node - Part 1 & 2: https://youtu.be/Dl-4oxJv_yY/ & https://youtu.be/LOuvIQTOYkc/
+- Alan Hugh Schoen: https://en.wikipedia.org/wiki/Alan_Schoen
+- Triply Periodic Minimal Surfaces Documentation: https://www.schoengeometry.com/e-tpms.html
+- THE GEOMETRY GARRET OF ALAN-HS: https://www.schoengeometry.com/
+- Gyroid: https://en.wikipedia.org/wiki/Gyroid
+- COOLLAB Official Website: https://coollab-art.com/
 
 Coollab-node contributed to the Coolab-Community Nodes collection - June 2025
