@@ -26,8 +26,9 @@ This repository is a community-driven collection of custom nodes for [COOLLAB](h
 
 1. **Browse nodes** in the `/nodes/` directory
 2. **Download** the `.clbnode` files you need
-3. **Import** them into your COOLLAB project
-4. **Create and share** your own nodes!
+3. **Import** them into your COOLLAB Launcher
+   under this phat in the wished categoryfulder: C:\Users\YOUR-USER-NAME\AppData\Roaming\Coollab Launcher\Installed Versions\1.5.0 Spout IN\Nodes
+5. **Create and share** your own nodes!
 
 ### 📁 Repository Structure
 
