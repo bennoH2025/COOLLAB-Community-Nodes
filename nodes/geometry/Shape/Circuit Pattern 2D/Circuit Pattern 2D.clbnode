@@ -1,0 +1,142 @@
+// Inspired by electronic circuit boards and codet to SDF- & procedural generation techniques
+//
+// Idea and project coordination by bennoH.
+// Coding by claude.ai in the Sonnet-4 model of Anthropic PBC on a "KostenlosPlan" of bennoH.
+// This Coollab "2D SDF-node" by his name "Circuit Pattern 2D" is licensed under GPLv3.0 by bennoH. 2026
+
+// To learn how to write nodes, see https://coollab-art.com/Tutorials/Writing%20Nodes/Intro
+
+INPUT float 'Pattern Scale'; /// Controls the density of the circuit pattern
+INPUT float 'Line Thickness'; /// Thickness of the circuit lines
+INPUT float 'Animation Speed'; /// Speed of the animated elements
+INPUT Point2D 'Offset'; /// Shifts the pattern position
+INPUT float 'Octaves'; /// Number of detail layers (1-4)
+INPUT float 'Electron Flow'; /// Intensity of moving electron effect
+INPUT float 'Flicker Amount'; /// Amount of flickering effect
+
+// 2D random function
+vec2 rand2(vec2 p, float time_offset)
+{
+    return fract(vec2(
+        sin(p.x * 591.32 + p.y * 154.077 + time_offset),
+        cos(p.x * 391.32 + p.y * 49.077 + time_offset)
+    ));
+}
+
+// 1D noise for variation
+float noise1d(float p)
+{
+    float fl = floor(p);
+    float fc = fract(p);
+    return mix(
+        fract(sin(fl) * 58.5453123),
+        fract(sin(fl + 1.0) * 58.5453123),
+        fc
+    );
+}
+
+// Voronoi distance for circuit-like patterns
+float voronoi(vec2 x, float time_offset)
+{
+    vec2 p = floor(x);
+    vec2 f = fract(x);
+    
+    vec2 res = vec2(8.0);
+    for(int j = -1; j <= 1; j++)
+    {
+        for(int i = -1; i <= 1; i++)
+        {
+            vec2 b = vec2(float(i), float(j));
+            vec2 r = b - f + rand2(p + b, time_offset);
+            
+            // Chebyshev distance for sharp, circuit-like edges
+            float d = max(abs(r.x), abs(r.y));
+            
+            if(d < res.x)
+            {
+                res.y = res.x;
+                res.x = d;
+            }
+            else if(d < res.y)
+            {
+                res.y = d;
+            }
+        }
+    }
+    return res.y - res.x;
+}
+
+SignedDistance main(UV uv)
+{
+    // Center UV coordinates
+    vec2 centered_uv = (uv - 0.5) * 2.0;
+    
+    // Apply offset
+    centered_uv += 'Offset' * 2.0;
+    
+    // Scale the pattern
+    vec2 pattern_uv = centered_uv * 'Pattern Scale';
+    
+    // Time-based animation
+    float time_val = _time * 'Animation Speed';
+    
+    // Flicker effect
+    float flicker = mix(1.0, noise1d(time_val * 2.0), 'Flicker Amount');
+    
+    // Accumulate multiple octaves
+    float pattern_value = 0.0;
+    float amplitude = 0.65;
+    float frequency = 1.5;
+    
+    int num_octaves = int(clamp('Octaves', 1.0, 4.0));
+    
+    for(int i = 0; i < 4; i++)
+    {
+        if(i >= num_octaves) break;
+        
+        // Base voronoi pattern
+        float v1 = voronoi(pattern_uv * frequency + 1.0, time_val * 0.1);
+        
+        // Moving "electrons" effect for detail layers
+        float electron_effect = 0.0;
+        if(i > 0 && 'Electron Flow' > 0.0)
+        {
+            float v2 = voronoi(pattern_uv * frequency * 0.5 + 50.0 + time_val, time_val);
+            
+            float line_edge = 1.0 - smoothstep(0.0, 'Line Thickness' * 0.4, v1);
+            float electron_edge = 1.0 - smoothstep(0.0, 'Line Thickness' * 0.25, v2);
+            
+            electron_effect = pow(line_edge * (0.5 + electron_edge), 2.0) * 'Electron Flow' * amplitude;
+        }
+        
+        // Create sharp circuit lines
+        float line = 1.0 - smoothstep(0.0, 'Line Thickness' * 0.8, v1);
+        
+        // Add noise modulation
+        float noise_mod = noise1d(line * 10.0 + time_val * 0.1) * amplitude;
+        
+        // Apply flicker to first octave
+        float octave_value = line + noise_mod * 0.3 + electron_effect;
+        if(i == 0)
+        {
+            octave_value *= flicker;
+        }
+        
+        pattern_value += octave_value;
+        
+        // Prepare for next octave
+        frequency *= 1.5;
+        amplitude *= 0.65;
+    }
+    
+    // Add slight vignette effect
+    float vignette = exp(-0.6 * length(centered_uv)) * 1.2;
+    pattern_value *= vignette;
+    
+    // Convert to signed distance
+    // Negative inside the circuit pattern, positive outside
+    float threshold = 0.4;
+    float sdf = threshold - pattern_value;
+    
+    return sdf * 0.5;
+}
