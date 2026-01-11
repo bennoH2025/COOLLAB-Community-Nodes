@@ -18,7 +18,7 @@ This organic irregularity becomes especially apparent when the animation is acti
 ## Key Features
 
 ### 🎬 Integrated Animation
-One of the standout features of this node is its **built-in animation system**. Unlike many procedural patterns that require external animation setups, Circuit Pattern 2D comes alive with just one click:
+One of the standout features of this node is its **built-in animation system**. Unlike most nodes where you need to connect animation nodes like the **Time Node**, Circuit Pattern 2D already has a suitable animation integrated. Of course, you can still expand or modify the animation by connecting additional nodes, but the basic animation works immediately without any setup:
 
 - **Perfect for beginners**: Simply press the Play button in Coollab's timeline and watch the circuit patterns animate automatically
 - **Electron Flow effect**: Simulates moving charges traveling through the circuit traces
@@ -80,15 +80,34 @@ This workflow allows for fast exploration and is perfect for creative experiment
 
 ### 🔮 Converting to 3D
 
-Circuit Pattern 2D works beautifully with Coollab's **2D to 3D shape converters**:
+Circuit Pattern 2D works beautifully with Coollab's **"3D Shape from 2D"** category, which contains two nodes:
+
+#### 📐 Extrude Node
+Creates an extruded 3D shape from the 2D pattern.
+
+**Tested Settings for Good Results:**
+- Pattern Scale: 0.79
+- Line Thickness: 0.37
+- Animation Speed: 0.49
+- All other parameters: 0.00
+- **In Extrude Node:** Height: 0.29
+
+These settings produce something not too wild and well-processable for the human eye.
+
+#### 🔄 Revolve Node
+Creates a cylindrical or circular 3D shape by rotating the 2D pattern around an axis. The result is somewhat similar to a Mandelbulber part "main_formula_1 Quaternion" and can generate fractal-like structures.
+
+⚠️ **Note:** The Revolve Node has higher GPU demands, as it likely generates fractal-like geometries.
 
 **Tips for 3D Conversion:**
-- **Start subtle**: Use moderate extrusion/depth values to maintain recognizability
-- **Combine with 3D Modifiers**: After conversion, apply 3D SDF modifiers like twists, bends, or repetitions for unique sculptural forms
-- **Exercise restraint**: The patterns can become overwhelming in 3D - less is often more
-- **Lighting matters**: Experiment with different lighting setups to emphasize the circuit topology
+- **🎯 Start subtle**: Use moderate extrusion/depth values to maintain recognizability
+- **🔧 Combine with 3D Modifiers**: After conversion, apply 3D SDF modifiers like twists, bends, or repetitions for unique sculptural forms
+- **⚖️ Exercise restraint**: The patterns can become overwhelming in 3D - less is often more
+- **💡 Lighting matters**: Experiment with different lighting setups to emphasize the circuit topology
 
 The irregular, organic nature of the circuits translates surprisingly well into 3D space, creating structures that feel both technological and natural.
+
+After that, all **3D Modifiers** can be applied, which opens up completely new design dimensions!
 
 ## Technical Details
 
@@ -133,8 +152,172 @@ The beauty of Circuit Pattern 2D lies in its versatility and the unexpected resu
 - Inspired by electronic circuit board patterns and procedural generation techniques
 - Idea and project coordination: bennoH
 - Coding: claude.ai (Sonnet-4 model, Anthropic PBC)
-- License: GPLv3.0 by bennoH, 2025
+- License: GPLv3.0 by bennoH, 2026
 
 ---
 
 *For more information on writing and using Coollab nodes, visit: https://coollab-art.com/Tutorials/Writing%20Nodes/Intro*
+
+---
+
+# Circuit Pattern 2D - Dokumentation
+
+## Übersicht
+
+**Circuit Pattern 2D** ist ein prozedural generierter 2D SDF (Signed Distance Field) Node, der animierte Leiterplattenmuster erzeugt. Inspiriert von den komplexen Layouts gedruckter Schaltkreise (PCBs), generiert dieser Node organische, fließende Muster, die an elektronische Leiterbahnen, Lötpads und Bauteil-Layouts erinnern.
+
+## 🎯 Inspiration & Design-Philosophie
+
+Obwohl visuell ähnlich zu **Cairo Tiling**, verfolgt Circuit Pattern 2D einen grundlegend anderen Ansatz:
+
+- **Cairo Tiling** basiert auf regelmäßigen, gleichmäßigen Gittermustern mit vorhersehbaren, sich wiederholenden Strukturen
+- **Circuit Pattern 2D** nutzt Voronoi-basierte prozedurale Generierung, um **unregelmäßige, organische Muster** zu schaffen, die sich nie exakt gleich wiederholen
+- Die ungleichmäßige, asymmetrische Natur imitiert den authentischen Look echter Leiterplatten-Layouts, wo Leiterbahnen funktionalen Anforderungen folgen statt ästhetischer Symmetrie
+- Die **integrierte Animation** erweckt diese Muster zum Leben und simuliert den Fluss von Elektronen durch die Schaltkreis-Pfade
+
+Diese organische Unregelmäßigkeit wird besonders sichtbar, wenn die Animation aktiv ist, da der "Electron Flow"-Effekt durch die unvorhersehbaren Pfade wandert und ein faszinierendes, sich ständig veränderndes visuelles Erlebnis schafft.
+
+## ⭐ Hauptmerkmale
+
+### 🎬 Integrierte Animation
+Eines der herausragenden Features dieses Nodes ist sein **eingebautes Animationssystem**. Anders als in den meisten Nodes, wo man spezielle Nodes wie den **Time Node** zur Animation verknüpfen muss, ist hier bereits eine passende Animation integriert:
+
+- **🎓 Perfekt für Anfänger**: Einfach den Play-Button in Coollabs Timeline drücken und das Schaltkreismuster animiert sich automatisch
+- **⚡ Electron Flow Effekt**: Simuliert bewegte Ladungen, die durch die Leiterbahnen wandern
+- **✨ Flicker-Effekt**: Fügt authentisches visuelles Rauschen hinzu, das echte elektronische Komponenten nachahmt
+- **🎵 Manuelle Synchronisation**: Nutze den `Animation Speed`-Parameter, um die Animation von Hand auf Musik oder andere zeitliche Anforderungen zu synchronisieren
+
+Natürlich kann man durch Verknüpfung zusätzlicher Nodes (wie Time Node, LFO, etc.) die Animation noch erweitern oder verändern, aber die Grundanimation funktioniert sofort ohne Setup.
+
+Dies macht Circuit Pattern 2D außergewöhnlich zugänglich für Neulinge und gleichzeitig leistungsstark genug für fortgeschrittene Benutzer.
+
+### 🔧 Multi-Oktaven-Detail
+Das Muster wird mit mehreren Schichten (Oktaven) von Voronoi-Rauschen aufgebaut, sodass Sie die Komplexität steuern können:
+- Niedrigere Oktavenwerte (1-2) erzeugen einfachere, klarere Schaltkreismuster
+- Höhere Oktavenwerte (3-4) fügen komplexe Details und kleinere Leiterbahnen hinzu
+
+### ⚡ Dynamische Effekte
+- **💫 Electron Flow**: Animierte "Elektronen", die durch die Schaltkreis-Pfade wandern
+- **🔆 Flicker Amount**: Simuliert das Flackern elektronischer Komponenten oder instabiler Stromversorgung
+- **🌑 Vignette**: Subtile Abdunklung an den Rändern für eine fokussiertere Komposition
+
+## 📊 Parameter
+
+| Parameter | Bereich | Standard | Beschreibung |
+|-----------|---------|----------|--------------|
+| **Pattern Scale** | 0.5 - 10.0 | 2.0 | Steuert die Dichte und Größe des Schaltkreismusters. Höhere Werte erzeugen komplexere, dichter gepackte Schaltkreise. |
+| **Line Thickness** | 0.1 - 1.0 | 0.4 | Passt die Breite der Leiterbahnen an. Dünnere Linien erzeugen feinere Muster. |
+| **Animation Speed** | 0.0 - 5.0 | 1.0 | Steuert, wie schnell der Elektronenfluss und andere Animationen ablaufen. Auf 0 setzen für statisches Muster. |
+| **Offset** | Point2D | (0.0, 0.0) | Verschiebt das gesamte Muster im 2D-Raum. Nützlich für Positionierung oder Variationen. |
+| **Octaves** | 1.0 - 4.0 | 3.0 | Anzahl der Detailschichten. Mehr Oktaven = komplexere Muster (aber potenziell langsamer). |
+| **Electron Flow** | 0.0 - 2.0 | 0.5 | Intensität des animierten Elektroneneffekts. Höhere Werte erzeugen mehr sichtbare "Energie", die durch die Schaltkreise fließt. |
+| **Flicker Amount** | 0.0 - 1.0 | 0.3 | Menge an zufälligem Flackern. Fügt visuelles Rauschen für ein organischeres, weniger perfektes Aussehen hinzu. |
+
+## 🎨 Kreative Nutzungstipps
+
+### 🌟 Kombination mit 2D Modifiern
+
+Die **2D Modifier**-Kategorie in Coollab bietet endlose Möglichkeiten, Circuit Pattern 2D in völlig neue Visuals zu verwandeln:
+
+**Sehr empfohlene Kombinationen:**
+- **⭐ Star Symmetry**: Erzeugt kaleidoskopische Schaltkreis-Mandalas mit radialer Wiederholung
+- **🌊 Sine Warp Tile**: Fügt fließende, wellenartige Verzerrungen zu den Schaltkreismustern hinzu
+- **🌀 Warping Illusionary**: Kombiniert mehrere Warp-Effekte für surreale, unmögliche Schaltkreis-Geometrien
+- **🔮 Kaleidoskop-Nodes**: Generieren hypnotische symmetrische Muster aus den unregelmäßigen Schaltkreisen
+- **🎯 Polar Coordinates**: Transformiert lineare Schaltkreise in kreisförmige, radiale Designs
+
+**Experimentelle Vorschläge:**
+- Versuchen Sie, mehrere Modifier zu stapeln für unerwartete Ergebnisse
+- Kombinieren Sie mit Displacement- oder Noise-Modifiern für Glitch-Art-Ästhetik
+- Nutzen Sie Rotations- und Skalierungs-Modifier für dynamische kameraähnliche Bewegungen
+
+### 🚀 Schnelles Erstellen von Variationen
+
+Da Circuit Pattern 2D ein 2D SDF ist, können Sie schnell iterieren und Dutzende Variationen erstellen:
+1. Mit Standardeinstellungen beginnen
+2. Einen 2D Modifier anwenden
+3. 1-2 Parameter anpassen
+4. Als Preset speichern oder Ergebnis screenshot
+5. Mit verschiedenen Modifiern wiederholen
+
+Dieser Workflow ermöglicht schnelle Exploration und ist perfekt für kreative Experimente.
+
+### 🔮 Umwandlung in 3D
+
+Circuit Pattern 2D funktioniert hervorragend mit Coollabs **"3D Shape from 2D"**-Kategorie, die zwei Nodes enthält:
+
+#### 📐 Extrude Node
+Erzeugt eine extrudierte 3D-Form aus dem 2D-Muster.
+
+**Getestete Einstellungen für gute Ergebnisse:**
+- Pattern Scale: 0.79
+- Line Thickness: 0.37
+- Animation Speed: 0.49
+- Alle anderen Parameter: 0.00
+- **Im Extrude Node:** Height: 0.29
+
+Diese Einstellungen ergeben etwas nicht allzu Wildes und gut Verarbeitbares für das menschliche Auge.
+
+#### 🔄 Revolve Node
+Erzeugt eine zylindrische oder kreisgebundene 3D-Form durch Rotation des 2D-Musters um eine Achse. Das Ergebnis ähnelt leicht einem Mandelbulber-Teil "main_formula_1 Quaternion" und kann fraktalartige Strukturen erzeugen.
+
+⚠️ **Hinweis:** Das Revolve Node stellt höhere GPU-Anforderungen, da es wahrscheinlich fraktalartige Geometrien generiert.
+
+**Tipps für 3D-Konvertierung:**
+- **🎯 Subtil beginnen**: Verwenden Sie moderate Extrusions-/Tiefenwerte, um Erkennbarkeit zu bewahren
+- **🔧 Mit 3D Modifiern kombinieren**: Nach der Konvertierung können Sie 3D SDF Modifier wie Twists, Bends oder Repetitions anwenden für einzigartige skulpturale Formen
+- **⚖️ Zurückhaltung üben**: Die Muster können in 3D überwältigend werden - weniger ist oft mehr
+- **💡 Beleuchtung ist wichtig**: Experimentieren Sie mit verschiedenen Lichtsetups, um die Schaltkreis-Topologie zu betonen
+
+Die unregelmäßige, organische Natur der Schaltkreise übersetzt sich überraschend gut in den 3D-Raum und erzeugt Strukturen, die sich sowohl technologisch als auch natürlich anfühlen.
+
+Danach können alle **3D Modifier** angewendet werden, was wieder ganz neue Design-Dimensionen eröffnet!
+
+## 🔧 Technische Details
+
+- **Node-Typ**: 2D SDF (UV → SignedDistance)
+- **Kategorie**: 2D SDF
+- **Animation**: Integriert via `_time`-Variable
+- **Algorithmus**: Multi-Oktaven Voronoi-Rauschen mit Chebyshev-Distanz
+- **Performance**: Moderat (skaliert mit Oktavenzahl)
+
+## 💡 Workflow-Beispiele
+
+### Beispiel 1: Animierter Schaltkreis-Hintergrund
+1. Circuit Pattern 2D zur Komposition hinzufügen
+2. Play in der Timeline drücken
+3. `Animation Speed` an Projekt-Tempo anpassen
+4. Als Hintergrund-Layer oder Maske verwenden
+
+### Beispiel 2: Glitch Art
+1. Mit Circuit Pattern 2D beginnen
+2. `Flicker Amount` auf 0.7-1.0 setzen
+3. Einen **Displacement**-Modifier hinzufügen
+4. Mit Farbeffekten für Cyberpunk-Ästhetik kombinieren
+
+### Beispiel 3: 3D Schaltkreis-Skulptur
+1. Circuit Pattern 2D erstellen
+2. Mit Extrude Node in 3D konvertieren
+3. Einen **Twist** oder **Bend** 3D Modifier anwenden
+4. Mit metallischen Materialien für Tech-Art-Look rendern
+
+## 🎭 Kreative Freiheit
+
+Die Schönheit von Circuit Pattern 2D liegt in seiner Vielseitigkeit und den unerwarteten Ergebnissen, die aus Experimenten entstehen. Haben Sie keine Angst:
+- 🚀 Parameter auf extreme Werte zu treiben
+- 🔀 Scheinbar inkompatible Modifier zu kombinieren
+- 💥 Die "Regeln" zu brechen und zu sehen, was passiert
+- 🎨 Mehrere Instanzen mit Blend-Modi zu überlagern
+
+**Lassen Sie Ihrer Kreativität freien Lauf** - genau wie die Elektronen, die durch diese digitalen Schaltkreise fließen! ⚡✨
+
+## 📜 Credits
+
+- Inspiriert von elektronischen Leiterplattenmustern und prozeduralen Generierungstechniken
+- Idee und Projektkoordination: bennoH
+- Programmierung: claude.ai (Sonnet-4 Modell, Anthropic PBC)
+- Lizenz: GPLv3.0 by bennoH, 2026
+
+---
+
+*Für weitere Informationen zum Schreiben und Verwenden von Coollab-Nodes besuchen Sie: https://coollab-art.com/Tutorials/Writing%20Nodes/Intro*
