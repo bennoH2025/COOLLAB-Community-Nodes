@@ -1,3 +1,7 @@
+[English](#circuit-pattern-2d---documentation) | [Deutsch](#circuit-pattern-2d---dokumentation)
+
+---
+
 # Circuit Pattern 2D - Documentation
 
 ## Overview
@@ -157,6 +161,10 @@ The beauty of Circuit Pattern 2D lies in its versatility and the unexpected resu
 ---
 
 *For more information on writing and using Coollab nodes, visit: https://coollab-art.com/Tutorials/Writing%20Nodes/Intro*
+
+---
+
+[English](#circuit-pattern-2d---documentation) | [Deutsch](#circuit-pattern-2d---dokumentation)
 
 ---
 
