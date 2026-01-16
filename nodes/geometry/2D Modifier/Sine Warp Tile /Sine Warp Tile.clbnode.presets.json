@@ -1,0 +1,468 @@
+{
+    "Presets": {
+        "Underlying container": [
+            {
+                "first": "41447d34-a9e8-4d66-bd4a-e79adef485e0",
+                "second": {
+                    "Name": "Centret",
+                    "Values": [
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "Size",
+                                "Value": 0.550000011920929,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "Rotation",
+                                "Value": 0.0,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "Angle",
+                                "Value": 0.0,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 3,
+                            "data": {
+                                "Name": "Shift",
+                                "Value": {
+                                    "Point2D": {
+                                        "x": 0.4699999988079071,
+                                        "y": 0.5
+                                    }
+                                },
+                                "Metadata": {
+                                    "Drag speed": 0.00009999999747378752
+                                }
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "first": "e998051c-0a9b-4397-b67a-0b0ee1df67f8",
+                "second": {
+                    "Name": "45d'Gr",
+                    "Values": [
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "Size",
+                                "Value": 0.550000011920929,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "Rotation",
+                                "Value": 0.26999998092651369,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "Angle",
+                                "Value": 1.862645149230957e-9,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 3,
+                            "data": {
+                                "Name": "Shift",
+                                "Value": {
+                                    "Point2D": {
+                                        "x": 0.4699999988079071,
+                                        "y": 0.5
+                                    }
+                                },
+                                "Metadata": {
+                                    "Drag speed": 0.00009999999747378752
+                                }
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "first": "2128ab75-9f5b-4128-9061-70978b9e3118",
+                "second": {
+                    "Name": "Diagonic",
+                    "Values": [
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "Size",
+                                "Value": 0.36000001430511477,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "Rotation",
+                                "Value": 0.35600000619888308,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "Angle",
+                                "Value": 0.5,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 3,
+                            "data": {
+                                "Name": "Shift",
+                                "Value": {
+                                    "Point2D": {
+                                        "x": 0.6179999709129334,
+                                        "y": -0.19499999284744264
+                                    }
+                                },
+                                "Metadata": {
+                                    "Drag speed": 0.00009999999747378752
+                                }
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "first": "7dce3e6d-909c-4363-82e1-128c8243b61d",
+                "second": {
+                    "Name": "Simple Wave Pattern",
+                    "Values": [
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "Size",
+                                "Value": 0.20000000298023225,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "Rotation",
+                                "Value": 0.0,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "Angle",
+                                "Value": 0.0,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 3,
+                            "data": {
+                                "Name": "Shift",
+                                "Value": {
+                                    "Point2D": {
+                                        "x": 0.0,
+                                        "y": 0.0
+                                    }
+                                },
+                                "Metadata": {
+                                    "Drag speed": 0.00009999999747378752
+                                }
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "first": "82011665-5fd2-4c3c-8de2-3fd79c77a32e",
+                "second": {
+                    "Name": "for higher Mandala Patterns",
+                    "Values": [
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "Size",
+                                "Value": 0.4860000014305115,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "Rotation",
+                                "Value": 0.0,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "Angle",
+                                "Value": 0.3199999928474426,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 3,
+                            "data": {
+                                "Name": "Shift",
+                                "Value": {
+                                    "Point2D": {
+                                        "x": -0.23600000143051148,
+                                        "y": 0.050999999046325687
+                                    }
+                                },
+                                "Metadata": {
+                                    "Drag speed": 0.00009999999747378752
+                                }
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "first": "e3accd52-723e-4b39-9696-65edc17111dc",
+                "second": {
+                    "Name": "for Animated Vortex",
+                    "Values": [
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "Size",
+                                "Value": 0.4860000014305115,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "Rotation",
+                                "Value": 0.0,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "Angle",
+                                "Value": 1.0,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": true,
+                                        "Min": 0.0,
+                                        "Has max bound": true,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.0006000000284984708,
+                                        "Use slider": true,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 3,
+                            "data": {
+                                "Name": "Shift",
+                                "Value": {
+                                    "Point2D": {
+                                        "x": -0.23600000143051148,
+                                        "y": 0.050999999046325687
+                                    }
+                                },
+                                "Metadata": {
+                                    "Drag speed": 0.00009999999747378752
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}
