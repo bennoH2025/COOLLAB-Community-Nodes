@@ -1,0 +1,51 @@
+// Inspired by VIDVOX-ISFs from the MIT-Repository
+//
+// Idea and project coordination by bennoH.
+// Coding by claude.ai in the Sonnet-4 model of Anthropic PBC on a "KostenlosPlan" of bennoH.
+// This Coollab "2D Modifire-node" by his name "Warping illusionary" is lizensed under GPLv3.0 by bennoH. 2026
+
+// To learn how to write nodes, see https://coollab-art.com/Tutorials/Writing%20Nodes/Intro
+
+
+INPUT float 'Size'; /// Controls the scale of the tiling effect
+INPUT float 'Rotation'; /// Rotates the entire pattern
+INPUT float 'Angle'; /// Rotates the warped result
+INPUT Point2D 'Shift'; /// Shifts the pattern position
+
+vec2 apply_sine_warp(vec2 uv)
+{
+    // Apply rotation
+    float s = sin(TAU * 'Rotation' * 0.5);
+    float c = cos(TAU * 'Rotation' * 0.5);
+    vec2 point = vec2(c * uv.x - s * uv.y, s * uv.x + c * uv.y);
+    
+    // Scale
+    float scale = 1.0 / max('Size', 0.001);
+    point *= scale;
+    
+    // Apply shift
+    point -= scale * 'Shift';
+    
+    // Apply sine distortion
+    point = 0.5 + 0.5 * vec2(sin(scale * point.x), sin(scale * point.y));
+    
+    // Rotate the result
+    vec2 center = vec2(0.5, 0.5);
+    float r = distance(center, point);
+    float a = atan(point.y - center.y, point.x - center.x);
+    
+    s = sin(a + TAU * 'Angle');
+    c = cos(a + TAU * 'Angle');
+    
+    float zoom = max(abs(s), abs(c));
+    
+    point.x = (r * c) / zoom + 0.5;
+    point.y = (r * s) / zoom + 0.5;
+    
+    return point;
+}
+
+UV main(UV uv)
+{
+    return apply_sine_warp(uv);
+}
