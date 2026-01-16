@@ -115,11 +115,12 @@ While primarily a 2D effect, you can use it creatively with **"3D Shape from 2D"
 ## Workflow Examples
 
 ### Example 1: Simple Wave Pattern
-1. Start with a gradient or solid color
+1. Start with a "Color Ramp"node or any gradient and link that to the Saturation on a "Color HSL" node
 2. Add Sine Warp Tile
 3. Set Size to 0.2
 4. Adjust Rotation slowly to find interesting angles
 5. Add color effects to enhance the pattern
+6. You can then animate the "Angel" and "Rotate" options using a Time node, and additionally also the X and/or Y shift of the "Sine Warp Tile".
 
 ### Example 2: Kaleidoscope Effect
 1. Create or import an image
