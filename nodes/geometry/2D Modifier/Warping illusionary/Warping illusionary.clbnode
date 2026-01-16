@@ -1,0 +1,94 @@
+// Inspired by VIDVOX-ISFs from the MIT-Repository
+//
+// Idea and project coordination by bennoH.
+// Coding by claude.ai in the Sonnet-4 model of Anthropic PBC on a "KostenlosPlan" of bennoH.
+// This Coollab "2D Modifire-node" by his name "Warping illusionary" is lizensed under GPLv3.0 by bennoH. 2026
+
+// To learn how to write nodes, see https://coollab-art.com/Tutorials/Writing%20Nodes/Intro
+
+
+
+INPUT float 'Sine Scale'; /// Controls the scale of the sine wave distortion
+INPUT float 'Sine Strength'; /// Controls the intensity of the sine warp effect
+INPUT float 'Power X'; /// Exponential distortion on X axis
+INPUT float 'Power Y'; /// Exponential distortion on Y axis
+INPUT bool 'Symmetric X'; /// If true, applies symmetric power curve from center on X
+INPUT bool 'Symmetric Y'; /// If true, applies symmetric power curve from center on Y
+INPUT float 'Rotation'; /// Rotates the entire pattern
+INPUT float 'Angle'; /// Rotates the warped result
+INPUT Point2D 'Shift'; /// Shifts the pattern position with wrapping
+
+vec2 apply_power_warp(vec2 pos)
+{
+    // Apply power curve on X axis
+    if ('Symmetric X') {
+        if (pos.x > 0.5)
+            pos.x = 0.5 + pow(2.0 * (pos.x - 0.5), 'Power X') / 2.0;
+        else {
+            pos.x = pow(1.0 - 2.0 * pos.x, 'Power X') / 2.0;
+            pos.x = 0.5 - pos.x;
+        }
+    } else {
+        pos.x = pow(pos.x, 'Power X');
+    }
+    
+    // Apply power curve on Y axis
+    if ('Symmetric Y') {
+        if (pos.y > 0.5)
+            pos.y = 0.5 + pow(2.0 * (pos.y - 0.5), 'Power Y') / 2.0;
+        else {
+            pos.y = pow(1.0 - 2.0 * pos.y, 'Power Y') / 2.0;
+            pos.y = 0.5 - pos.y;
+        }
+    } else {
+        pos.y = pow(pos.y, 'Power Y');
+    }
+    
+    return pos;
+}
+
+vec2 apply_sine_warp(vec2 uv)
+{
+    // Apply initial rotation
+    float s = sin(TAU * 'Rotation' * 0.5);
+    float c = cos(TAU * 'Rotation' * 0.5);
+    vec2 point = vec2(c * uv.x - s * uv.y, s * uv.x + c * uv.y);
+    
+    // Scale for sine distortion
+    float scale = 1.0 / max('Sine Scale', 0.001);
+    point *= scale;
+    
+    // Apply shift with wrapping
+    point.x = mod(point.x - scale * 'Shift'.x, 1.0);
+    point.y = mod(point.y - scale * 'Shift'.y, 1.0);
+    
+    // Apply sine distortion with controllable strength
+    vec2 sine_offset = 'Sine Strength' * vec2(sin(scale * point.x), sin(scale * point.y));
+    point = point + sine_offset * 0.5;
+    
+    // Rotate the result
+    vec2 center = vec2(0.5, 0.5);
+    float r = distance(center, point);
+    float a = atan(point.y - center.y, point.x - center.x);
+    
+    s = sin(a + TAU * 'Angle');
+    c = cos(a + TAU * 'Angle');
+    
+    float zoom = max(abs(s), abs(c));
+    
+    point.x = (r * c) / zoom + 0.5;
+    point.y = (r * s) / zoom + 0.5;
+    
+    return point;
+}
+
+UV main(UV uv)
+{
+    // First apply power warp
+    vec2 warped = apply_power_warp(uv);
+    
+    // Then apply sine warp on top
+    warped = apply_sine_warp(warped);
+    
+    return warped;
+}
