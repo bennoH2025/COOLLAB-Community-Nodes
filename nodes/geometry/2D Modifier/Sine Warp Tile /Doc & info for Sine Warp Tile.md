@@ -143,8 +143,8 @@ While primarily a 2D effect, you can use it creatively with **"3D Shape from 2D"
 6. If desired add a "Color Ramp" node for colorfule or dramatic effect
 
 ### Example 4: Dual Warp Complexity
-1. Apply Sine Warp Tile (Size: 0.3, Rotation: 0.0)
-2. Add a second Sine Warp Tile (Size: 0.15, Rotation: 0.5)
+1. Apply "Sine Warp Tile" (Size: 0.38-0.8, Rotation: 0.0)
+2. Add a second "Sine Warp Tile" node (Size: approx. 0.3, Rotation: approx. 0.5)
 3. Adjust both Angle parameters independently
 4. Creates intricate, fractal-like patterns
 
