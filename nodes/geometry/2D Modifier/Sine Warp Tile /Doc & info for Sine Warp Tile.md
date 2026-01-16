@@ -120,7 +120,8 @@ While primarily a 2D effect, you can use it creatively with **"3D Shape from 2D"
 3. Set Size to 0.2
 4. Adjust Rotation slowly to find interesting angles
 5. Add color effects to enhance the pattern
-6. You can then animate the "Angel" and "Rotate" options using a Time node, and additionally also the X and/or Y shift of the "Sine Warp Tile".
+6. You can then animate the "Angel" and "Rotate" options using a Time node,
+   and additionally also the X and/or Y shift of the "Sine Warp Tile".
 
 ### Example 2: higher Mandala Patterns
 1. Import an image with the "Image" node
@@ -136,8 +137,10 @@ While primarily a 2D effect, you can use it creatively with **"3D Shape from 2D"
 1. Start with a textured image
 2. Add Sine Warp Tile
 3. Set Size: 0.25, Rotation: 0.25
-4. Animate Angle from 0 to 1 over time
-5. Add color grading for dramatic effect
+4. Animate Angle from 0 to 1 over a "Time" node and use 0.14 for the Speed option
+   To define the range to 0-1, right-click on the Angle option (before the connection with Time)
+   and then activate/enter 0 and 1 and activate slider at the first line.
+6. If desired add a "Color Ramp" node for colorfule or dramatic effect
 
 ### Example 4: Dual Warp Complexity
 1. Apply Sine Warp Tile (Size: 0.3, Rotation: 0.0)
