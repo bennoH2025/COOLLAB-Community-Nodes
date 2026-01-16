@@ -2,7 +2,7 @@
 
 ---
 
-# Warping Illusionary - Documentation
+# Warping illusionary - Documentation
 
 ## Overview
 
@@ -128,15 +128,28 @@ Every parameter is animation-ready:
 ### 🖼️ Application Examples
 
 **For Abstract Art:**
-- Start with gradients
-- Use extreme Power values (0.25 or 4.0)
-- High Sine Strength (1.5+)
-- Animate slowly for meditative motion
+- Start with a "Gradient XXO" node, go into a "Color Ramp"
+  and now into the "Warping illusionary" node where you use:
+- Sine Scale 0.060 - 0.420  / I recommend 0.200
+- Sine Strength 1.260 - 1.760 / I recommend 1.500
+- PowerX 0.250 (up to 0.750) & PowerY 0.400 (up to 0.980)
+- Both symmetry switches to one
+- At Rotation & Angle linked in a "Time" node where the Speed is set to 0.01
+- The shifts can be set to 0, but can also be animated very very slowly as before
+- The slowly animation is for a meditative motion
 
-**For Psychedelic Effects:**
-- Apply to photos or video
-- Moderate Power (1.2 - 1.8)
-- High Sine Scale (0.8+) for fine detail
+**For Psychedelic Effects "Psychrultic":**
+- Start by a video or a ani-Gif via the "Video" node
+- link that in the "Warping illusionary" node
+- Sine Scale 0.120 - 0.340  / I recommend 0.180
+- Sine Strength 1.000 - 3.890 / I recommend 1.380
+- PowerX 0.250 (up to 0.750) & PowerY 0.400 (up to 0.980)
+- Both symmetry switches to one
+- Rotation 0.00
+- Angle I recommend 0.150 (0.000 - 1.000 - This range could also be animated)
+- linked in a Time Node where the speed is set to 0.01
+- The shifts shut be animatetd by a "Time" node where the Speed is set to 0.01-0.03
+- The soft animation is importand
 - Add Star Symmetry afterward
 
 **For Glitch Art:**
