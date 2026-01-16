@@ -116,18 +116,21 @@ While primarily a 2D effect, you can use it creatively with **"3D Shape from 2D"
 
 ### Example 1: Simple Wave Pattern
 1. Start with a "Color Ramp"node or any gradient and link that to the Saturation on a "Color HSL" node
-2. Add Sine Warp Tile
+2. Add "Sine Warp Tile"
 3. Set Size to 0.2
 4. Adjust Rotation slowly to find interesting angles
 5. Add color effects to enhance the pattern
 6. You can then animate the "Angel" and "Rotate" options using a Time node, and additionally also the X and/or Y shift of the "Sine Warp Tile".
 
-### Example 2: Kaleidoscope Effect
-1. Create or import an image
-2. Apply Sine Warp Tile with Size: 0.15
-3. Add Star Symmetry node (8 or 12 segments)
-4. Fine-tune Angle for perfect alignment
-5. Result: Mesmerizing mandala patterns
+### Example 2: higher Mandala Patterns
+1. Import an image with the "Image" node
+2. Apply "Sine Warp Tile" with Size: between 0.320 and 0.840 / recommended is 0.486
+3. set the Angle to 0.320
+4. Add the "Star Symmetry" node and set the size to 10.000
+5. Fine-tune or animate the Angle option of "Star Symmetry" for perfect alignment
+6. If desired, center and shift of your like it the subject using the "Translate" node.
+7. Other ways to animate with a "Time" node include the Shift or Angle options in the "Sine Warp Tile" node.
+8. The result is a fascinating mandala pattern with a strong kaleidoscopic character.
 
 ### Example 3: Animated Vortex
 1. Start with a textured image
