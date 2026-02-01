@@ -1,0 +1,36 @@
+// Alpha Composite - Blend foreground over background with mix control
+//
+// Idea and project coordination by bennoH.
+// Coding by claude.ai in the Sonnet-4.5 model of Anthropic PBC on a "KostenlosPlan" of bennoH.
+// This Coollab node is licensed under GPLv3.0 by bennoH. 2026
+
+// To learn how to write nodes, see https://coollab-art.com/Tutorials/Writing%20Nodes/Intro
+
+INPUT UV->sRGB_StraightA 'Foreground'; /// The image with transparency (e.g. from Chroma Key)
+INPUT UV->sRGB_StraightA 'Background'; /// The background image
+INPUT float 'Mix'; /// Blend amount (0 = background only, 1 = full composite)
+
+sRGB_StraightA main(UV uv)
+{
+    // Get foreground and background colors
+    vec4 fg = 'Foreground'(uv);
+    vec4 bg = 'Background'(uv);
+    
+    // Standard alpha compositing: Over operation
+    // Result = Foreground + Background * (1 - Foreground.alpha)
+    float alpha_out = fg.a + bg.a * (1.0 - fg.a);
+    
+    vec3 rgb_out;
+    if (alpha_out > 0.0) {
+        rgb_out = (fg.rgb * fg.a + bg.rgb * bg.a * (1.0 - fg.a)) / alpha_out;
+    } else {
+        rgb_out = vec3(0.0);
+    }
+    
+    vec4 composited = vec4(rgb_out, alpha_out);
+    
+    // Mix between background and composited result
+    vec4 result = mix(bg, composited, 'Mix');
+    
+    return result;
+}
