@@ -1,0 +1,86 @@
+// Color Grading - Tonal or in a classical manir (Highlights, Mids, Shadows)
+//
+// Idea and project coordination by bennoH.
+// Coding by claude.ai in the Sonnet-4.5 model of Anthropic PBC on a "KostenlosPlan" of bennoH.
+// This Coollab node is licensed under GPLv3.0 by bennoH. 2026
+
+// To learn how to write nodes, see https://coollab-art.com/Tutorials/Writing%20Nodes/Intro
+
+INPUT UV->sRGB_StraightA 'Input'; /// The image to grade
+
+INPUT float '--- Highlights ---';
+INPUT float 'Highlights Intensity'; /// Adjust brightness of highlights (-1 to 1, 0 = no change)
+INPUT float 'Highlights Hue Shift'; /// Shift hue in highlights (0 to 1 = 0° to 360°)
+
+INPUT float '--- Mids ---';
+INPUT float 'Mids Intensity'; /// Adjust brightness of midtones (-1 to 1, 0 = no change)
+INPUT float 'Mids Hue Shift'; /// Shift hue in midtones (0 to 1 = 0° to 360°)
+
+INPUT float '--- Shadows ---';
+INPUT float 'Shadows Intensity'; /// Adjust brightness of shadows (-1 to 1, 0 = no change)
+INPUT float 'Shadows Hue Shift'; /// Shift hue in shadows (0 to 1 = 0° to 360°)
+
+// RGB to HSV conversion
+vec3 rgb2hsv(vec3 c)
+{
+    vec4 K = vec4(0.0, -1.0 / 3.0, 2.0 / 3.0, -1.0);
+    vec4 p = mix(vec4(c.bg, K.wz), vec4(c.gb, K.xy), step(c.b, c.g));
+    vec4 q = mix(vec4(p.xyw, c.r), vec4(c.r, p.yzx), step(p.x, c.r));
+    float d = q.x - min(q.w, q.y);
+    float e = 1.0e-10;
+    return vec3(abs(q.z + (q.w - q.y) / (6.0 * d + e)), d / (q.x + e), q.x);
+}
+
+// HSV to RGB conversion
+vec3 hsv2rgb(vec3 c)
+{
+    vec4 K = vec4(1.0, 2.0 / 3.0, 1.0 / 3.0, 3.0);
+    vec3 p = abs(fract(c.xxx + K.xyz) * 6.0 - K.www);
+    return c.z * mix(K.xxx, clamp(p - K.xxx, 0.0, 1.0), c.y);
+}
+
+sRGB_StraightA main(UV uv)
+{
+    // Get input color
+    vec4 color = 'Input'(uv);
+    vec3 rgb = color.rgb;
+    
+    // Calculate luminance for masking
+    float luma = dot(rgb, vec3(0.299, 0.587, 0.114));
+    
+    // Create masks for shadows, mids, highlights
+    // Shadows: affect dark areas (luma < 0.33)
+    float shadow_mask = smoothstep(0.33, 0.0, luma);
+    
+    // Mids: affect middle areas (luma around 0.33-0.66)
+    float mid_mask = 1.0 - abs(luma - 0.5) * 2.0;
+    mid_mask = smoothstep(0.0, 1.0, mid_mask);
+    
+    // Highlights: affect bright areas (luma > 0.66)
+    float highlight_mask = smoothstep(0.66, 1.0, luma);
+    
+    // ===== INTENSITY ADJUSTMENTS =====
+    rgb += 'Highlights Intensity' * highlight_mask;
+    rgb += 'Mids Intensity' * mid_mask;
+    rgb += 'Shadows Intensity' * shadow_mask;
+    
+    rgb = clamp(rgb, 0.0, 1.0);
+    
+    // ===== HUE SHIFTS =====
+    // Convert to HSV for hue manipulation
+    vec3 hsv = rgb2hsv(rgb);
+    
+    // Apply hue shifts based on masks
+    float total_hue_shift = 0.0;
+    total_hue_shift += 'Highlights Hue Shift' * highlight_mask;
+    total_hue_shift += 'Mids Hue Shift' * mid_mask;
+    total_hue_shift += 'Shadows Hue Shift' * shadow_mask;
+    
+    hsv.x = fract(hsv.x + total_hue_shift);
+    
+    rgb = hsv2rgb(hsv);
+    rgb = clamp(rgb, 0.0, 1.0);
+    
+    // Return with original alpha
+    return vec4(rgb, color.a);
+}
