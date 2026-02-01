@@ -1,0 +1,30 @@
+// Gamma Correction - Simple gamma adjustment
+//
+// Idea and project coordination by bennoH.
+// Coding by claude.ai in the Sonnet-4.5 model of Anthropic PBC on a "KostenlosPlan" of bennoH.
+// This Coollab node is licensed under GPLv3.0 by bennoH. 2026
+
+// To learn how to write nodes, see https://coollab-art.com/Tutorials/Writing%20Nodes/Intro
+
+INPUT UV->sRGB_StraightA 'Input'; /// The image to apply gamma correction
+
+INPUT float 'Gamma'; /// Gamma value (2.2 = neutral/EBU standard, higher = lighter, lower = darker)
+
+sRGB_StraightA main(UV uv)
+{
+    // Get input color
+    vec4 color = 'Input'(uv);
+    vec3 rgb = color.rgb;
+    
+    // Apply gamma correction
+    // Gamma = 2.2 is neutral (EBU/TV standard)
+    // Higher values = lighter, lower values = darker
+    float gamma_value = max('Gamma', 0.01); // Prevent division by zero
+    float gamma_factor = 2.2 / gamma_value;
+    rgb = pow(rgb, vec3(gamma_factor));
+    
+    rgb = clamp(rgb, 0.0, 1.0);
+    
+    // Return with original alpha
+    return vec4(rgb, color.a);
+}
