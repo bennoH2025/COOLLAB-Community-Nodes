@@ -34,4 +34,24 @@ sRGB_StraightA main(UV uv)
     rgb = clamp(rgb, 0.0, 1.0);
     
     // ===== MID POINT (Gamma adjustment) =====
-    // Map 0
+    // Map 0.5 to neutral (no change)
+    // <0.5 = darker, >0.5 = lighter
+    float midpoint = clamp('Mid Point', 0.01, 0.99);
+    
+    if (midpoint < 0.5) {
+        // Darken: gamma > 1.0
+        float gamma = 1.0 + (0.5 - midpoint) * 4.0; // Range: 1.0 to 3.0
+        rgb = pow(rgb, vec3(gamma));
+    } else if (midpoint > 0.5) {
+        // Lighten: gamma < 1.0
+        float gamma = 1.0 - (midpoint - 0.5) * 1.6; // Range: 1.0 to 0.2
+        gamma = max(gamma, 0.1);
+        rgb = pow(rgb, vec3(gamma));
+    }
+    // If midpoint == 0.5, no change
+    
+    rgb = clamp(rgb, 0.0, 1.0);
+    
+    // Return with original alpha
+    return vec4(rgb, color.a);
+}
