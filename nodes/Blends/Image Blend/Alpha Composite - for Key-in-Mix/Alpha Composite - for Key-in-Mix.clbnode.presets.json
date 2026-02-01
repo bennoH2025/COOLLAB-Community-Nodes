@@ -1,0 +1,32 @@
+{
+    "Presets": {
+        "Underlying container": [
+            {
+                "first": "f86ac0b1-ca31-43bd-85d6-bc1a761e373e",
+                "second": {
+                    "Name": "Deafault  (100% blendMix with alpha)",
+                    "Values": [
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "Mix",
+                                "Value": 1.0,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}
