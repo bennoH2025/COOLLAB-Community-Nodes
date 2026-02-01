@@ -1,0 +1,86 @@
+// Chroma Key - Make a color range transparent
+//
+// Idea and project coordination by bennoH.
+// Coding by claude.ai in the Sonnet-4.5 model of Anthropic PBC on a "KostenlosPlan" of bennoH.
+// This Coollab node is licensed under GPLv3.0 by bennoH. 2026
+
+// To learn how to write nodes, see https://coollab-art.com/Tutorials/Writing%20Nodes/Intro
+
+INPUT UV->sRGB_StraightA 'Input'; /// The image to key
+
+INPUT float '--- Key Settings ---';
+INPUT sRGB 'Key Color'; /// The color to make transparent (e.g. green for greenscreen)
+INPUT float 'Tolerance'; /// How similar colors must be to be keyed (0 = exact match, 1 = all colors)
+INPUT float 'Softness'; /// Edge softness of the key (0 = hard edge, 1 = very soft)
+INPUT bool 'Show Matte'; /// Display the alpha matte in white/black
+
+INPUT float '--- Refinement ---';
+INPUT float 'Spill Suppression'; /// Reduce color spill from the keyed color (0 = none, 1 = full)
+INPUT float 'Edge Erode'; /// Shrink the matte edges (-1 = grow, 0 = no change, 1 = shrink)
+
+// RGB to HSV conversion
+vec3 rgb2hsv(vec3 c)
+{
+    vec4 K = vec4(0.0, -1.0 / 3.0, 2.0 / 3.0, -1.0);
+    vec4 p = mix(vec4(c.bg, K.wz), vec4(c.gb, K.xy), step(c.b, c.g));
+    vec4 q = mix(vec4(p.xyw, c.r), vec4(c.r, p.yzx), step(p.x, c.r));
+    float d = q.x - min(q.w, q.y);
+    float e = 1.0e-10;
+    return vec3(abs(q.z + (q.w - q.y) / (6.0 * d + e)), d / (q.x + e), q.x);
+}
+
+// HSV to RGB conversion
+vec3 hsv2rgb(vec3 c)
+{
+    vec4 K = vec4(1.0, 2.0 / 3.0, 1.0 / 3.0, 3.0);
+    vec3 p = abs(fract(c.xxx + K.xyz) * 6.0 - K.www);
+    return c.z * mix(K.xxx, clamp(p - K.xxx, 0.0, 1.0), c.y);
+}
+
+sRGB_StraightA main(UV uv)
+{
+    // Get input color
+    vec4 color = 'Input'(uv);
+    vec3 rgb = color.rgb;
+    
+    // Calculate color distance to key color
+    vec3 key = 'Key Color';
+    float distance = length(rgb - key);
+    
+    // Create alpha matte based on tolerance and softness
+    float matte = 1.0 - smoothstep('Tolerance' - 'Softness', 'Tolerance' + 'Softness', distance);
+    
+    // Apply edge erode/grow
+    matte = clamp(matte + 'Edge Erode', 0.0, 1.0);
+    
+    // Invert matte (1 = keep, 0 = transparent)
+    float alpha = 1.0 - matte;
+    
+    // Spill suppression: reduce the key color from the RGB
+    if ('Spill Suppression' > 0.0) {
+        vec3 hsv = rgb2hsv(rgb);
+        vec3 key_hsv = rgb2hsv(key);
+        
+        // Calculate hue difference
+        float hue_diff = abs(hsv.x - key_hsv.x);
+        hue_diff = min(hue_diff, 1.0 - hue_diff); // Handle hue wraparound
+        
+        // Suppress saturation of similar hues
+        float spill_mask = 1.0 - smoothstep(0.0, 0.15, hue_diff);
+        hsv.y = hsv.y * (1.0 - spill_mask * 'Spill Suppression');
+        
+        rgb = hsv2rgb(hsv);
+        rgb = clamp(rgb, 0.0, 1.0);
+    }
+    
+    // Combine with original alpha
+    alpha = alpha * color.a;
+    
+    // Show matte visualization if enabled
+    if ('Show Matte') {
+        return vec4(vec3(alpha), 1.0); // White = opaque, Black = transparent
+    }
+    
+    // Return keyed image with transparency
+    return vec4(rgb, alpha);
+}
