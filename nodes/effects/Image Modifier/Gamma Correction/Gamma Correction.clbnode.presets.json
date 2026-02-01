@@ -1,0 +1,58 @@
+{
+    "Presets": {
+        "Underlying container": [
+            {
+                "first": "53086fdb-5b7a-474d-b7af-2dec85864542",
+                "second": {
+                    "Name": "Default  (Standart for Monitors by EBU & SMPTE)",
+                    "Values": [
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "Gamma",
+                                "Value": 2.200000047683716,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "first": "6d143c6f-876f-42a9-8eb3-f6b1ccd7b653",
+                "second": {
+                    "Name": "Advertising Styl (a byt mo craky)",
+                    "Values": [
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "Gamma",
+                                "Value": 1.7999999523162842,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}
