@@ -1,0 +1,37 @@
+// Levels - Video levels adjustment (Base, Mid Point, Ratio)
+//
+// Idea and project coordination by bennoH.
+// Coding by claude.ai in the Sonnet-4.5 model of Anthropic PBC on a "KostenlosPlan" of bennoH.
+// This Coollab node is licensed under GPLv3.0 by bennoH. 2026
+
+// To learn how to write nodes, see https://coollab-art.com/Tutorials/Writing%20Nodes/Intro
+
+INPUT UV->sRGB_StraightA 'Input'; /// The image to adjust levels
+
+INPUT float 'Base'; /// Input black point (0.5 = neutral, <0.5 = darker blacks, >0.5 = lift blacks/brighter)
+INPUT float 'Mid Point'; /// Midpoint gamma (0.5 = neutral, <0.5 = darker midtones, >0.5 = lighter midtones)
+INPUT float 'Ratio'; /// Input white point (0.5 = neutral, <0.5 = compress whites/darker, >0.5 = expand whites/brighter)
+
+sRGB_StraightA main(UV uv)
+{
+    // Get input color
+    vec4 color = 'Input'(uv);
+    vec3 rgb = color.rgb;
+    
+    // ===== BASE (Input Black Point) =====
+    // Map 0.5 to 0.0 (neutral)
+    // <0.5 goes negative (darkens), >0.5 goes positive (lifts blacks)
+    float base_offset = ('Base' - 0.5) * 2.0; // Range: -1.0 to +1.0
+    rgb = rgb - base_offset;
+    rgb = clamp(rgb, 0.0, 1.0);
+    
+    // ===== RATIO (Input White Point) =====
+    // Map 0.5 to 1.0 (neutral)
+    // <0.5 compresses range (darker), >0.5 expands range (brighter)
+    float ratio_factor = 0.5 + ('Ratio' - 0.5) * 2.0; // Range: 0.5 at min, 1.5 at max
+    ratio_factor = max(ratio_factor, 0.01); // Prevent division by zero
+    rgb = rgb / ratio_factor;
+    rgb = clamp(rgb, 0.0, 1.0);
+    
+    // ===== MID POINT (Gamma adjustment) =====
+    // Map 0
