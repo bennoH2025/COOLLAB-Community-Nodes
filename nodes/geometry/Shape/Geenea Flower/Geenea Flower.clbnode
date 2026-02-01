@@ -1,0 +1,54 @@
+// Geenea Flower - Visual approximation of the minimal surface
+//
+// Inspired by the mathematical concept of Jeener's Flower (Jeenersche Blume)
+// A minimal surface with beautiful petal-like structures
+//
+// Idea and project coordination by bennoH.
+// Coding by claude.ai in the Sonnet-4 model of Anthropic PBC on a "KostenlosPlan" of bennoH.
+// This Coollab "2D SDF-node" is licensed under GPLv3.0 by bennoH. 2026
+
+// To learn how to write nodes, see https://coollab-art.com/Tutorials/Writing%20Nodes/Intro
+
+INPUT float 'Petal Count'; /// Number of flower petals (try 5 for classic look)
+INPUT float 'Petal Size'; /// Size of the petals
+INPUT float 'Center Size'; /// Size of the center hole/indentation
+INPUT float 'Wave Amount'; /// Amount of wave distortion on edges
+INPUT float 'Wave Frequency'; /// Frequency of the edge waves results in the number of leaves
+INPUT Point2D 'Center'; /// Center position of the flower
+
+SignedDistance main(UV uv)
+{
+    // Center the coordinates
+    vec2 pos = uv - 'Center';
+    
+    // Convert to polar coordinates
+    float r = length(pos);
+    float theta = atan(pos.y, pos.x);
+    
+    // Create petal pattern using sin/cos
+    // The basic flower shape comes from sin(n*theta) modulation
+    float n = 'Petal Count';
+    
+    // Petal modulation - creates the main flower shape
+    // Using both sin³ and sin⁵ terms inspired by the original formula (w³/3 - w⁵/5)
+    float petal_mod = sin(n * theta);
+    float petal_shape = petal_mod * petal_mod * petal_mod / 3.0 
+                      - petal_mod * petal_mod * petal_mod * petal_mod * petal_mod / 5.0;
+    
+    // Scale the petal modulation
+    float base_radius = 'Petal Size' * (0.5 + 0.5 * petal_shape);
+    
+    // Add wave distortion to edges for organic look
+    float wave = sin(theta * 'Wave Frequency' + r * 10.0) * 'Wave Amount';
+    base_radius += wave * 0.1;
+    
+    // Create the flower SDF
+    float flower_dist = r - base_radius;
+    
+    // Add center hole/indentation
+    // This creates the characteristic "dip" in the center
+    float center_influence = smoothstep('Center Size', 'Center Size' * 2.0, r);
+    flower_dist = mix(flower_dist + 'Center Size' * 0.5, flower_dist, center_influence);
+    
+    return flower_dist;
+}
