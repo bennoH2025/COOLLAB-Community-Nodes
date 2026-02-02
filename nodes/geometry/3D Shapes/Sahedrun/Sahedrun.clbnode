@@ -1,0 +1,96 @@
+// Sahedron - A abstraction of a polyhedron with xxo triangular faces
+// To learn how to write nodes, see https://coollab-art.com/Tutorials/Writing%20Nodes/Intro
+
+INPUT float 'Radius';
+INPUT float 'Vertices Radius';
+INPUT float 'Edges Thickness';
+INPUT float 'Faces Roundness';
+INPUT float 'Faces Size';
+INPUT float 'Faces Sharpness';
+INPUT float 'Fix Artifacts';
+
+float icosahedronD2Planes(vec3 pos, vec3 p, vec3 pab, vec3 pbc, vec3 pca)
+{
+    // Distance to the 3 faces
+    pos -= p;
+    float d0 = dot(pos, pab);
+    float d1 = dot(pos, pbc);
+    float d2 = dot(pos, pca);
+    return max(max(d0, d1), d2);
+}
+
+float icosahedronD2Segments(vec3 pos, vec3 p, vec3 nc, float SRadius)
+{
+    pos -= p;
+    float dla = length_squared(pos - min(0., pos.x) * vec3(1., 0., 0.));
+    float dlb = length_squared(pos - min(0., pos.y) * vec3(0., 1., 0.));
+    float dlc = length_squared(pos - min(0., dot(pos, nc)) * nc);
+    return sqrt(min(min(dla, dlb), dlc)) - SRadius;
+}
+
+float icosahedronD2Vertices(vec3 pos, vec3 p, float VRadius)
+{
+    return length(pos - p) - VRadius;
+}
+
+SignedDistance main(vec3 pos)
+{
+    pos /= 'Radius';
+    
+    // Icosahedron specific parameters (20 triangular faces)
+    int kind = 3; // Triangle base
+    float cospin = cos(PI / float(kind));
+    float scospin = sqrt(0.75 - cospin * cospin);
+    
+    // Golden ratio for icosahedron proportions
+    float phi = (1.0 + sqrt(5.0)) * 0.5;
+    float invphi = 1.0 / phi;
+    
+    vec3 nc = vec3(-0.5, -cospin, scospin); // 3rd folding plane
+    vec3 pab = vec3(0., 0., 1.);
+    vec3 pbc = vec3(scospin, 0., 0.5);
+    vec3 pca = vec3(0., scospin, cospin);
+    
+    // Apply icosahedron-specific scaling using golden ratio
+    pbc *= invphi;
+    pca *= phi * 0.5;
+    
+    vec3 p = normalize(('Faces Roundness' * pab + 'Faces Size' * pbc + 'Faces Sharpness' * pca));
+    pbc = normalize(pbc);
+    pca = normalize(pca);
+    
+    // Icosahedron folding (20 faces require specific folding pattern)
+    for (int i = 0; i < 3; i++)
+    {
+        pos.xy = abs(pos.xy);
+        pos -= 2. * min(0., dot(pos, nc)) * nc;
+    }
+    
+    // Additional folding planes for icosahedron symmetry
+    // Using the icosahedron's characteristic normal vectors
+    pos = abs(pos);
+    
+    // First set of icosahedral folding planes
+    float t = dot(pos, normalize(vec3(phi, 1., 0.)));
+    pos -= 2. * min(0., t) * normalize(vec3(phi, 1., 0.));
+    
+    t = dot(pos, normalize(vec3(1., 0., phi)));
+    pos -= 2. * min(0., t) * normalize(vec3(1., 0., phi));
+    
+    t = dot(pos, normalize(vec3(0., phi, 1.)));
+    pos -= 2. * min(0., t) * normalize(vec3(0., phi, 1.));
+    
+    // Second set for complete icosahedral symmetry
+    t = dot(pos, normalize(vec3(invphi, phi, 1.)));
+    pos -= 2. * min(0., t) * normalize(vec3(invphi, phi, 1.));
+    
+    t = dot(pos, normalize(vec3(1., invphi, phi)));
+    pos -= 2. * min(0., t) * normalize(vec3(1., invphi, phi));
+    
+    float d = icosahedronD2Planes(pos, p, pab, pbc, pca);
+    d = min(d, icosahedronD2Segments(pos, p, nc, 'Edges Thickness'));
+    d = min(d, icosahedronD2Vertices(pos, p, 'Vertices Radius'));
+    
+    // Apply artifact fix
+    return mix(d, max(d, -abs(d) + 'Fix Artifacts'), step(0.0, 'Fix Artifacts')) * 'Radius';
+}
