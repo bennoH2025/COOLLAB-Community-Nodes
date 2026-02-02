@@ -1,0 +1,67 @@
+// Möbius Strip - A one-sided non-orientable surface
+//
+// Mathematical concept: A surface with only one side and one boundary
+// Created by twisting a strip and connecting the ends
+//
+// Idea and project coordination by bennoH.
+// Coding by claude.ai in the Sonnet-4.5 model of Anthropic PBC on a "KostenlosPlan" of bennoH.
+// This Coollab "3D SDF-node" is licensed under GPLv3.0 by bennoH. 2026
+
+// To learn how to write nodes, see https://coollab-art.com/Tutorials/Writing%20Nodes/Intro
+
+INPUT float 'Major Radius'; /// Radius of the central circle
+INPUT float 'Strip Width'; /// Width of the strip
+INPUT float 'Strip Thickness'; /// Thickness of the strip
+INPUT float 'Twist Amount'; /// Amount of twist (0.5 = classic Möbius, 1.0 = full twist)
+INPUT float 'Rotation Speed'; /// Speed of rotation around Z axis (0 = no rotation)
+
+// Rotate a 2D point
+vec2 rotate2D(vec2 p, float angle)
+{
+    float c = cos(angle);
+    float s = sin(angle);
+    return vec2(c * p.x - s * p.y, s * p.x + c * p.y);
+}
+
+SignedDistance main(vec3 pos)
+{
+    // Apply rotation around Z axis based on time
+    // Use modulo to keep angle in 0 to TAU range for precision
+    float rotation_angle = mod(_time * 'Rotation Speed', TAU);
+    vec3 rotated_pos = pos;
+    
+    if ('Rotation Speed' != 0.0) {
+        float c = cos(rotation_angle);
+        float s = sin(rotation_angle);
+        rotated_pos.xy = vec2(
+            c * pos.x - s * pos.y,
+            s * pos.x + c * pos.y
+        );
+    }
+    
+    // Get angle around the major circle
+    float angle = atan(rotated_pos.y, rotated_pos.x);
+    
+    // Distance from center axis in XY plane
+    float radius_xy = length(rotated_pos.xy);
+    
+    // Distance from major circle
+    float dist_from_circle = radius_xy - 'Major Radius';
+    
+    // Calculate twist angle based on position around the circle
+    // 0.5 twist = PI radians = half twist = Möbius strip
+    float twist_angle = angle * 'Twist Amount';
+    
+    // Create local coordinate system on the strip
+    // Rotate the offset and height by the twist angle
+    vec2 local = rotate2D(vec2(dist_from_circle, rotated_pos.z), twist_angle);
+    
+    // Distance to the strip rectangle in local coordinates
+    vec2 strip_size = vec2('Strip Width', 'Strip Thickness');
+    vec2 d = abs(local) - strip_size;
+    
+    // SDF for rectangle (2D box)
+    float dist = length(max(d, 0.0)) + min(max(d.x, d.y), 0.0);
+    
+    return dist;
+}
