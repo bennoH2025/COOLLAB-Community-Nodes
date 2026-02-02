@@ -541,11 +541,11 @@ Making professional colorization accessible to everyone in Coollab!
 
 ## Übersicht
 
-**Colorize Easy** ist ein einfaches aber kraftvolles Kolorisierungs-Tool, das es Ihnen ermöglicht, Farbe auf Bilder oder Formen anzuwenden während Struktur und Detail erhalten bleiben. Mit zwei unterschiedlichen Modi - Tint Mode und Blend Mode - gibt Ihnen dieser Node flexible Kontrolle darüber, wie Farbe angewendet wird, und macht ihn perfekt für alles von einfachem Tinting bis zu komplexen kreativen Farbeffekten.
+**Colorize Easy** ist ein einfaches aber wertvolles Einfärbungs-Tool, das es Ihnen ermöglicht, Farbe auf Bilder oder Formen anzuwenden während Struktur und Detail erhalten bleiben. Mit zwei unterschiedlichen Modi - Tint Mode und Blend Mode - gibt Ihnen dieser Node flexible Kontrolle darüber, wie Farbe angewendet wird, und macht ihn perfekt für alles von einfachem Tinting bis zu komplexen kreativen Farbeffekten.
 
 ## 🎯 Inspiration & Design-Philosophie
 
-Entwickelt für zugängliche, intuitive Kolorisierung:
+Entwickelt für rasches und einfaches wie auch intuitives Einfärben/Colorieren:
 
 - **Zwei Modi, ein Node**: Wechseln zwischen Tinting- und Blending-Ansätzen
 - **Struktur erhalten**: Erhält Detail und Form Ihres Inputs
@@ -553,12 +553,12 @@ Entwickelt für zugängliche, intuitive Kolorisierung:
 - **Flexible Anwendung**: Funktioniert mit Bildern, Formen, Generatoren und Effekten
 - **Kreative Freiheit**: Von subtilen Tönungen bis zu kühnen Farbüberlagerungen
 
-Dieser Node macht Kolorisierung für jeden zugänglich während er professionelle Qualität für sowohl korrigierende als auch kreative Arbeit bietet.
+Dieser Node macht Colorieren für jeden zugänglich während er professionelle Qualität für sowohl korrigierende als auch kreative Arbeit bietet.
 
 ## ⭐ Hauptmerkmale
 
 ### 🎨 Dual-Modus-Operation
-Zwei unterschiedliche Kolorisierungs-Ansätze:
+Zwei unterschiedliche Färbungsansätze:
 - **Tint Mode**: Luminanz-basiertes Tinting (Graustufen → gefärbt)
 - **Blend Mode**: Multiply-Blending (farbiges Overlay)
 - Modi wechseln mit einzelner Checkbox
