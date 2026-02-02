@@ -1,0 +1,1854 @@
+{
+    "Presets": {
+        "Underlying container": [
+            {
+                "first": "0e4e93b4-d703-4d7c-aec5-a603404074ce",
+                "second": {
+                    "Name": "Red Tint",
+                    "Values": [
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "R",
+                                "Value": 1.0,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "G",
+                                "Value": 0.0,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "B",
+                                "Value": 0.0,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "A",
+                                "Value": 1.0,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": true,
+                                        "Min": 0.0,
+                                        "Has max bound": true,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 0,
+                            "data": {
+                                "Name": "Use Tint Mode",
+                                "Value": true,
+                                "Metadata": {}
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "first": "8e146712-20e3-45f0-b7ee-5ce69c16db60",
+                "second": {
+                    "Name": "Yellow Tint  (Cornstyle)",
+                    "Values": [
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "R",
+                                "Value": 1.309999942779541,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "G",
+                                "Value": 1.0,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "B",
+                                "Value": 0.0,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "A",
+                                "Value": 1.0,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": true,
+                                        "Min": 0.0,
+                                        "Has max bound": true,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 0,
+                            "data": {
+                                "Name": "Use Tint Mode",
+                                "Value": true,
+                                "Metadata": {}
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "first": "7ec1b3c4-7bee-40cf-8fde-f8c886a7ee42",
+                "second": {
+                    "Name": "Green Tint",
+                    "Values": [
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "R",
+                                "Value": 0.0,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "G",
+                                "Value": 1.0,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "B",
+                                "Value": 0.0,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "A",
+                                "Value": 1.0,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": true,
+                                        "Min": 0.0,
+                                        "Has max bound": true,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 0,
+                            "data": {
+                                "Name": "Use Tint Mode",
+                                "Value": true,
+                                "Metadata": {}
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "first": "a84754e3-2922-48ee-aea8-75a38aad29c2",
+                "second": {
+                    "Name": "Blue Tint",
+                    "Values": [
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "R",
+                                "Value": 0.0,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "G",
+                                "Value": 0.0,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "B",
+                                "Value": 1.0,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "A",
+                                "Value": 1.0,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": true,
+                                        "Min": 0.0,
+                                        "Has max bound": true,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 0,
+                            "data": {
+                                "Name": "Use Tint Mode",
+                                "Value": true,
+                                "Metadata": {}
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "first": "47097e4b-fa92-4b18-a57f-164a5c192c9c",
+                "second": {
+                    "Name": "Lilac Tint",
+                    "Values": [
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "R",
+                                "Value": 0.6399999856948853,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "G",
+                                "Value": 0.11999999731779099,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "B",
+                                "Value": 1.0,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "A",
+                                "Value": 1.0,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": true,
+                                        "Min": 0.0,
+                                        "Has max bound": true,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 0,
+                            "data": {
+                                "Name": "Use Tint Mode",
+                                "Value": true,
+                                "Metadata": {}
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "first": "a1008eed-4e68-4d74-a78d-5c93ec026097",
+                "second": {
+                    "Name": "Rosa Tint",
+                    "Values": [
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "R",
+                                "Value": 3.169999837875366,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "G",
+                                "Value": 0.3700000047683716,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "B",
+                                "Value": 1.0399999618530274,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "A",
+                                "Value": 1.0,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": true,
+                                        "Min": 0.0,
+                                        "Has max bound": true,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 0,
+                            "data": {
+                                "Name": "Use Tint Mode",
+                                "Value": true,
+                                "Metadata": {}
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "first": "cb01c27d-95eb-44d2-92b1-51a676aa1a63",
+                "second": {
+                    "Name": "Orange Tint",
+                    "Values": [
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "R",
+                                "Value": 3.799999952316284,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "G",
+                                "Value": 0.4300000071525574,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "B",
+                                "Value": 0.0,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "A",
+                                "Value": 1.0,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": true,
+                                        "Min": 0.0,
+                                        "Has max bound": true,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 0,
+                            "data": {
+                                "Name": "Use Tint Mode",
+                                "Value": true,
+                                "Metadata": {}
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "first": "1f174974-8e56-4997-b560-05e28944386d",
+                "second": {
+                    "Name": "Red GlowUp",
+                    "Values": [
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "R",
+                                "Value": 1.659999966621399,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "G",
+                                "Value": 0.14000001549720765,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "B",
+                                "Value": 0.009999999776482582,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "A",
+                                "Value": 1.0,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": true,
+                                        "Min": 0.0,
+                                        "Has max bound": true,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 0,
+                            "data": {
+                                "Name": "Use Tint Mode",
+                                "Value": true,
+                                "Metadata": {}
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "first": "e10b52e6-f2bf-4836-8119-0794330576a3",
+                "second": {
+                    "Name": "CianSkyes",
+                    "Values": [
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "R",
+                                "Value": 0.21000002324581147,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "G",
+                                "Value": 0.7099999785423279,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "B",
+                                "Value": 2.809999942779541,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "A",
+                                "Value": 1.0,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": true,
+                                        "Min": 0.0,
+                                        "Has max bound": true,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 0,
+                            "data": {
+                                "Name": "Use Tint Mode",
+                                "Value": true,
+                                "Metadata": {}
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "first": "5de3a932-ef79-449d-ba87-037b197fc593",
+                "second": {
+                    "Name": "TurkyGreenwitch",
+                    "Values": [
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "R",
+                                "Value": 0.09000000357627869,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "G",
+                                "Value": 0.8899999260902405,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "B",
+                                "Value": 0.8799999952316284,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "A",
+                                "Value": 1.0,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": true,
+                                        "Min": 0.0,
+                                        "Has max bound": true,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 0,
+                            "data": {
+                                "Name": "Use Tint Mode",
+                                "Value": true,
+                                "Metadata": {}
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "first": "b141a159-2f2f-4d33-b3c6-e3b8503cbf6e",
+                "second": {
+                    "Name": "Glow to Rosees",
+                    "Values": [
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "R",
+                                "Value": 2.109999895095825,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "G",
+                                "Value": 0.7599999904632568,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "B",
+                                "Value": 0.5900000333786011,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "A",
+                                "Value": 1.0,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": true,
+                                        "Min": 0.0,
+                                        "Has max bound": true,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 0,
+                            "data": {
+                                "Name": "Use Tint Mode",
+                                "Value": false,
+                                "Metadata": {}
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "first": "6a1f9692-d8ff-4204-bff2-bd5899456d47",
+                "second": {
+                    "Name": "Glow to Orange",
+                    "Values": [
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "R",
+                                "Value": 2.109999895095825,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "G",
+                                "Value": 0.7599999904632568,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "B",
+                                "Value": 0.0,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "A",
+                                "Value": 1.0,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": true,
+                                        "Min": 0.0,
+                                        "Has max bound": true,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 0,
+                            "data": {
+                                "Name": "Use Tint Mode",
+                                "Value": false,
+                                "Metadata": {}
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "first": "16c6b3d6-ef01-4995-b63e-3d59c54e447c",
+                "second": {
+                    "Name": "Flame over",
+                    "Values": [
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "R",
+                                "Value": 3.609999895095825,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "G",
+                                "Value": 1.6699999570846558,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "B",
+                                "Value": 0.0,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "A",
+                                "Value": 1.0,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": true,
+                                        "Min": 0.0,
+                                        "Has max bound": true,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 0,
+                            "data": {
+                                "Name": "Use Tint Mode",
+                                "Value": false,
+                                "Metadata": {}
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "first": "3e7fed2b-78bc-4a84-99b6-3da52e9ef35c",
+                "second": {
+                    "Name": "Sepia    (Old Photo)",
+                    "Values": [
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "R",
+                                "Value": 0.45500001311302187,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "G",
+                                "Value": 0.3050000071525574,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "B",
+                                "Value": 0.1860000044107437,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "A",
+                                "Value": 1.0,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": true,
+                                        "Min": 0.0,
+                                        "Has max bound": true,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 0,
+                            "data": {
+                                "Name": "Use Tint Mode",
+                                "Value": true,
+                                "Metadata": {}
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "first": "a3c84d58-19e5-48da-8029-cbc6740fe26e",
+                "second": {
+                    "Name": "GreenHornet",
+                    "Values": [
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "R",
+                                "Value": 1.309999942779541,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "G",
+                                "Value": 1.0,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "B",
+                                "Value": 0.0,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "A",
+                                "Value": 1.0,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": true,
+                                        "Min": 0.0,
+                                        "Has max bound": true,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 0,
+                            "data": {
+                                "Name": "Use Tint Mode",
+                                "Value": false,
+                                "Metadata": {}
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "first": "cdd4865c-5c06-4905-acf2-597e071bdd44",
+                "second": {
+                    "Name": "Orangeria",
+                    "Values": [
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "R",
+                                "Value": 1.350000023841858,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "G",
+                                "Value": 0.3499999940395355,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "B",
+                                "Value": 0.10999998450279236,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "A",
+                                "Value": 1.0,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": true,
+                                        "Min": 0.0,
+                                        "Has max bound": true,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 0,
+                            "data": {
+                                "Name": "Use Tint Mode",
+                                "Value": false,
+                                "Metadata": {}
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "first": "4dc0a99a-256d-4463-8089-fbc83f2fac3e",
+                "second": {
+                    "Name": "UV-Geck",
+                    "Values": [
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "R",
+                                "Value": 1.2000000476837159,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "G",
+                                "Value": 0.1899999976158142,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "B",
+                                "Value": 0.47999998927116396,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "A",
+                                "Value": 1.0,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": true,
+                                        "Min": 0.0,
+                                        "Has max bound": true,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 0,
+                            "data": {
+                                "Name": "Use Tint Mode",
+                                "Value": false,
+                                "Metadata": {}
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "first": "e0c35bc4-effc-463b-b312-8730f9d0bd42",
+                "second": {
+                    "Name": "softly Yellero",
+                    "Values": [
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "R",
+                                "Value": 1.4399999380111695,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "G",
+                                "Value": 0.9300000071525574,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "B",
+                                "Value": 0.42000001668930056,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "A",
+                                "Value": 1.0,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": true,
+                                        "Min": 0.0,
+                                        "Has max bound": true,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 0,
+                            "data": {
+                                "Name": "Use Tint Mode",
+                                "Value": false,
+                                "Metadata": {}
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "first": "693b87fe-9048-4167-bb1e-fba66351d566",
+                "second": {
+                    "Name": "Ocer-Koker",
+                    "Values": [
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "R",
+                                "Value": 1.3600000143051148,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "G",
+                                "Value": 0.8600000143051148,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "B",
+                                "Value": 0.17000001668930055,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "A",
+                                "Value": 1.0,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": true,
+                                        "Min": 0.0,
+                                        "Has max bound": true,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 0,
+                            "data": {
+                                "Name": "Use Tint Mode",
+                                "Value": false,
+                                "Metadata": {}
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "first": "61c2b21e-e1f8-4837-8a86-1f9345079bc5",
+                "second": {
+                    "Name": "Ocer tintet",
+                    "Values": [
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "R",
+                                "Value": 1.2899999618530274,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "G",
+                                "Value": 0.7700000405311585,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "B",
+                                "Value": 0.45000001788139346,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "A",
+                                "Value": 1.0,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": true,
+                                        "Min": 0.0,
+                                        "Has max bound": true,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 0,
+                            "data": {
+                                "Name": "Use Tint Mode",
+                                "Value": true,
+                                "Metadata": {}
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "first": "567efb29-4a69-4684-8bbc-1c1e892f5487",
+                "second": {
+                    "Name": "Ocer  UnTint",
+                    "Values": [
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "R",
+                                "Value": 1.2899999618530274,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "G",
+                                "Value": 0.7700000405311585,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "B",
+                                "Value": 0.45000001788139346,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "A",
+                                "Value": 1.0,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": true,
+                                        "Min": 0.0,
+                                        "Has max bound": true,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 0,
+                            "data": {
+                                "Name": "Use Tint Mode",
+                                "Value": false,
+                                "Metadata": {}
+                            }
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}
