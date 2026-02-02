@@ -170,6 +170,2046 @@
                         }
                     ]
                 }
+            },
+            {
+                "first": "d85c92ae-63f8-4670-8d9d-152fc8dd2641",
+                "second": {
+                    "Name": "classic film look   --  a litle bit warm and craky",
+                    "Values": [
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "--- Highlights ---",
+                                "Value": 0.0,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "Highlights Intensity",
+                                "Value": 0.0,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "Highlights Hue Shift",
+                                "Value": 0.04600000008940697,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 10.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "--- Mids ---",
+                                "Value": 0.0,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "Mids Intensity",
+                                "Value": -0.03999999910593033,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "Mids Hue Shift",
+                                "Value": 0.012000000104308129,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "--- Shadows ---",
+                                "Value": 0.0,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "Shadows Intensity",
+                                "Value": 0.0,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "Shadows Hue Shift",
+                                "Value": 0.06700000166893006,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "first": "584a00f8-b328-4b46-8780-ac2efc82cfae",
+                "second": {
+                    "Name": "shadow detail recovery  --  blocked-up & dark shadows ",
+                    "Values": [
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "--- Highlights ---",
+                                "Value": 0.0,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "Highlights Intensity",
+                                "Value": 0.0,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "Highlights Hue Shift",
+                                "Value": 0.009999999776482582,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 10.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "--- Mids ---",
+                                "Value": 0.0,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "Mids Intensity",
+                                "Value": -0.05000000074505806,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "Mids Hue Shift",
+                                "Value": 0.006000000052154064,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "--- Shadows ---",
+                                "Value": 0.0,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "Shadows Intensity",
+                                "Value": 0.20000000298023225,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "Shadows Hue Shift",
+                                "Value": 0.004999999888241291,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "first": "52450dac-1b32-46f5-8921-1e4e47ddf624",
+                "second": {
+                    "Name": "highlight detail protection  --  overexposed highlights losing detail",
+                    "Values": [
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "--- Highlights ---",
+                                "Value": 0.0,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "Highlights Intensity",
+                                "Value": -0.15000000596046449,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "Highlights Hue Shift",
+                                "Value": 0.009999999776482582,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 10.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "--- Mids ---",
+                                "Value": 0.0,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "Mids Intensity",
+                                "Value": 0.05000000074505806,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "Mids Hue Shift",
+                                "Value": 0.006000000052154064,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "--- Shadows ---",
+                                "Value": 0.0,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "Shadows Intensity",
+                                "Value": 0.0010000000474974514,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "Shadows Hue Shift",
+                                "Value": 0.004999999888241291,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "first": "e501a56b-bae3-41c9-9cee-1a60f134c5c1",
+                "second": {
+                    "Name": "Teal & Orange Look  (Blockbuster) - warmet & craky",
+                    "Values": [
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "--- Highlights ---",
+                                "Value": 0.0,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "Highlights Intensity",
+                                "Value": 0.0,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "Highlights Hue Shift",
+                                "Value": 0.5199999809265137,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 10.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "--- Mids ---",
+                                "Value": 0.0,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "Mids Intensity",
+                                "Value": -0.06999999284744263,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "Mids Hue Shift",
+                                "Value": 0.026000000536441804,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "--- Shadows ---",
+                                "Value": 0.0,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "Shadows Intensity",
+                                "Value": -0.009999997913837433,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "Shadows Hue Shift",
+                                "Value": 0.05000000074505806,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "first": "9d5c260b-6292-4959-9dee-9b8cb4290a47",
+                "second": {
+                    "Name": "Golden Hour Effect  - or somthing like ... .",
+                    "Values": [
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "--- Highlights ---",
+                                "Value": 0.0,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "Highlights Intensity",
+                                "Value": 0.10000000149011612,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "Highlights Hue Shift",
+                                "Value": 0.16999998688697816,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 10.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "--- Mids ---",
+                                "Value": 0.0,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "Mids Intensity",
+                                "Value": 0.08999999612569809,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "Mids Hue Shift",
+                                "Value": 0.026000000536441804,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "--- Shadows ---",
+                                "Value": 0.0,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "Shadows Intensity",
+                                "Value": -0.009999997913837433,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "Shadows Hue Shift",
+                                "Value": 0.05000000074505806,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "first": "c87b8f74-2984-4be8-b1a8-89b5760b0ad3",
+                "second": {
+                    "Name": "Cold craky Morning  -- or somthing like ... .",
+                    "Values": [
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "--- Highlights ---",
+                                "Value": 0.0,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "Highlights Intensity",
+                                "Value": 0.12000000476837158,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "Highlights Hue Shift",
+                                "Value": -0.20000000298023225,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 10.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "--- Mids ---",
+                                "Value": 0.0,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "Mids Intensity",
+                                "Value": -0.10999999940395355,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "Mids Hue Shift",
+                                "Value": 0.05600002035498619,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "--- Shadows ---",
+                                "Value": 0.0,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "Shadows Intensity",
+                                "Value": -0.004999999888241291,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "Shadows Hue Shift",
+                                "Value": 0.059999965131282809,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "first": "ab62dc45-5e9a-4e98-977e-931edbb9d822",
+                "second": {
+                    "Name": "Sepialook  (to use with \"Sepia    (Old Photo)\" of the \"Colorice easy\"-node",
+                    "Values": [
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "--- Highlights ---",
+                                "Value": 0.0,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "Highlights Intensity",
+                                "Value": 0.019999999552965165,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "Highlights Hue Shift",
+                                "Value": 0.10999999940395355,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 10.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "--- Mids ---",
+                                "Value": 0.0,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "Mids Intensity",
+                                "Value": 0.10999999195337296,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "Mids Hue Shift",
+                                "Value": 0.04999999701976776,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "--- Shadows ---",
+                                "Value": 0.0,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "Shadows Intensity",
+                                "Value": 0.07999999821186066,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "Shadows Hue Shift",
+                                "Value": 0.05999996140599251,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "first": "10350a59-7c31-4642-82c1-9c470cdb4a8c",
+                "second": {
+                    "Name": "Selective Midtone Enhancement  (exposer play)",
+                    "Values": [
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "--- Highlights ---",
+                                "Value": 0.0,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "Highlights Intensity",
+                                "Value": 0.0,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "Highlights Hue Shift",
+                                "Value": 0.0,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 10.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "--- Mids ---",
+                                "Value": 0.0,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "Mids Intensity",
+                                "Value": 0.17999999225139619,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "Mids Hue Shift",
+                                "Value": 0.0,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "--- Shadows ---",
+                                "Value": 0.0,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "Shadows Intensity",
+                                "Value": 0.0,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "Shadows Hue Shift",
+                                "Value": 0.0,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "first": "bcf265f2-ce38-4b08-879e-6dc6edef55e6",
+                "second": {
+                    "Name": "Film Print FadeOut Emulation",
+                    "Values": [
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "--- Highlights ---",
+                                "Value": 0.0,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "Highlights Intensity",
+                                "Value": -0.04999999701976776,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "Highlights Hue Shift",
+                                "Value": 0.07999999821186066,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 10.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "--- Mids ---",
+                                "Value": 0.0,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "Mids Intensity",
+                                "Value": 0.0,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "Mids Hue Shift",
+                                "Value": 0.05999999865889549,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "--- Shadows ---",
+                                "Value": 0.0,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "Shadows Intensity",
+                                "Value": 0.14999999105930329,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "Shadows Hue Shift",
+                                "Value": 0.04999999701976776,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "first": "f18b33ec-0fc3-49eb-8a04-e99ec6ca934f",
+                "second": {
+                    "Name": "Kodak Portra (Warm, Portrait)",
+                    "Values": [
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "--- Highlights ---",
+                                "Value": 0.0,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "Highlights Intensity",
+                                "Value": 0.05000000074505806,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "Highlights Hue Shift",
+                                "Value": 0.05999999865889549,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 10.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "--- Mids ---",
+                                "Value": 0.0,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "Mids Intensity",
+                                "Value": 0.019999999552965165,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "Mids Hue Shift",
+                                "Value": 0.03999999910593033,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "--- Shadows ---",
+                                "Value": 0.0,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "Shadows Intensity",
+                                "Value": -0.05000000074505806,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "Shadows Hue Shift",
+                                "Value": 0.05000000074505806,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "first": "c3f0dcac-29bf-4a42-9a4f-42385e9b8bad",
+                "second": {
+                    "Name": "Fuji Velvia (Vivid Landscape)  --  Combine with high saturation (1.4)",
+                    "Values": [
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "--- Highlights ---",
+                                "Value": 0.0,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "Highlights Intensity",
+                                "Value": 0.05000000074505806,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "Highlights Hue Shift",
+                                "Value": 0.0,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 10.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "--- Mids ---",
+                                "Value": 0.0,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "Mids Intensity",
+                                "Value": 0.0,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "Mids Hue Shift",
+                                "Value": 0.0,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "--- Shadows ---",
+                                "Value": 0.0,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "Shadows Intensity",
+                                "Value": -0.10000000149011612,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "Shadows Hue Shift",
+                                "Value": 0.0,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "first": "fc1e11c4-53be-449b-8ca7-89cc304b90f9",
+                "second": {
+                    "Name": "Cinestill 800T (Tungsten, Night)",
+                    "Values": [
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "--- Highlights ---",
+                                "Value": 0.0,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "Highlights Intensity",
+                                "Value": 0.10000000149011612,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "Highlights Hue Shift",
+                                "Value": 0.07999999821186066,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 10.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "--- Mids ---",
+                                "Value": 0.0,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "Mids Intensity",
+                                "Value": 0.0,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "Mids Hue Shift",
+                                "Value": 0.5199999809265137,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "--- Shadows ---",
+                                "Value": 0.0,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "Shadows Intensity",
+                                "Value": 0.0,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "Shadows Hue Shift",
+                                "Value": 0.550000011920929,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                }
             }
         ]
     }
