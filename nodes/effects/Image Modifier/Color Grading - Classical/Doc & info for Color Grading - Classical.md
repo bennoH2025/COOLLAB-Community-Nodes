@@ -562,7 +562,7 @@ This is the same tool used by professional colorists, now in Coollab!
 
 ---
 
-[English](#color-grading---tonal---documentation) | [Deutsch](#color-grading---tonal---dokumentation)
+[English](#color-grading---tonal---documentation) | [Deutsch](#color-grading---Classical---dokumentation)
 
 ---
 
