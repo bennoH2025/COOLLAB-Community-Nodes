@@ -1,0 +1,42 @@
+// Colorize Node with mode selection - Tinting or Blending
+//
+// Idea and project coordination by bennoH.
+// Coding by claude.ai in the Sonnet-4 model of Anthropic PBC on a "KostenlosPlan" of bennoH.
+// This Coollab node is licensed under GPLv3.0 by bennoH. 2026
+
+// To learn how to write nodes, see https://coollab-art.com/Tutorials/Writing%20Nodes/Intro
+
+INPUT UV->sRGB_StraightA 'Input'; /// The image/shape to colorize
+INPUT float 'R'; /// Red channel (0-1)
+INPUT float 'G'; /// Green channel (0-1)
+INPUT float 'B'; /// Blue channel (0-1)
+INPUT float 'A'; /// Alpha channel (0-1)
+INPUT bool 'Use Tint Mode'; /// True = Tint by Color (luminance-based), False = Blend with Color (multiply)
+
+sRGB_StraightA main(UV uv)
+{
+    // Get the input color/alpha
+    vec4 input_color = 'Input'(uv);
+    
+    // Create the desired color
+    vec4 target_color = vec4('R', 'G', 'B', 'A');
+    
+    vec3 colorized;
+    
+    if ('Use Tint Mode')
+    {
+        // MODE 1: Tint by Color (luminance-based)
+        // Converts to grayscale then applies color - good for B&W inputs
+        float luminance = input_color.r * 0.2126 + input_color.g * 0.7152 + input_color.b * 0.0722;
+        colorized = vec3(luminance) * target_color.rgb;
+    }
+    else
+    {
+        // MODE 2: Blend with Color (multiply)
+        // Multiplies colors - keeps more color info, like a colored overlay
+        colorized = input_color.rgb * target_color.rgb;
+    }
+    
+    // Preserve the input's alpha and apply target alpha
+    return vec4(colorized, input_color.a * target_color.a);
+}
