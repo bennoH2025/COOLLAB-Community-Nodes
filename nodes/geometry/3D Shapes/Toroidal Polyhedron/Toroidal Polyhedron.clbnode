@@ -1,0 +1,104 @@
+// Inspired:
+// https://www.pngwing.com/de/free-png-yxdzl    the inspiring image for me to this node-project
+// https://en.wikipedia.org/wiki/Toroidal_polyhedron  
+// https://www.researchgate.net/profile/Ali-Mahdavi-Amiri/publication/257931715/figure/fig6/AS:668762713899011@1536456864224/A-cube-tetrahedron-octahedron-and-a-toroidal-polyhedron-and-their-2D-domain-at-the.png  used just as a impresion and extending the info of wikipedia
+// https://www.researchgate.net/figure/A-cube-tetrahedron-octahedron-and-a-toroidal-polyhedron-and-their-2D-domain-at-the_fig6_257931715  used just as a impresion and extending the info of wikipedia
+//
+// This Node creates a Toroidal polyhedron 3D-Shape by use of a SDF (https://en.wikipedia.org/wiki/Signed_distance_function)
+// Idea and project coordination by bennoH.
+// Coding by claude.ai in the Sonnet-4.5 model of Anthropic PBC on a "KostenlosPlan" of bennoH.
+// This Coollab 3D-Shape-node by his name "Toroidal Polyhedron V-05" is lizensed under GPLv3.0 by bennoH. 2025
+
+// To learn how to write nodes, see https://coollab-art.com/Tutorials/Writing%20Nodes/Intro
+
+
+
+
+INPUT float 'Major Radius'; /// Distance from center to tube center
+INPUT float 'Minor Radius'; /// Radius of the tube cross-section
+INPUT int 'Major Divisions'; /// Number of divisions around the major circumference
+INPUT int 'Minor Divisions'; /// Number of divisions around the tube
+INPUT vec3 'Position'; /// Center position of the polyhedron
+
+// Function to generate a point on the torus surface given parameters
+vec3 torusPoint(float u, float v, float majorR, float minorR) {
+    float majorAngle = u * TAU;
+    float minorAngle = v * TAU;
+    
+    vec3 center = vec3(cos(majorAngle) * majorR, 0.0, sin(majorAngle) * majorR);
+    vec3 normal = vec3(cos(majorAngle), 0.0, sin(majorAngle));
+    vec3 binormal = vec3(0.0, 1.0, 0.0);
+    vec3 tangent = cross(normal, binormal);
+    
+    return center + (cos(minorAngle) * normal + sin(minorAngle) * binormal) * minorR;
+}
+
+// Distance to a flat quad (rectangle) defined by 4 vertices
+float sdQuad(vec3 p, vec3 v0, vec3 v1, vec3 v2, vec3 v3) {
+    // Calculate the plane normal and center
+    vec3 center = (v0 + v1 + v2 + v3) * 0.25;
+    vec3 edge1 = v1 - v0;
+    vec3 edge2 = v3 - v0;
+    vec3 normal = normalize(cross(edge1, edge2));
+    
+    // Project point onto the quad's plane
+    float planeDist = dot(p - center, normal);
+    vec3 projected = p - normal * planeDist;
+    
+    // Check if projected point is inside the rectangular bounds
+    // Use local 2D coordinates on the quad
+    vec3 u = normalize(edge1);
+    vec3 v = normalize(cross(normal, u));
+    
+    vec3 localPos = projected - v0;
+    float uCoord = dot(localPos, u);
+    float vCoord = dot(localPos, v);
+    
+    float uLength = length(edge1);
+    float vLength = dot(edge2, v);
+    
+    // Distance to rectangle bounds
+    float uDist = max(0.0, max(-uCoord, uCoord - uLength));
+    float vDist = max(0.0, max(-vCoord, vCoord - vLength));
+    float edgeDist = length(vec2(uDist, vDist));
+    
+    // If inside the rectangle bounds, distance is just plane distance
+    if (uCoord >= 0.0 && uCoord <= uLength && vCoord >= 0.0 && vCoord <= vLength) {
+        return abs(planeDist);
+    } else {
+        // Outside bounds: distance to closest edge/corner
+        return sqrt(planeDist * planeDist + edgeDist * edgeDist);
+    }
+}
+
+SignedDistance main(vec3 pos) {
+    vec3 p = pos - 'Position';
+    
+    float minDist = 1e6;
+    
+    // Generate the grid of quads that form the toroidal polyhedron
+    int majorDivs = max(3, 'Major Divisions');
+    int minorDivs = max(3, 'Minor Divisions');
+    
+    for (int i = 0; i < majorDivs && i < 32; i++) {
+        for (int j = 0; j < minorDivs && j < 32; j++) {
+            // Current grid position
+            float u0 = float(i) / float(majorDivs);
+            float v0 = float(j) / float(minorDivs);
+            float u1 = float(i + 1) / float(majorDivs);
+            float v1 = float(j + 1) / float(minorDivs);
+            
+            // Generate the 4 vertices of this quad
+            vec3 p00 = torusPoint(u0, v0, 'Major Radius', 'Minor Radius');
+            vec3 p10 = torusPoint(u1, v0, 'Major Radius', 'Minor Radius');
+            vec3 p11 = torusPoint(u1, v1, 'Major Radius', 'Minor Radius');
+            vec3 p01 = torusPoint(u0, v1, 'Major Radius', 'Minor Radius');
+            
+            // Calculate distance to this quad
+            float quadDist = sdQuad(p, p00, p10, p11, p01);
+            minDist = min(minDist, quadDist);
+        }
+    }
+    
+    return minDist;
+}
