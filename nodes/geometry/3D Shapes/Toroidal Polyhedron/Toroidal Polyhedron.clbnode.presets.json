@@ -1,0 +1,1128 @@
+{
+    "Presets": {
+        "Underlying container": [
+            {
+                "first": "6b4c0d49-a7dc-4b12-85da-6151897558a1",
+                "second": {
+                    "Name": "Ular",
+                    "Values": [
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "Major Radius",
+                                "Value": 0.6299999952316284,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "Minor Radius",
+                                "Value": 0.5199999809265137,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 1,
+                            "data": {
+                                "Name": "Major Divisions",
+                                "Value": 0,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0,
+                                        "Has max bound": false,
+                                        "Max": 12,
+                                        "Drag speed": 0.019999999552965165,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 1,
+                            "data": {
+                                "Name": "Minor Divisions",
+                                "Value": 5,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0,
+                                        "Has max bound": false,
+                                        "Max": 12,
+                                        "Drag speed": 0.019999999552965165,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 5,
+                            "data": {
+                                "Name": "Position",
+                                "Value": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0
+                                },
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "first": "7879fb66-7fe6-41c2-8423-449f768bc3cf",
+                "second": {
+                    "Name": "Jormiko",
+                    "Values": [
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "Major Radius",
+                                "Value": 0.20999997854232789,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "Minor Radius",
+                                "Value": 1.0,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 1,
+                            "data": {
+                                "Name": "Major Divisions",
+                                "Value": 7,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0,
+                                        "Has max bound": false,
+                                        "Max": 12,
+                                        "Drag speed": 0.019999999552965165,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 1,
+                            "data": {
+                                "Name": "Minor Divisions",
+                                "Value": 1,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0,
+                                        "Has max bound": false,
+                                        "Max": 12,
+                                        "Drag speed": 0.019999999552965165,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 5,
+                            "data": {
+                                "Name": "Position",
+                                "Value": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0
+                                },
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "first": "4cd17f32-c9ef-47e4-92dd-4b0d9765b0e4",
+                "second": {
+                    "Name": "CrashBox-ED",
+                    "Values": [
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "Major Radius",
+                                "Value": -0.3500000238418579,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "Minor Radius",
+                                "Value": 1.090000033378601,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 1,
+                            "data": {
+                                "Name": "Major Divisions",
+                                "Value": 3,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0,
+                                        "Has max bound": false,
+                                        "Max": 12,
+                                        "Drag speed": 0.019999999552965165,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 1,
+                            "data": {
+                                "Name": "Minor Divisions",
+                                "Value": 6,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0,
+                                        "Has max bound": false,
+                                        "Max": 12,
+                                        "Drag speed": 0.019999999552965165,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 5,
+                            "data": {
+                                "Name": "Position",
+                                "Value": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0
+                                },
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "first": "0bd35f24-a216-462c-aac2-7b18a59bc0d8",
+                "second": {
+                    "Name": "Space outer sides",
+                    "Values": [
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "Major Radius",
+                                "Value": -0.3500000238418579,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "Minor Radius",
+                                "Value": 1.090000033378601,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 1,
+                            "data": {
+                                "Name": "Major Divisions",
+                                "Value": 5,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0,
+                                        "Has max bound": false,
+                                        "Max": 12,
+                                        "Drag speed": 0.019999999552965165,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 1,
+                            "data": {
+                                "Name": "Minor Divisions",
+                                "Value": 8,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0,
+                                        "Has max bound": false,
+                                        "Max": 12,
+                                        "Drag speed": 0.019999999552965165,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 5,
+                            "data": {
+                                "Name": "Position",
+                                "Value": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0
+                                },
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "first": "8726d196-3e35-4822-802a-f12b3fa33582",
+                "second": {
+                    "Name": "Compaction",
+                    "Values": [
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "Major Radius",
+                                "Value": 0.0,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "Minor Radius",
+                                "Value": 1.1200000047683716,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 1,
+                            "data": {
+                                "Name": "Major Divisions",
+                                "Value": 5,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0,
+                                        "Has max bound": false,
+                                        "Max": 12,
+                                        "Drag speed": 0.019999999552965165,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 1,
+                            "data": {
+                                "Name": "Minor Divisions",
+                                "Value": 8,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0,
+                                        "Has max bound": false,
+                                        "Max": 12,
+                                        "Drag speed": 0.019999999552965165,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 5,
+                            "data": {
+                                "Name": "Position",
+                                "Value": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0
+                                },
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "first": "96c3e1df-b3be-4479-9980-574d273ccde4",
+                "second": {
+                    "Name": "ApolCapsUL",
+                    "Values": [
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "Major Radius",
+                                "Value": 0.0,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "Minor Radius",
+                                "Value": 1.1200000047683716,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 1,
+                            "data": {
+                                "Name": "Major Divisions",
+                                "Value": 16,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0,
+                                        "Has max bound": false,
+                                        "Max": 12,
+                                        "Drag speed": 0.019999999552965165,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 1,
+                            "data": {
+                                "Name": "Minor Divisions",
+                                "Value": 7,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0,
+                                        "Has max bound": false,
+                                        "Max": 12,
+                                        "Drag speed": 0.019999999552965165,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 5,
+                            "data": {
+                                "Name": "Position",
+                                "Value": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0
+                                },
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "first": "f8b7d072-9a94-463a-be5f-92f0c15ab71b",
+                "second": {
+                    "Name": "Lampiongqua",
+                    "Values": [
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "Major Radius",
+                                "Value": -0.41999998688697817,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "Minor Radius",
+                                "Value": 1.0499999523162842,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 1,
+                            "data": {
+                                "Name": "Major Divisions",
+                                "Value": 32,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0,
+                                        "Has max bound": false,
+                                        "Max": 12,
+                                        "Drag speed": 0.019999999552965165,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 1,
+                            "data": {
+                                "Name": "Minor Divisions",
+                                "Value": 16,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0,
+                                        "Has max bound": false,
+                                        "Max": 12,
+                                        "Drag speed": 0.019999999552965165,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 5,
+                            "data": {
+                                "Name": "Position",
+                                "Value": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0
+                                },
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "first": "c5bac949-7169-4b29-a666-706b97465066",
+                "second": {
+                    "Name": "SnalTorulas",
+                    "Values": [
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "Major Radius",
+                                "Value": 4.25,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "Minor Radius",
+                                "Value": 0.9599999785423279,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 1,
+                            "data": {
+                                "Name": "Major Divisions",
+                                "Value": 45,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0,
+                                        "Has max bound": false,
+                                        "Max": 12,
+                                        "Drag speed": 0.019999999552965165,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 1,
+                            "data": {
+                                "Name": "Minor Divisions",
+                                "Value": 17,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0,
+                                        "Has max bound": false,
+                                        "Max": 12,
+                                        "Drag speed": 0.019999999552965165,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 5,
+                            "data": {
+                                "Name": "Position",
+                                "Value": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0
+                                },
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "first": "f8d7f63d-f83e-4884-af5e-d1eea3d143d9",
+                "second": {
+                    "Name": "TriangoTorular",
+                    "Values": [
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "Major Radius",
+                                "Value": 3.0799999237060549,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "Minor Radius",
+                                "Value": 0.9599999785423279,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 1,
+                            "data": {
+                                "Name": "Major Divisions",
+                                "Value": 32,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0,
+                                        "Has max bound": false,
+                                        "Max": 12,
+                                        "Drag speed": 0.019999999552965165,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 1,
+                            "data": {
+                                "Name": "Minor Divisions",
+                                "Value": 3,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0,
+                                        "Has max bound": false,
+                                        "Max": 12,
+                                        "Drag speed": 0.019999999552965165,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 5,
+                            "data": {
+                                "Name": "Position",
+                                "Value": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0
+                                },
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "first": "f2b1205f-333d-4179-92c6-2ba270717f59",
+                "second": {
+                    "Name": "QuadTorular",
+                    "Values": [
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "Major Radius",
+                                "Value": 3.0799999237060549,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "Minor Radius",
+                                "Value": 0.9599999785423279,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 1,
+                            "data": {
+                                "Name": "Major Divisions",
+                                "Value": 19,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0,
+                                        "Has max bound": false,
+                                        "Max": 12,
+                                        "Drag speed": 0.019999999552965165,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 1,
+                            "data": {
+                                "Name": "Minor Divisions",
+                                "Value": 5,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0,
+                                        "Has max bound": false,
+                                        "Max": 12,
+                                        "Drag speed": 0.019999999552965165,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 5,
+                            "data": {
+                                "Name": "Position",
+                                "Value": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0
+                                },
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "first": "3ee10a87-fb7b-4116-bddd-66a43d9b26a4",
+                "second": {
+                    "Name": "Edge of Roundal",
+                    "Values": [
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "Major Radius",
+                                "Value": 3.0799999237060549,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "Minor Radius",
+                                "Value": 0.22999995946884156,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 1,
+                            "data": {
+                                "Name": "Major Divisions",
+                                "Value": 19,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0,
+                                        "Has max bound": false,
+                                        "Max": 12,
+                                        "Drag speed": 0.019999999552965165,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 1,
+                            "data": {
+                                "Name": "Minor Divisions",
+                                "Value": 5,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0,
+                                        "Has max bound": false,
+                                        "Max": 12,
+                                        "Drag speed": 0.019999999552965165,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 5,
+                            "data": {
+                                "Name": "Position",
+                                "Value": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0
+                                },
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}
