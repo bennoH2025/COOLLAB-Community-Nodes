@@ -1,0 +1,26 @@
+// Colorize Node with separate input - keeps all color channels inklus the alpha free
+//
+// Idea and project coordination by bennoH.
+// Coding by claude.ai in the Sonnet-4 model of Anthropic PBC on a "KostenlosPlan" of bennoH.
+// This Coollab node is licensed under GPLv3.0 by bennoH. 2026
+
+// To learn how to write nodes, see https://coollab-art.com/Tutorials/Writing%20Nodes/Intro
+
+INPUT UV->sRGB_StraightA 'Input'; /// The image/shape to colorize
+INPUT float 'R'; /// Red channel (0-1)
+INPUT float 'G'; /// Green channel (0-1)
+INPUT float 'B'; /// Blue channel (0-1)
+INPUT float 'A'; /// Alpha channel (0-1)
+
+sRGB_StraightA main(UV uv)
+{
+    // Get the input color/alpha
+    vec4 input_color = 'Input'(uv);
+    
+    // Create the desired color
+    vec4 target_color = vec4('R', 'G', 'B', 'A');
+    
+    // Use the input's alpha as a mask, apply the target color
+    // Preserve the input's shape/alpha but apply new color
+    return vec4(target_color.rgb, input_color.a * target_color.a);
+}
