@@ -1,0 +1,94 @@
+{
+    "Presets": {
+        "Underlying container": [
+            {
+                "first": "e08f99bb-28f7-4abf-b204-4431698277ea",
+                "second": {
+                    "Name": "Crunchy PR-Style",
+                    "Values": [
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "Brightness",
+                                "Value": -0.09999999403953552,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "Contrast",
+                                "Value": 0.6700000166893005,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "first": "b789adc9-e138-4f4b-b821-ada681913062",
+                "second": {
+                    "Name": "Softed",
+                    "Values": [
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "Brightness",
+                                "Value": 0.07999999821186066,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "index": 2,
+                            "data": {
+                                "Name": "Contrast",
+                                "Value": -0.06999996304512024,
+                                "Metadata": {
+                                    "Bounds": {
+                                        "Has min bound": false,
+                                        "Min": 0.0,
+                                        "Has max bound": false,
+                                        "Max": 1.0,
+                                        "Drag speed": 0.009999999776482582,
+                                        "Use slider": false,
+                                        "Is logarithmic": false
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}
