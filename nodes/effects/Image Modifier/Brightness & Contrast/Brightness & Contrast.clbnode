@@ -1,0 +1,31 @@
+// Brightness & Contrast - Classic image adjustment
+//
+// Idea and project coordination by bennoH.
+// Coding by claude.ai in the Sonnet-4 model of Anthropic PBC on a "KostenlosPlan" of bennoH.
+// This Coollab node is licensed under GPLv3.0 by bennoH. 2026
+
+// To learn how to write nodes, see https://coollab-art.com/Tutorials/Writing%20Nodes/Intro
+
+INPUT UV->sRGB_StraightA 'Input'; /// The image to adjust
+INPUT float 'Brightness'; /// Brightness adjustment (-1 to 1, 0 = no change)
+INPUT float 'Contrast'; /// Contrast adjustment (-1 to 1, 0 = no change)
+
+sRGB_StraightA main(UV uv)
+{
+    // Get the input color
+    vec4 color = 'Input'(uv);
+    
+    // Apply brightness (simple addition)
+    vec3 adjusted = color.rgb + 'Brightness';
+    
+    // Apply contrast (around midpoint 0.5)
+    // Formula: (color - 0.5) * contrast_factor + 0.5
+    float contrast_factor = 1.0 + 'Contrast';
+    adjusted = (adjusted - 0.5) * contrast_factor + 0.5;
+    
+    // Clamp to valid range [0, 1]
+    adjusted = clamp(adjusted, 0.0, 1.0);
+    
+    // Return with original alpha
+    return vec4(adjusted, color.a);
+}
