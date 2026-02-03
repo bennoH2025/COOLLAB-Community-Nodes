@@ -6,7 +6,7 @@
 
 ## Overview
 
-**Make BG Color** is a simple color replacement tool originally intended for backgrounds but useful for various solid color applications. It replaces input colors completely while preserving alpha/transparency.
+**Make BG Color** this allows you to quickly and easily create solid-color backgrounds or use it to color 3D-Shapes in full color, ignoring all edges and shading, resulting in a pure colored shadow of the object. It completely replaces the input colors while preserving alpha and transparency. However, it cannot be applied to only Shapes.
 
 ⚠️ **Note**: This node ignores the input's color completely - it only uses the alpha channel. Perfect for solid colors, but not for color grading!
 
@@ -179,7 +179,7 @@ Simple: Takes your RGBA values, applies them everywhere the input has alpha.
 
 ## Übersicht
 
-**Make BG Color** ist ein einfaches Farbersetzungs-Tool, ursprünglich für Hintergründe gedacht, aber nützlich für verschiedene Vollfarb-Anwendungen. Es ersetzt Input-Farben komplett während es Alpha/Transparenz bewahrt.
+**Make BG Color** damit kannst Du rasch und einfach Einfarbige Hintergründe erstellenoder es nutzen um 3D-Shape's volfarbig zu coloriern wobei alle Kanten und Shatierungen ignoriert werden was quasi ein reiner farbiger Shattenwurff des Objektes ergiebt. Es ersetzt die Input-Farben komplett während es Alpha/Transparenz bewahrt. Auf Shaps läst es sich aber nicht anwenden. 
 
 ⚠️ **Hinweis**: Dieser Node ignoriert die Input-Farbe komplett - er nutzt nur den Alpha-Kanal. Perfekt für Vollfarben, aber nicht für Color Grading!
 
