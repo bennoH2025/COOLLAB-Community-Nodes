@@ -1,0 +1,73 @@
+// Lumakey - classical - Make brightness ranges transparent
+//
+// Idea and project coordination by bennoH.
+// Coding by claude.ai in the Sonnet-4.5 model of Anthropic PBC on a "KostenlosPlan" of bennoH.
+// This Coollab node is licensed under GPLv3.0 by bennoH. 2026
+
+// To learn how to write nodes, see https://coollab-art.com/Tutorials/Writing%20Nodes/Intro
+
+INPUT UV->sRGB_StraightA 'Input'; /// The image to key
+
+INPUT float '--- Key Settings ---';
+INPUT float 'Key Luminance'; /// The brightness level to make transparent (0 = black, 1 = white)
+INPUT float 'Tolerance'; /// How wide the brightness range is (0 = exact match, 1 = all brightnesses)
+INPUT float 'Softness'; /// Edge softness of the key (0 = hard edge, 1 = very soft)
+INPUT bool 'Show Matte'; /// Display the alpha matte in white/black
+INPUT bool 'Invert Key'; /// Invert the key (keep dark instead of bright, or vice versa)
+
+INPUT float '--- Refinement ---';
+INPUT float 'Edge Erode'; /// Shrink the matte edges (-1 = grow, 0 = no change, 1 = shrink)
+INPUT float 'Black Point'; /// Adjust the darkest point of the result (0 = no change, 1 = lift blacks)
+INPUT float 'White Point'; /// Adjust the brightest point of the result (0 = crush whites, 1 = no change)
+
+sRGB_StraightA main(UV uv)
+{
+    // Get input color
+    vec4 color = 'Input'(uv);
+    vec3 rgb = color.rgb;
+    
+    // Calculate luminance (Rec. 709)
+    float luminance = dot(rgb, vec3(0.2126, 0.7152, 0.0722));
+    
+    // Calculate distance from key luminance
+    float distance = abs(luminance - 'Key Luminance');
+    
+    // Create alpha matte based on tolerance and softness
+    float matte = 1.0 - smoothstep('Tolerance' - 'Softness', 'Tolerance' + 'Softness', distance);
+    
+    // Apply edge erode/grow
+    matte = clamp(matte + 'Edge Erode', 0.0, 1.0);
+    
+    // Invert matte (1 = keep, 0 = transparent)
+    float alpha = 1.0 - matte;
+    
+    // Invert key if requested (keeps the opposite range)
+    if ('Invert Key') {
+        alpha = 1.0 - alpha;
+    }
+    
+    // Apply black and white point adjustments to the RGB
+    // Black Point: lifts the darkest values
+    if ('Black Point' > 0.0) {
+        rgb = rgb + vec3('Black Point' * 0.3); // Lift shadows
+        rgb = clamp(rgb, 0.0, 1.0);
+    }
+    
+    // White Point: compresses the brightest values
+    if ('White Point' < 1.0) {
+        float compression = 1.0 - 'White Point';
+        rgb = rgb * (1.0 - compression * 0.5); // Compress highlights
+        rgb = clamp(rgb, 0.0, 1.0);
+    }
+    
+    // Combine with original alpha
+    alpha = alpha * color.a;
+    
+    // Show matte visualization if enabled
+    if ('Show Matte') {
+        return vec4(vec3(alpha), 1.0); // White = opaque, Black = transparent
+    }
+    
+    // Return keyed image with transparency
+    return vec4(rgb, alpha);
+}
