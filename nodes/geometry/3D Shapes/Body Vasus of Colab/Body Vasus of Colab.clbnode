@@ -1,0 +1,123 @@
+// Body Vasus of Colab - Simple vase and pottery shapes
+//
+// A body of revolution is created by rotating a 2D profile curve around an axis.
+// This creates symmetric 3D shapes like vases, bowls, bottles, etc.
+// Open top, closed bottom.
+//
+// Idea and project coordination by bennoH.
+// Coding by claude.ai in the Sonnet-4.5 model of Anthropic PBC on a "KostenlosPlan" of bennoH.
+// This Coollab 3D SDF-node is licensed under GPLv3.0 by bennoH. 2026
+
+// To learn how to write nodes, see https://coollab-art.com/Tutorials/Writing%20Nodes/Intro
+
+INPUT int 'Profile Type'; /// 0=Cylinder, 1=Cone, 2=Sphere, 3=Vase, 4=Hourglass, 5=Bulb, 6=Bowl
+INPUT float 'Height'; /// Total height of the object
+INPUT float 'Base Radius'; /// Radius at the bottom
+INPUT float 'Top Radius'; /// Radius at the top (for tapering)
+INPUT float 'Bulge'; /// Bulge amount in the middle (0 = straight, 1 = very bulgy)
+INPUT float 'Smoothness'; /// Profile curve smoothness (for vase/bowl shapes)
+INPUT vec3 'Position'; /// Position offset (X, Y, Z)
+
+// Profile function: returns radius at height y
+float getProfile(float y, int type) {
+    // Normalize y to [0, 1] range
+    float t = (y + 'Height' * 0.5) / 'Height';
+    t = clamp(t, 0.0, 1.0);
+    
+    float baseR = 'Base Radius';
+    float topR = 'Top Radius';
+    float bulge = 'Bulge';
+    float smoothness = clamp('Smoothness', 0.01, 0.99);
+    
+    float r = 0.0;
+    
+    if (type == 0) {
+        // CYLINDER - straight sides
+        r = mix(baseR, topR, t);
+    }
+    else if (type == 1) {
+        // CONE - linear taper
+        r = mix(baseR, topR, t);
+    }
+    else if (type == 2) {
+        // SPHERE - circular profile
+        float centerY = 0.5;
+        float radius = (baseR + topR) * 0.5;
+        float dy = t - centerY;
+        r = sqrt(max(0.0, radius * radius - dy * dy * 'Height' * 'Height' * 0.25));
+    }
+    else if (type == 3) {
+        // VASE - smooth bulge in middle
+        float linearR = mix(baseR, topR, t);
+        float bulgeFactor = sin(t * PI) * bulge * baseR;
+        r = linearR + bulgeFactor;
+    }
+    else if (type == 4) {
+        // HOURGLASS - pinch in middle
+        float linearR = mix(baseR, topR, t);
+        float pinch = sin(t * PI) * bulge * baseR;
+        r = linearR - pinch;
+        r = max(r, baseR * 0.1); // Prevent going to zero
+    }
+    else if (type == 5) {
+        // BULB - bulge at bottom, narrow at top
+        float bulgeT = pow(1.0 - t, 2.0);
+        float bulgeFactor = bulgeT * bulge * baseR;
+        r = mix(baseR, topR, t) + bulgeFactor;
+    }
+    else if (type == 6) {
+        // BOWL - smooth curve, wide at top
+        float curvature = pow(t, 1.0 + smoothness * 2.0);
+        r = mix(baseR, topR, curvature);
+        // Add subtle outward curve
+        float bowlCurve = sin(t * PI * 0.5) * bulge * baseR * 0.5;
+        r = r + bowlCurve;
+    }
+    
+    return max(r, 0.01); // Prevent zero radius
+}
+
+// SDF for a flat circular cap
+float sdFlatCap(vec2 p, float radius) {
+    return length(p) - radius;
+}
+
+SignedDistance main(vec3 pos) {
+    // Apply position offset
+    vec3 p = pos - 'Position';
+    
+    // Get the profile type
+    int profileType = clamp('Profile Type', 0, 6);
+    
+    // Get height along Y axis
+    float height = p.y;
+    float halfHeight = 'Height' * 0.5;
+    
+    // Clamp to valid height range for profile calculation
+    float clampedHeight = clamp(height, -halfHeight, halfHeight);
+    
+    // Calculate distance from Y axis (rotation axis)
+    float distFromAxis = length(p.xz);
+    
+    // Get the profile radius at this height
+    float profileRadius = getProfile(clampedHeight, profileType);
+    
+    // SDF: distance from current point to the profile surface (body)
+    float bodyDist = distFromAxis - profileRadius;
+    
+    // Handle height boundaries
+    if (height > halfHeight) {
+        // Above top - open, just cut off at height boundary
+        float topCapY = height - halfHeight;
+        bodyDist = max(bodyDist, topCapY);
+    }
+    else if (height < -halfHeight) {
+        // Below bottom - use flat bottom cap
+        float bottomCapY = height + halfHeight;
+        float bottomCapRadius = getProfile(-halfHeight, profileType);
+        float bottomCapDist = max(sdFlatCap(p.xz, bottomCapRadius), -bottomCapY);
+        bodyDist = bottomCapDist;
+    }
+    
+    return bodyDist;
+}
