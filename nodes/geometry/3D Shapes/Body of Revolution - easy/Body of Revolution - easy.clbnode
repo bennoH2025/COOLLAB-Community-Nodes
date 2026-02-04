@@ -1,0 +1,218 @@
+// Body of Revolution - easy
+//
+// A body of revolution is created by rotating a 2D profile curve around an axis.
+// This creates symmetric 3D shapes like vases, bowls, bottles, etc.
+// With 5 radius control points and optional eccentricity.
+//
+// Idea and project coordination by bennoH.
+// Coding by claude.ai in the Sonnet-4.5 model of Anthropic PBC on a "KostenlosPlan" of bennoH.
+// This Coollab 3D SDF-node is licensed under GPLv3.0 by bennoH. 2026
+
+// To learn how to write nodes, see https://coollab-art.com/Tutorials/Writing%20Nodes/Intro
+
+INPUT int 'Profile Type'; /// 0=Cylinder, 1=Cone, 2=Sphere, 3=Vase, 4=Hourglass, 5=Bulb, 6=Bowl
+INPUT float 'Height'; /// Total height of the object
+
+INPUT float '--- Radius Control Points ---';
+INPUT float 'Base Radius'; /// Radius at the bottom (y = -Height/2)
+INPUT float 'Radius 1'; /// Radius at 25% height
+INPUT float 'Radius 2'; /// Radius at 50% height (middle)
+INPUT float 'Radius 3'; /// Radius at 75% height
+INPUT float 'Top Radius'; /// Radius at the top (y = +Height/2)
+
+INPUT float '--- Shape Control ---';
+INPUT float 'Bulge'; /// Bulge amount in the middle (0 = straight, 1 = very bulgy)
+INPUT float 'Smoothness'; /// Profile curve smoothness (for vase/bowl shapes)
+
+INPUT float '--- Eccentricity ---';
+INPUT bool 'Enable Eccentricity'; /// Enable off-center displacement for one radius
+INPUT float 'Eccentric Point'; /// Height position for eccentricity (0.0 = bottom, 4.0 = top)
+INPUT float 'Eccentricity Amount'; /// How far off-center to displace (0 = centered, 1 = large offset)
+INPUT float 'Eccentricity Angle'; /// Angle of displacement in radians (0 to TAU)
+
+INPUT vec3 'Position'; /// Position offset (X, Y, Z)
+
+// Get radius at specific height with 5 control points
+float getRadiusAtHeight(float t) {
+    // t is normalized [0, 1] from bottom to top
+    float baseR = 'Base Radius';
+    float r1 = 'Radius 1';
+    float r2 = 'Radius 2';
+    float r3 = 'Radius 3';
+    float topR = 'Top Radius';
+    
+    float r = 0.0;
+    
+    // Interpolate between the 5 control points
+    if (t < 0.25) {
+        // Between Base and R1
+        float localT = t / 0.25;
+        r = mix(baseR, r1, localT);
+    }
+    else if (t < 0.5) {
+        // Between R1 and R2
+        float localT = (t - 0.25) / 0.25;
+        r = mix(r1, r2, localT);
+    }
+    else if (t < 0.75) {
+        // Between R2 and R3
+        float localT = (t - 0.5) / 0.25;
+        r = mix(r2, r3, localT);
+    }
+    else {
+        // Between R3 and Top
+        float localT = (t - 0.75) / 0.25;
+        r = mix(r3, topR, localT);
+    }
+    
+    return r;
+}
+
+// Get eccentricity offset at height t
+vec2 getEccentricityOffset(float t) {
+    if (!('Enable Eccentricity')) {
+        return vec2(0.0, 0.0);
+    }
+    
+    // Convert eccentric point from 0.0-4.0 range to 0.0-1.0 normalized height
+    float eccentricPoint = clamp('Eccentric Point', 0.0, 4.0);
+    float targetT = eccentricPoint / 4.0; // Maps 0.0-4.0 to 0.0-1.0
+    
+    float eccentAmount = 'Eccentricity Amount';
+    float eccentAngle = 'Eccentricity Angle';
+    
+    // Calculate falloff - offset is strongest at the eccentric point
+    float falloff = 1.0 - abs(t - targetT) * 4.0; // Influence within ±0.25 range
+    falloff = clamp(falloff, 0.0, 1.0);
+    falloff = smoothstep(0.0, 1.0, falloff); // Smooth transition
+    
+    // Calculate offset direction
+    float offsetX = cos(eccentAngle) * eccentAmount * falloff;
+    float offsetZ = sin(eccentAngle) * eccentAmount * falloff;
+    
+    return vec2(offsetX, offsetZ);
+}
+
+// Profile function: returns radius at height y
+float getProfile(float y, int type, out vec2 centerOffset) {
+    // Normalize y to [0, 1] range
+    float t = (y + 'Height' * 0.5) / 'Height';
+    t = clamp(t, 0.0, 1.0);
+    
+    float bulge = 'Bulge';
+    
+    // Get base radius from control points
+    float baseR = getRadiusAtHeight(t);
+    
+    // Get eccentricity offset for this height
+    centerOffset = getEccentricityOffset(t);
+    
+    float r = baseR;
+    
+    // Apply profile-specific modifications
+    if (type == 0) {
+        // CYLINDER - use control points as-is
+        r = baseR;
+    }
+    else if (type == 1) {
+        // CONE - use control points as-is (linear between them)
+        r = baseR;
+    }
+    else if (type == 2) {
+        // SPHERE - circular profile
+        float centerY = 0.5;
+        float radius = ('Base Radius' + 'Top Radius') * 0.5;
+        float dy = t - centerY;
+        r = sqrt(max(0.0, radius * radius - dy * dy * 'Height' * 'Height' * 0.25));
+    }
+    else if (type == 3) {
+        // VASE - smooth bulge in middle
+        float bulgeFactor = sin(t * PI) * bulge * 'Base Radius';
+        r = baseR + bulgeFactor;
+    }
+    else if (type == 4) {
+        // HOURGLASS - pinch in middle
+        float pinch = sin(t * PI) * bulge * 'Base Radius';
+        r = baseR - pinch;
+        r = max(r, 'Base Radius' * 0.1);
+    }
+    else if (type == 5) {
+        // BULB - bulge at bottom, narrow at top
+        float bulgeT = pow(1.0 - t, 2.0);
+        float bulgeFactor = bulgeT * bulge * 'Base Radius';
+        r = baseR + bulgeFactor;
+    }
+    else if (type == 6) {
+        // BOWL - smooth curve, wide at top
+        float bowlCurve = sin(t * PI * 0.5) * bulge * 'Base Radius' * 0.5;
+        r = baseR + bowlCurve;
+    }
+    
+    return max(r, 0.01);
+}
+
+// SDF for a flat circular cap
+float sdFlatCap(vec2 p, float radius) {
+    return length(p) - radius;
+}
+
+SignedDistance main(vec3 pos) {
+    // Apply position offset
+    vec3 p = pos - 'Position';
+    
+    // Get the profile type
+    int profileType = clamp('Profile Type', 0, 6);
+    
+    // Get height along Y axis
+    float height = p.y;
+    float halfHeight = 'Height' * 0.5;
+    
+    // Clamp to valid height range for profile calculation
+    float clampedHeight = clamp(height, -halfHeight, halfHeight);
+    
+    // Get the profile radius and center offset at this height
+    vec2 centerOffset;
+    float profileRadius = getProfile(clampedHeight, profileType, centerOffset);
+    
+    // Apply eccentricity: shift the center of the circle at this height
+    vec2 pXZ = p.xz - centerOffset;
+    
+    // Calculate distance from shifted Y axis (rotation axis)
+    float distFromAxis = length(pXZ);
+    
+    // SDF: distance from current point to the profile surface (body)
+    float bodyDist = distFromAxis - profileRadius;
+    
+    // Flat caps at top and bottom
+    float topCapY = height - halfHeight;
+    float bottomCapY = height + halfHeight;
+    
+    // Get cap radii and offsets
+    vec2 topOffset;
+    float topCapRadius = getProfile(halfHeight, profileType, topOffset);
+    
+    vec2 bottomOffset;
+    float bottomCapRadius = getProfile(-halfHeight, profileType, bottomOffset);
+    
+    // Distance to top cap (flat circle)
+    vec2 topCapPos = p.xz - topOffset;
+    float topCapDist = max(sdFlatCap(topCapPos, topCapRadius), topCapY);
+    
+    // Distance to bottom cap (flat circle)
+    vec2 bottomCapPos = p.xz - bottomOffset;
+    float bottomCapDist = max(sdFlatCap(bottomCapPos, bottomCapRadius), -bottomCapY);
+    
+    // Combine body and caps
+    float finalDist = bodyDist;
+    
+    // If above top, use top cap
+    if (height > halfHeight) {
+        finalDist = topCapDist;
+    }
+    // If below bottom, use bottom cap
+    else if (height < -halfHeight) {
+        finalDist = bottomCapDist;
+    }
+    
+    return finalDist;
+}
